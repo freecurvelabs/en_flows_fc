@@ -5,7 +5,7 @@ import wandb
 from water_experiment import losses
 from water_experiment.dataset import get_data
 from water_experiment.models import get_model
-from flows.distributions import PositionPrior
+from water_experiment.distributions import PositionPrior
 from flows.utils import remove_mean
 
 parser = argparse.ArgumentParser(description='SE3')
