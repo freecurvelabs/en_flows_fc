@@ -5,7 +5,7 @@ import wandb
 from water_experiment import losses
 from water_experiment.dataset import get_data
 from water_experiment.models import get_model
-from water_experiment.distributions import PositionPrior
+from water_experiment.distributions import get_prior
 from flows.utils import remove_mean
 
 parser = argparse.ArgumentParser(description='SE3')
@@ -62,11 +62,18 @@ else:
 
 
 def main():
-    prior = PositionPrior()  # set up prior
-
+    
     flow = get_model(args, dim, n_particles)
+    
+    device = "cpu"
     if torch.cuda.is_available():
         flow = flow.cuda()
+        device = "cuda"
+    
+    dtype = torch.float32
+    ctx = torch.zeros([], device=device, dtype=dtype) 
+    
+    prior = get_prior(args,ctx)
 
     # Log all args to wandb
     wandb.init(entity=args.wandb_usr, project='se3flows', name=args.name, config=args)
