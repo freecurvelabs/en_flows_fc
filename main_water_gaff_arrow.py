@@ -5,14 +5,15 @@ import wandb
 from water_experiment import losses
 from water_experiment.dataset import get_data
 from water_experiment.models import get_model
-from water_experiment.distributions import get_prior
+from water_experiment.distributions import get_prior,test_flow
 from flows.utils import remove_mean
 
 parser = argparse.ArgumentParser(description='SE3')
 parser.add_argument('--model', type=str, default='simple_dynamics',
                     help='our_dynamics | schnet | simple_dynamics | kernel_dynamics | egnn_dynamics | gnn_dynamics')
-parser.add_argument('--data', type=str, default='wat2_gaff',
+parser.add_argument('--data', type=str, default='wat2_arrow',
                     help='wat2_gaff | wat2_arrow | wat5_gaff | wat5_arrow')
+parser.add_argument('--prior', type=str, default='normal',)
 parser.add_argument('--n_epochs', type=int, default=300)
 parser.add_argument('--batch_size', type=int, default=100)
 parser.add_argument('--lr', type=float, default=5e-4)
@@ -45,6 +46,11 @@ parser.add_argument('--weight_decay', type=float, default=1e-12,
 parser.add_argument('--ode_regularization', type=float, default=0)
 parser.add_argument('--x_aggregation', type=str, default='sum',
                     help='sum | mean')
+parser.add_argument('--test_flow', type=eval, default=False,
+                    help='True | False')
+parser.add_argument('--save_flow', type=str, default='flow.pt')
+parser.add_argument('--load_flow', type=str, default='')
+
 
 args, unparsed_args = parser.parse_known_args()
 print(args)
@@ -73,7 +79,14 @@ def main():
     dtype = torch.float32
     ctx = torch.zeros([], device=device, dtype=dtype) 
     
+    if(args.load_flow != ''):
+        flow.load_state_dict(torch.load(args.load_flow))
+            
     prior = get_prior(args,ctx)
+    
+    if(args.test_flow):
+        test_flow(args, flow, ctx)
+        return True
 
     # Log all args to wandb
     wandb.init(entity=args.wandb_usr, project='se3flows', name=args.name, config=args)
@@ -83,8 +96,8 @@ def main():
     #                         wandb_log_dir=wandb.run.dir)
 
     data_train, batch_iter_train = get_data(args, 'train', args.batch_size)
-    data_val, batch_iter_val = get_data(args, 'val', batch_size=100)
-    data_test, batch_iter_test = get_data(args, 'test', batch_size=100)
+    data_val, batch_iter_val = get_data(args, 'val', 100)
+    data_test, batch_iter_test = get_data(args, 'test', 100)
 
     print("Max")
     print(torch.max(data_train))
@@ -92,7 +105,7 @@ def main():
     # initial training with likelihood maximization on data set
     optim = torch.optim.AdamW(flow.parameters(), lr=args.lr, amsgrad=True,
                               weight_decay=args.weight_decay)
-    print(flow)
+    #print(flow)
 
     best_val_loss = 1e8
     best_test_loss = 1e8
@@ -103,8 +116,8 @@ def main():
             batch = data_train[idxs]
             assert batch.size(0) == args.batch_size
 
-            batch = batch.view(batch.size(0), n_particles, n_dims)
-            batch = remove_mean(batch)
+            #batch = batch.view(batch.size(0), n_particles, n_dims)
+            #batch = remove_mean(batch)
 
             if args.data_augmentation:
                 batch = utils.random_rotation(batch).detach()
@@ -115,7 +128,6 @@ def main():
             optim.zero_grad()
 
             # transform batch through flow
-
 
             if 'kernel_dynamics' in args.model:
                 loss, nll, reg_term, mean_abs_z = losses.compute_loss_and_nll_kerneldynamics(args, flow, prior, batch, n_particles, n_dims)
@@ -153,6 +165,8 @@ def main():
 
         print()  # Clear line
 
+    torch.save(flow.state_dict(), 'flow_%s.pt' % args.name)
+    
     return best_test_loss
 
 
@@ -170,7 +184,7 @@ def test(args, data_test, batch_iter_test, flow, prior, epoch, partition='test')
             batch = torch.Tensor(data_test[batch_idxs])
             if torch.cuda.is_available():
                 batch = batch.cuda()
-            batch = batch.view(batch.size(0), n_particles, n_dims)
+            #batch = batch.view(batch.size(0), n_particles, n_dims)
             if 'kernel_dynamics' in args.model:
                 loss, nll, reg_term, mean_abs_z = losses.compute_loss_and_nll_kerneldynamics(args, flow, prior, batch,
                                                                                              n_particles, n_dims)

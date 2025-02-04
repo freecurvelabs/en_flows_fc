@@ -60,6 +60,7 @@ class FFJORD(torch.nn.Module):
         reg_term = x.new_zeros(x.shape[0])
 
         state = (x, ldj, reg_term)
+        #print(f"FFJORD.forward() {x.shape=}")
 
         self.odefunc.before_odeint(x)
         # print(state, self.odefunc, self.int_time, self.method)
@@ -178,6 +179,7 @@ class ODEfunc(torch.nn.Module):
 
     def forward(self, t, state):
         x, ldj, reg_term = state
+        #print(f"ODEfunc.forward() {x.shape=}")
 
         self.num_evals += 1
         with torch.set_grad_enabled(True):

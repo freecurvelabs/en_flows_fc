@@ -12,7 +12,210 @@ from flows.utils import \
     sample_center_gravity_zero_gaussian_with_mask, \
     sample_center_gravity_zero_gaussian, \
     sample_gaussian_with_mask
+from .dataset import get_data_wat
+    
+from typing import Union, Optional, Sequence
+from collections.abc import Sequence as _Sequence
+import warnings
 
+def _is_non_empty_sequence_of_integers(x):
+    return (
+        isinstance(x, _Sequence) and (len(x) > 0) and all(isinstance(y, int) for y in x)
+    )
+
+def _is_sequence_of_non_empty_sequences_of_integers(x):
+    return (
+        isinstance(x, _Sequence)
+        and len(x) > 0
+        and all(_is_non_empty_sequence_of_integers(y) for y in x)
+    )
+
+def _parse_dim(dim):
+    if isinstance(dim, int):
+        return [torch.Size([dim])]
+    if _is_non_empty_sequence_of_integers(dim):
+        return [torch.Size(dim)]
+    elif _is_sequence_of_non_empty_sequences_of_integers(dim):
+        return list(map(torch.Size, dim))
+    else:
+        raise ValueError(
+            f"dim must be either:"
+            f"\n\t- an integer"
+            f"\n\t- a non-empty list of integers"
+            f"\n\t- a list with len > 1 containing non-empty lists containing integers"
+        )
+
+class Energy(torch.nn.Module):
+    """
+    Base class for all energy models.
+
+    It supports energies defined over:
+        - simple vector states of shape [..., D]
+        - tensor states of shape [..., D1, D2, ..., Dn]
+        - states composed of multiple tensors (x1, x2, x3, ...)
+          where each xi is of form [..., D1, D2, ...., Dn]
+
+    Each input can have multiple batch dimensions,
+    so a final state could have shape
+        ([B1, B2, ..., Bn, D1, D2, ..., Dn],
+         ...,
+         [B1, B2, ..., Bn, D'1, ..., D'1n]).
+
+    which would return an energy tensor with shape
+        ([B1, B2, ..., Bn, 1]).
+
+    Forces are computed for each input by default.
+    Here the convention is followed, that forces will have
+    the same shape as the input state.
+
+    To define the state shape, the parameter `dim` has to
+    be of the following form:
+        - an integer, e.g. d = 5
+            then each event is a simple vector state
+            of shape [..., 5]
+        - a non-empty list of integers, e.g. d = [3, 6, 7]
+            then each event is a tensor state of shape [..., 3, 6, 7]
+        - a list of len > 1 containing non-empty integer lists,
+            e.g. d = [[1, 3], [5, 3, 6]]. Then each event is
+            a tuple of tensors of shape ([..., 1, 3], [..., 5, 3, 6])
+
+    Parameters:
+    -----------
+    dim: Union[int, Sequence[int], Sequence[Sequence[int]]]
+        The event shape of the states for which energies/forces ar computed.
+
+    """
+
+    def __init__(self, dim: Union[int, Sequence[int], Sequence[Sequence[int]]], **kwargs):
+
+        super().__init__(**kwargs)
+        self._event_shapes = _parse_dim(dim)
+
+    @property
+    def dim(self):
+        if len(self._event_shapes) > 1:
+            raise ValueError(
+                "This energy instance is defined for multiple events."
+                "Therefore there exists no coherent way to define the dimension of an event."
+                "Consider using Energy.event_shapes instead."
+            )
+        elif len(self._event_shapes[0]) > 1:
+            warnings.warn(
+                "This Energy instance is defined on multidimensional events. "
+                "Therefore, its Energy.dim is distributed over multiple tensor dimensions. "
+                "Consider using Energy.event_shape instead.",
+                UserWarning,
+            )
+        return int(torch.prod(torch.tensor(self.event_shape, dtype=int)))
+
+    @property
+    def event_shape(self):
+        if len(self._event_shapes) > 1:
+            raise ValueError(
+                "This energy instance is defined for multiple events."
+                "Therefore therefore there exists no single event shape."
+                "Consider using Energy.event_shapes instead."
+            )
+        return self._event_shapes[0]
+
+    @property
+    def event_shapes(self):
+        return self._event_shapes
+
+    def _energy(self, *xs, **kwargs):
+        raise NotImplementedError()
+
+    def energy(self, *xs, temperature=1.0, **kwargs):
+        assert len(xs) == len(
+            self._event_shapes
+        ), f"Expected {len(self._event_shapes)} arguments but only received {len(xs)}"
+        batch_shape = xs[0].shape[: -len(self._event_shapes[0])]
+        for i, (x, s) in enumerate(zip(xs, self._event_shapes)):
+            assert x.shape[: -len(s)] == batch_shape, (
+                f"Inconsistent batch shapes."
+                f"Input at index {i} has batch shape {x.shape[:-len(s)]}"
+                f"however input at index 0 has batch shape {batch_shape}."
+            )
+            assert (
+                x.shape[-len(s) :] == s
+            ), f"Input at index {i} as wrong shape {x.shape[-len(s):]} instead of {s}"
+        return self._energy(*xs, **kwargs) / temperature
+
+    def force(
+        self,
+        *xs: Sequence[torch.Tensor],
+        temperature: float = 1.0,
+        ignore_indices: Optional[Sequence[int]] = None,
+        no_grad: Union[bool, Sequence[int]] = False,
+        **kwargs,
+    ):
+        """
+        Computes forces with respect to the input tensors.
+
+        If states are tuples of tensors, it returns a tuple of forces for each input tensor.
+        If states are simple tensors / vectors it returns a single forces.
+
+        Depending on the context it might be unnecessary to compute all input forces.
+        For this case `ignore_indices` denotes those input tensors for which no forces.
+        are to be computed.
+
+        E.g. by setting `ignore_indices = [1]` the result of `energy.force(x, y, z)`
+        will be `(fx, None, fz)`.
+
+        Furthermore, the forces will allow for taking high-order gradients by default.
+        If this is unwanted, e.g. to save memory it can be turned off by setting `no_grad=True`.
+        If higher-order gradients should be ignored for only a subset of inputs it can
+        be specified by passing a list of ignore indices to `no_grad`.
+
+        E.g. by setting `no_grad = [1]` the result of `energy.force(x, y, z)`
+        will be `(fx, fy, fz)`, where `fx` and `fz` allow for taking higher order gradients
+        and `fy` will not.
+
+        Parameters:
+        -----------
+        xs: *torch.Tensor
+            Input tensor(s)
+        temperature: float
+            Temperature at which to compute forces
+        ignore_indices: Sequence[int]
+            Which inputs should be skipped in the force computation
+        no_grad: Union[bool, Sequence[int]]
+            Either specifies whether higher-order gradients should be computed at all,
+            or specifies which inputs to leave out when computing higher-order gradients.
+        """
+        if ignore_indices is None:
+            ignore_indices = []
+
+        with torch.enable_grad():
+            forces = []
+            requires_grad_states = [x.requires_grad for x in xs]
+
+            for i, x in enumerate(xs):
+                if i not in ignore_indices:
+                    x = x.requires_grad_(True)
+                else:
+                    x = x.requires_grad_(False)
+
+            energy = self.energy(*xs, temperature=temperature, **kwargs)
+
+            for i, x in enumerate(xs):
+                if i not in ignore_indices:
+                    if isinstance(no_grad, bool):
+                        with_grad = not no_grad
+                    else:
+                        with_grad = i not in no_grad
+                    force = -torch.autograd.grad(
+                        energy.sum(), x, create_graph=with_grad,
+                    )[0]
+                    forces.append(force)
+                    x.requires_grad_(requires_grad_states[i])
+                else:
+                    forces.append(None)
+
+        forces = (*forces,)
+        if len(self._event_shapes) == 1:
+            forces = forces[0]
+        return forces
 
 class PositionFeaturePrior(torch.nn.Module):
     def __init__(self, n_dim, in_node_nf):
@@ -50,7 +253,6 @@ class PositionFeaturePrior(torch.nn.Module):
 
         return z_x, z_h
 
-
 class PositionPrior(torch.nn.Module):
     def __init__(self):
         super().__init__()
@@ -62,7 +264,23 @@ class PositionPrior(torch.nn.Module):
         samples = sample_center_gravity_zero_gaussian(size, device)
         return samples
 
-class ArbalestPrior(torch.nn.Module):
+
+class _ArbalestEnergyWrapper(torch.autograd.Function):
+    @staticmethod
+    def forward(ctx, input, ene_model):
+        energy, force, *_ = ene_model.evaluate(input)
+        ctx.save_for_backward(-force)
+        return energy
+
+    @staticmethod
+    def backward(ctx, grad_output):
+        neg_force, = ctx.saved_tensors
+        grad_input = grad_output * neg_force
+        return grad_input, None
+    
+_evaluate_arbalest_energy = _ArbalestEnergyWrapper.apply
+
+class ArbalestPrior(Energy):
     def __init__(self, system_struct_fname: str, conf_templ_fname: str, crd_dim : int, coords : np.ndarray, ctx):
         """Torch module to compute reduced energies (Log Probabilities) using Arbalest
 
@@ -90,18 +308,19 @@ class ArbalestPrior(torch.nn.Module):
         self._ctx = ctx
         
         event_shape = (self.n_atoms*3,) 
-        super().__init__()
+        super().__init__(event_shape)
         
     def forward(self, x):
-        (ene, frc) = self.evaluate_ene_frc(x)
-        return ene
+        ene = self._energy(x)
+        #(ene, frc) = self.evaluate_ene_frc(x)
+        return -ene
     #    return center_gravity_zero_gaussian_log_likelihood(x)
 
     def sample(self, size, device):
         permutation = np.random.permutation(self._npt)[:size]
         return torch.tensor(np.asarray(self._coords[permutation]),device=device)
     
-    def evaluate_ene_frc(self, batch):
+    def evaluate(self, batch):
         unitcell_lengths=np.full((len(batch),3),3.2)
         unitcell_angles=np.full((len(batch),3),90.0)
     
@@ -163,37 +382,121 @@ class ArbalestPrior(torch.nn.Module):
         
         ene_tensor    = torch.tensor(energies,dtype=torch.float32).to(self._ctx)
         forces_tensor = torch.tensor(forces/(4.184*self._kt_to_kcal),dtype=torch.float32).to(self._ctx)  
-        
+                
         return (ene_tensor,forces_tensor) 
+    
+    def _energy(self, batch, no_grads=False):
+        return _evaluate_arbalest_energy(batch,self)
+    
+    def energy(self, batch):
+        (ene,_) = self.evaluate(batch)
+        return ene
+         
+    #def force(self, batch, temperature=None):
+    #    (ene,frc) = self.evaluate(self, batch)
+    #    return frc
     
 def get_prior(args, ctx):
     
-    if args.data == "wat2_gaff":
-        coords_prior = np.load(os.path.join("water_experiment","data","wat2_arrow" + ".npy"))
-        n_dims = 18
-        prior = ArbalestPrior(os.path.join("water_experiment","data","wat_2.gro"), 
-                              os.path.join("water_experiment","data","wat_2_arrow_rerun_conf_templ_oo_R5_KL_100.xml"),
-                        n_dims, coords_prior,ctx) 
-    elif args.data == 'wat2_arrow':
-        coords_prior = np.load(os.path.join("water_experiment","data","wat2_gaff" + ".npy"))
-        n_dims = 18
-        prior = ArbalestPrior(os.path.join("water_experiment","data","wat_2.gro"), 
-                              os.path.join("water_experiment","data","wat_2_gaff_rerun_conf_templ_oo_R5_KL_100.xml"),
-                        n_dims, coords_prior,ctx)
-    elif args.data == 'wat5_gaff':
-        coords_prior = np.load(os.path.join("water_experiment","data","wat5_arrow" + ".npy"))
-        n_dims = 45
-        prior = ArbalestPrior(os.path.join("water_experiment","data","wat_5.gro"), 
-                              os.path.join("water_experiment","data","wat_5_arrow_rerun_conf_templ_oo_R5.xml"), # should these be with _KL_100 suffix ??
-                        n_dims, coords_prior,ctx)
-    elif args.data == 'wat5_arrow':
-        coords_prior = np.load(os.path.join("water_experiment","data","wat5_gaff" + ".npy"))
-        n_dims = 45
-        prior = ArbalestPrior(os.path.join("water_experiment","data","wat_5.gro"), 
-                              os.path.join("water_experiment","data","wat_5_gaff_rerun_conf_templ_oo_R5.xml"),
-                        n_dims, coords_prior,ctx)
+    if args.data == "wat2_gaff": 
+        prior = get_dist_water("wat2_arrow", ctx)
+    elif args.data == "wat2_arrow":
+        prior = get_dist_water("wat2_gaff", ctx)
+    elif args.data == "wat5_gaff":
+        prior = get_dist_water("wat5_arrow", ctx)
+    elif args.data == "wat5_arrow":    
+        prior = get_dist_water("wat5_gaff", ctx) 
     else:
         prior = PositionPrior()  # set up Harmonic prior
     
     return prior
+
+def get_dist_water(dist_name,ctx):
+    
+    if dist_name == "wat2_arrow":
+        coords = np.load(os.path.join("water_experiment","data","wat2_arrow" + ".npy"))
+        n_dims = 18
+        prior = ArbalestPrior(os.path.join("water_experiment","data","wat_2.gro"), 
+                              os.path.join("water_experiment","data","wat_2_arrow_rerun_conf_templ_oo_R5_KL_100.xml"),
+                        n_dims, coords,ctx) 
+        
+    elif dist_name == 'wat2_gaff':
+        coords = np.load(os.path.join("water_experiment","data","wat2_gaff" + ".npy"))
+        n_dims = 18
+        prior = ArbalestPrior(os.path.join("water_experiment","data","wat_2.gro"), 
+                              os.path.join("water_experiment","data","wat_2_gaff_rerun_conf_templ_oo_R5_KL_100.xml"),
+                        n_dims, coords,ctx)
+        
+    elif dist_name == 'wat5_arrow':
+        coords = np.load(os.path.join("water_experiment","data","wat5_arrow" + ".npy"))
+        n_dims = 45
+        prior = ArbalestPrior(os.path.join("water_experiment","data","wat_5.gro"), 
+                              os.path.join("water_experiment","data","wat_5_arrow_rerun_conf_templ_oo_R5.xml"), # should these be with _KL_100 suffix ??
+                        n_dims, coords,ctx)
+        
+    elif dist_name == 'wat5_gaff':
+        coords = np.load(os.path.join("water_experiment","data","wat5_gaff" + ".npy"))
+        n_dims = 45
+        prior = ArbalestPrior(os.path.join("water_experiment","data","wat_5.gro"), 
+                              os.path.join("water_experiment","data","wat_5_gaff_rerun_conf_templ_oo_R5.xml"),
+                        n_dims, coords,ctx)
+        
+    else:
+        prior = None
+    
+    return prior
+
+kt_to_kcal = 8.314462*298/4.184/1000  # the conversion factor from kT to kcal/mol at 298K
+
+def test_flow(args, flow, ctx):
+    
+    flow = flow.to(ctx)
+    
+    dist_gaff = None
+    dist_arrow = None
+    data_gaff = None
+    data_arrow = None
+    
+    if( args.data == 'wat2_gaff' or args.data == 'wat2_arrow'):
+        dist_gaff = get_dist_water("wat2_gaff",ctx)
+        dist_arrow = get_dist_water("wat2_arrow",ctx)
+        data_arrow,batch_iter = get_data_wat(args.n_data, "test", 1000, 6, "wat2_arrow")
+        data_gaff,batch_iter = get_data_wat(args.n_data, "test", 1000, 6, "wat2_gaff")
+    elif( args.data == 'wat5_gaff' or args.data == 'wat5_arrow'):     
+        dist_gaff = get_dist_water("wat5_gaff",ctx)
+        dist_arrow = get_dist_water("wat5_arrow",ctx)
+        data_arrow,batch_iter = get_data_wat(args.n_data, "test", 1000, 15, "wat5_arrow")
+        data_gaff,batch_iter = get_data_wat(args.n_data, "test", 1000, 15, "wat5_gaff")
+        
+    
+    print(f" test_flow() { data_gaff.shape = } {data_arrow.shape = }")
+    
+    gaff_ene_gaff_trj   = dist_gaff.energy(data_gaff[:1000]).cpu().detach().numpy()*kt_to_kcal  # Converted to kcal/mol
+    print(f" {np.average(gaff_ene_gaff_trj)=} kcal/mol")
+    gaff_ene_arrow_trj  = dist_gaff.energy(data_arrow[:1000]).cpu().detach().numpy()*kt_to_kcal  # Converted to kcal/mol
+    print(f" {np.average(gaff_ene_arrow_trj)=} kcal/mol")
+    arrow_ene_arrow_trj = dist_arrow.energy(data_arrow[:1000]).cpu().detach().numpy()*kt_to_kcal  # Converted to kcal/mol
+    print(f" {np.average(arrow_ene_arrow_trj)=} kcal/mol")
+    arrow_ene_gaff_trj  = dist_arrow.energy(data_gaff[:1000]).cpu().detach().numpy()*kt_to_kcal  # Converted to kcal/mol
+    print(f" {np.average(arrow_ene_gaff_trj)=} kcal/mol")
+    
+    data_gaff = data_gaff.to(ctx)
+    data_arrow = data_arrow.to(ctx)
+        
+    (gaff_to_arrow_data,dlogp_gaff_to_arrow, _) = flow(data_gaff[:1000])
+    arrow_ene_transformed_gaff_trj = dist_arrow.energy(gaff_to_arrow_data).cpu().detach().numpy()*kt_to_kcal  # Converted to kcal/mol
+    del gaff_to_arrow_data
+    print(f" {np.average(arrow_ene_transformed_gaff_trj)=} kcal/mol")
+
+    #(arrow_to_gaff_data,dlogp_arrow_to_gaff) = flow.forward(data_arrow[:1000], inverse=True)
+    arrow_to_gaff_data = flow.reverse(data_arrow[:1000])
+    gaff_ene_transformed_arrow_trj = dist_gaff.energy(arrow_to_gaff_data).cpu().detach().numpy()*kt_to_kcal  # Converted to kcal/mol
+    del arrow_to_gaff_data
+    print(f" {np.average(gaff_ene_transformed_arrow_trj)=} kcal/mol")
+        
+    
+    
+    
+    
+    
 

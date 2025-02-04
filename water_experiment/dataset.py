@@ -29,9 +29,11 @@ def get_data_wat(n_data, partition, batch_size, n_particles_val=6, data_prefix =
     if partition == 'train':
         data = np.load(os.path.join("water_experiment","data",data_prefix + ".npy"))[0:n_data]
     elif partition == 'val':
-        data = np.load(os.path.join("water_experiment","data",data_prefix + ".npy"))[n_data:n_data + 10000]
+        data = np.load(os.path.join("water_experiment","data",data_prefix + ".npy"))[n_data:n_data + 1000]
     elif partition == 'test':
-        data = np.load(os.path.join("water_experiment","data",data_prefix + ".npy"))[n_data:n_data + 20000]
+        data = np.load(os.path.join("water_experiment","data",data_prefix + ".npy"))[n_data:n_data + 1000]
+    elif partition == 'all':
+        data = np.load(os.path.join("water_experiment","data",data_prefix + ".npy"))
     else:
         raise Exception("Wrong partition")
 
@@ -41,6 +43,8 @@ def get_data_wat(n_data, partition, batch_size, n_particles_val=6, data_prefix =
 
     #if partition == 'train':
     #    data = data[idx[:n_data]].clone()
+    
+    print(f"get_data_wat() {n_data=} {partition=} {len(data)=} {batch_size=} {data.shape=}")
 
     batch_iter = BatchIterator(len(data), batch_size)
 

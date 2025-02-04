@@ -35,11 +35,15 @@ def compute_loss_and_nll(args, flow, prior, batch):
     #     reg_term = (reg_frob.mean() + reg_dx2.mean())
     #     loss = nll + args.ode_regularization * reg_term
     # else:
+    #print(f" compute_loss_and_nll() {batch.shape=}")
+    
     z, delta_logp, reg_term = flow(batch)
 
     log_pz = prior(z)
     log_px = (log_pz + delta_logp.view(-1)).mean()
     nll = -log_px
+    
+    print(f"{-log_pz.mean()=:.2f} {-delta_logp.mean()=:.2f} ")
 
     mean_abs_z = torch.mean(torch.abs(z)).item()
     # print(f"mean(abs(z)): {mean_abs_z:.2f}")
@@ -49,7 +53,6 @@ def compute_loss_and_nll(args, flow, prior, batch):
     loss = nll
 
     return loss, nll, reg_term, mean_abs_z
-
 
 
 def compute_loss_and_nll_kerneldynamics(args, flow, prior, batch, n_particles, n_dims):

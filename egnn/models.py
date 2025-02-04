@@ -25,6 +25,7 @@ class EGNN_dynamics(nn.Module):
 
     def forward(self, t, xs):
 
+        #print(f"EGNN_dynamics.forward() {t=}, {xs.shape=}")
         n_batch = xs.shape[0]
         edges = self._cast_edges2batch(self.edges, n_batch, self._n_particles)
         edges = [edges[0], edges[1]]
@@ -42,8 +43,10 @@ class EGNN_dynamics(nn.Module):
             h = torch.cat([h, x], dim=1)
             vel = self.gnn(h, edges)
 
-        vel = vel.view(n_batch, self._n_particles, self._n_dimension)
+        #vel = vel.view(n_batch, self._n_particles, self._n_dimension)  # IGOR TMP
+        vel = vel.view(n_batch, self._n_particles * self._n_dimension)  # IGOR TMP
         vel = remove_mean(vel)
+        #print(f"EGNN_dynamics.forward() {vel.shape=}")
         return vel
 
     def _create_edges(self):
