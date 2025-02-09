@@ -12,6 +12,7 @@ class EGNN_dynamics(nn.Module):
         super().__init__()
         self.mode = mode
         if mode == 'egnn_dynamics':
+            # can set number of edge features here:
             self.egnn = EGNN(in_node_nf=1, in_edge_nf=1, hidden_nf=hidden_nf, device=device, act_fn=act_fn, n_layers=n_layers, recurrent=recurrent, attention=attention, tanh=tanh, agg=agg)
         elif mode == 'gnn_dynamics':
             self.gnn = GNN(in_node_nf=1 + n_dimension, in_edge_nf=0, hidden_nf=hidden_nf, out_node_nf=n_dimension, device=device, act_fn=act_fn, n_layers=n_layers, recurrent=recurrent, attention=attention)
@@ -19,23 +20,38 @@ class EGNN_dynamics(nn.Module):
         self.device = device
         self._n_particles = n_particles
         self._n_dimension = n_dimension
-        self.edges = self._create_edges()
-        self._edges_dict = {}
+        self.edges = self._create_edges()   # edges - pairs of atom indexes [[row][col]] 
+        self._edges_dict = {}               # this is empty but if not empty _cast_edges2batch wil use it 
         self.condition_time = condition_time
 
     def forward(self, t, xs):
 
         #print(f"EGNN_dynamics.forward() {t=}, {xs.shape=}")
         n_batch = xs.shape[0]
-        edges = self._cast_edges2batch(self.edges, n_batch, self._n_particles)
+        edges = self._cast_edges2batch(self.edges, n_batch, self._n_particles)   # forming the tensor of graph edges
         edges = [edges[0], edges[1]]
+       
         x = xs.view(n_batch*self._n_particles, self._n_dimension).clone()
-        h = torch.ones(n_batch*self._n_particles, 1).to(self.device)
+        h = torch.ones(n_batch*self._n_particles, 1).to(self.device)             # forming the tensor of graph verticies (nodes?)  - all ones here!  
+        
+        # IGOR_TMP modify node feature vector (distinguish oxygens):
+        for i in range(n_batch):
+            h[i*6,0] = 0.0
+            h[i*6+3,0] = 0.0
+        
         if self.condition_time:
             h = h*t
 
         if self.mode == 'egnn_dynamics':
             edge_attr = torch.sum((x[edges[0]] - x[edges[1]])**2, dim=1, keepdim=True)
+            #print(f"{edge_attr.shape=}")
+            #bonding_attr = torch.ones(n_batch*self._n_particles*(self._n_particles-1), 1).to(self.device)
+            #for i in range(len(edges[0])):
+            #    if( (edges[0][i] < 3 and edges[1][i] < 3) or (edges[0][i] > 2 and edges[1][i] > 2) ):
+            #        bonding_attr[i] = 0.0
+            
+            #edge_attr = torch.cat((edge_attr, bonding_attr), dim = 1)
+            
             _, x_final = self.egnn(h, x, edges, edge_attr=edge_attr)
             vel = x_final - x
 
@@ -43,8 +59,7 @@ class EGNN_dynamics(nn.Module):
             h = torch.cat([h, x], dim=1)
             vel = self.gnn(h, edges)
 
-        #vel = vel.view(n_batch, self._n_particles, self._n_dimension)  # IGOR TMP
-        vel = vel.view(n_batch, self._n_particles * self._n_dimension)  # IGOR TMP
+        vel = vel.view(n_batch, self._n_particles, self._n_dimension)  
         vel = remove_mean(vel)
         #print(f"EGNN_dynamics.forward() {vel.shape=}")
         return vel
@@ -84,7 +99,7 @@ class EGNN_dynamics_QM9(nn.Module):
         if mode == 'egnn_dynamics':
             self.egnn = EGNN(
                 in_node_nf=in_node_nf + context_node_nf, in_edge_nf=1,
-                hidden_nf=hidden_nf, device=device, act_fn=act_fn,
+                hidden_nf=hidden_nf, device=device, act_fn=act_fn, 
                 n_layers=n_layers, recurrent=recurrent, attention=attention, tanh=tanh, agg=agg)
             self.in_node_nf = in_node_nf
         elif mode == 'gnn_dynamics':
@@ -128,9 +143,6 @@ class EGNN_dynamics_QM9(nn.Module):
             # We're conditioning, awesome!
             context = context.view(bs*n_nodes, self.context_node_nf)
             h = torch.cat([h, context], dim=1)
-
-
-
 
         if self.mode == 'egnn_dynamics':
             edge_attr = torch.sum((x[edges[0]] - x[edges[1]]) ** 2, dim=1, keepdim=True)
@@ -189,6 +201,10 @@ class EGNN_dynamics_QM9(nn.Module):
 
 class EGNN(nn.Module):
     def __init__(self, in_node_nf, in_edge_nf, hidden_nf, device='cpu', act_fn=nn.SiLU(), n_layers=4, recurrent=True, attention=False, norm_diff=True, out_node_nf=None, tanh=False, coords_range=15, agg='sum'):
+        #
+        # in_node_nf - number of node(vertices) features 
+        # in_edge_nf - number of edge features ( normally 1 ( squared distances between atoms) - I added bonding info ) 
+        #
         super(EGNN, self).__init__()
         if out_node_nf is None:
             out_node_nf = in_node_nf

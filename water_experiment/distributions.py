@@ -11,8 +11,9 @@ from flows.utils import \
     center_gravity_zero_gaussian_log_likelihood, \
     sample_center_gravity_zero_gaussian_with_mask, \
     sample_center_gravity_zero_gaussian, \
-    sample_gaussian_with_mask
+    sample_gaussian_with_mask,remove_mean
 from .dataset import get_data_wat
+from . import losses
     
 from typing import Union, Optional, Sequence
 from collections.abc import Sequence as _Sequence
@@ -264,7 +265,6 @@ class PositionPrior(torch.nn.Module):
         samples = sample_center_gravity_zero_gaussian(size, device)
         return samples
 
-
 class _ArbalestEnergyWrapper(torch.autograd.Function):
     @staticmethod
     def forward(ctx, input, ene_model):
@@ -276,6 +276,7 @@ class _ArbalestEnergyWrapper(torch.autograd.Function):
     def backward(ctx, grad_output):
         neg_force, = ctx.saved_tensors
         grad_input = grad_output * neg_force
+        grad_input = grad_input.view(grad_input.shape[0], -1,3)
         return grad_input, None
     
 _evaluate_arbalest_energy = _ArbalestEnergyWrapper.apply
@@ -317,8 +318,12 @@ class ArbalestPrior(Energy):
     #    return center_gravity_zero_gaussian_log_likelihood(x)
 
     def sample(self, size, device):
-        permutation = np.random.permutation(self._npt)[:size]
-        return torch.tensor(np.asarray(self._coords[permutation]),device=device)
+        (n_samples,n_pt,n_dim) = size
+        permutation = np.random.permutation(self._npt)[:n_samples]
+        #permutation = np.random.permutation(self._npt)[:size]
+        s = torch.tensor(np.asarray(self._coords[permutation]),device=device)
+        s = s.reshape(n_samples,-1,3)
+        return s
     
     def evaluate(self, batch):
         unitcell_lengths=np.full((len(batch),3),3.2)
@@ -382,6 +387,8 @@ class ArbalestPrior(Energy):
         
         ene_tensor    = torch.tensor(energies,dtype=torch.float32).to(self._ctx)
         forces_tensor = torch.tensor(forces/(4.184*self._kt_to_kcal),dtype=torch.float32).to(self._ctx)  
+        
+        #forces_tensor = forces_tensor.reshape(len(batch),-1,3)
                 
         return (ene_tensor,forces_tensor) 
     
@@ -398,59 +405,70 @@ class ArbalestPrior(Energy):
     
 def get_prior(args, ctx):
     
-    if args.data == "wat2_gaff": 
-        prior = get_dist_water("wat2_arrow", ctx)
-    elif args.data == "wat2_arrow":
-        prior = get_dist_water("wat2_gaff", ctx)
-    elif args.data == "wat5_gaff":
-        prior = get_dist_water("wat5_arrow", ctx)
-    elif args.data == "wat5_arrow":    
-        prior = get_dist_water("wat5_gaff", ctx) 
+    if args.prior == "wat2_arrow" or args.prior == "wat2_gaff" or args.prior == "wat5_arrow" or args.prior == "wat5_gaff":
+        prior = get_dist_water(args.prior, ctx)
+    elif args.prior == "harmonic":
+        prior = PositionPrior()
     else:
         prior = PositionPrior()  # set up Harmonic prior
     
     return prior
 
+def get_target(args, ctx):
+    
+    if args.data == "wat2_arrow" or args.data == "wat2_gaff" or args.data == "wat5_arrow" or args.data == "wat5_gaff":
+        target = get_dist_water(args.data, ctx)
+    elif args.prior == "harmonic":
+        target = PositionPrior()
+    else:
+        target = PositionPrior()  # set up Harmonic target
+    
+    return target
+
 def get_dist_water(dist_name,ctx):
     
     if dist_name == "wat2_arrow":
+        print("get_dist_water()  wat2_arrow")
         coords = np.load(os.path.join("water_experiment","data","wat2_arrow" + ".npy"))
         n_dims = 18
-        prior = ArbalestPrior(os.path.join("water_experiment","data","wat_2.gro"), 
+        dist = ArbalestPrior(os.path.join("water_experiment","data","wat_2.gro"), 
                               os.path.join("water_experiment","data","wat_2_arrow_rerun_conf_templ_oo_R5_KL_100.xml"),
                         n_dims, coords,ctx) 
         
     elif dist_name == 'wat2_gaff':
+        print("get_dist_water()  wat2_gaff")
         coords = np.load(os.path.join("water_experiment","data","wat2_gaff" + ".npy"))
         n_dims = 18
-        prior = ArbalestPrior(os.path.join("water_experiment","data","wat_2.gro"), 
+        dist = ArbalestPrior(os.path.join("water_experiment","data","wat_2.gro"), 
                               os.path.join("water_experiment","data","wat_2_gaff_rerun_conf_templ_oo_R5_KL_100.xml"),
                         n_dims, coords,ctx)
         
     elif dist_name == 'wat5_arrow':
         coords = np.load(os.path.join("water_experiment","data","wat5_arrow" + ".npy"))
         n_dims = 45
-        prior = ArbalestPrior(os.path.join("water_experiment","data","wat_5.gro"), 
+        dist = ArbalestPrior(os.path.join("water_experiment","data","wat_5.gro"), 
                               os.path.join("water_experiment","data","wat_5_arrow_rerun_conf_templ_oo_R5.xml"), # should these be with _KL_100 suffix ??
                         n_dims, coords,ctx)
         
     elif dist_name == 'wat5_gaff':
         coords = np.load(os.path.join("water_experiment","data","wat5_gaff" + ".npy"))
         n_dims = 45
-        prior = ArbalestPrior(os.path.join("water_experiment","data","wat_5.gro"), 
+        dist = ArbalestPrior(os.path.join("water_experiment","data","wat_5.gro"), 
                               os.path.join("water_experiment","data","wat_5_gaff_rerun_conf_templ_oo_R5.xml"),
                         n_dims, coords,ctx)
         
     else:
-        prior = None
+        dist = None
     
-    return prior
+    return dist
 
 kt_to_kcal = 8.314462*298/4.184/1000  # the conversion factor from kT to kcal/mol at 298K
 
-def test_flow(args, flow, ctx):
+def test_flow(args, flow, ctx, flow_2 = None):
     
     flow = flow.to(ctx)
+    if( flow_2 is not None):
+        flow_2 = flow_2.to(ctx)
     
     dist_gaff = None
     dist_arrow = None
@@ -482,6 +500,55 @@ def test_flow(args, flow, ctx):
     
     data_gaff = data_gaff.to(ctx)
     data_arrow = data_arrow.to(ctx)
+    
+    if args.prior == 'harmonic' and (args.data == 'wat2_gaff' or args.data == 'wat5_gaff'):
+        
+        batch_size = 1000
+        batch = data_gaff[:batch_size].view(batch_size, -1, 3)
+        batch = remove_mean(batch)
+      
+        prior = PositionPrior()
+        losses.compute_loss_and_nll(args, flow, prior, batch)
+        
+        size = tuple(batch.shape)
+        
+        normal_sample = prior.sample(size, ctx.device)
+        normal_to_gaff_data = flow.reverse(normal_sample)
+        
+        gaff_ene_transformed_normal = dist_gaff.energy(normal_to_gaff_data).cpu().detach().numpy()*kt_to_kcal  
+        print(f" {np.average(gaff_ene_transformed_normal)=} kcal/mol")
+        
+        if( flow_2 is not None):
+            z, delta_logp, reg_term  = flow(batch)
+            gaff_to_arrow_data = flow_2.reverse(z)
+            arrow_ene_transformed_gaff_trj = dist_arrow.energy(gaff_to_arrow_data).cpu().detach().numpy()*kt_to_kcal  
+            print(f" {np.average(arrow_ene_transformed_gaff_trj)=} kcal/mol")
+        
+        return
+        
+    elif args.prior == 'harmonic' and (args.data == 'wat2_arrow' or args.data == 'wat5_arrow'):
+      
+        batch_size = 1000
+        batch = data_arrow[:batch_size].view(batch_size, -1, 3)
+        batch = remove_mean(batch)
+      
+        prior = PositionPrior()
+        losses.compute_loss_and_nll(args, flow, prior, batch)
+        
+        normal_sample = prior.sample(batch_size, ctx)
+        
+        normal_to_arrow_data = flow.reverse(normal_sample)
+        arrow_ene_transformed_normal = dist_arrow.energy(normal_to_arrow_data).cpu().detach().numpy()*kt_to_kcal  
+        print(f" {np.average(arrow_ene_transformed_normal)=} kcal/mol")
+        
+        if( flow_2 is not None):
+            z, delta_logp, reg_term  = flow(batch)
+            arrow_to_gaff_data = flow_2.reverse(z)
+            gaff_ene_transformed_arrow_trj = dist_gaff.energy(arrow_to_gaff_data).cpu().detach().numpy()*kt_to_kcal  
+            print(f" {np.average(gaff_ene_transformed_arrow_trj)=} kcal/mol")
+            
+        return
+        
         
     (gaff_to_arrow_data,dlogp_gaff_to_arrow, _) = flow(data_gaff[:1000])
     arrow_ene_transformed_gaff_trj = dist_arrow.energy(gaff_to_arrow_data).cpu().detach().numpy()*kt_to_kcal  # Converted to kcal/mol

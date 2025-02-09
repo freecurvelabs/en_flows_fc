@@ -1,21 +1,23 @@
 import argparse
 import torch
+import numpy as np
 import utils
 import wandb
 from water_experiment import losses
 from water_experiment.dataset import get_data
 from water_experiment.models import get_model
-from water_experiment.distributions import get_prior,test_flow
+from water_experiment.distributions import get_prior,get_target,test_flow
 from flows.utils import remove_mean
 
 parser = argparse.ArgumentParser(description='SE3')
-parser.add_argument('--model', type=str, default='simple_dynamics',
+parser.add_argument('--model', type=str, default='egnn_dynamics',
                     help='our_dynamics | schnet | simple_dynamics | kernel_dynamics | egnn_dynamics | gnn_dynamics')
 parser.add_argument('--data', type=str, default='wat2_arrow',
                     help='wat2_gaff | wat2_arrow | wat5_gaff | wat5_arrow')
-parser.add_argument('--prior', type=str, default='normal',)
+parser.add_argument('--prior', type=str, default='normal')
 parser.add_argument('--n_epochs', type=int, default=300)
 parser.add_argument('--batch_size', type=int, default=100)
+parser.add_argument('--kll_weight', type=float, default=0.0)
 parser.add_argument('--lr', type=float, default=5e-4)
 parser.add_argument('--n_data', type=int, default=1000,
                     help="Number of training samples")
@@ -50,7 +52,7 @@ parser.add_argument('--test_flow', type=eval, default=False,
                     help='True | False')
 parser.add_argument('--save_flow', type=str, default='flow.pt')
 parser.add_argument('--load_flow', type=str, default='')
-
+parser.add_argument('--load_flow_2', type=str, default='')
 
 args, unparsed_args = parser.parse_known_args()
 print(args)
@@ -70,6 +72,7 @@ else:
 def main():
     
     flow = get_model(args, dim, n_particles)
+    flow_2 = None
     
     device = "cpu"
     if torch.cuda.is_available():
@@ -80,16 +83,23 @@ def main():
     ctx = torch.zeros([], device=device, dtype=dtype) 
     
     if(args.load_flow != ''):
+        print("Loading flow from %s" % args.load_flow)
         flow.load_state_dict(torch.load(args.load_flow))
-            
+    
+    if(args.load_flow_2 != ''):
+        flow_2 = get_model(args, dim, n_particles)
+        print("Loading flow 2 from %s" % args.load_flow_2)
+        flow_2.load_state_dict(torch.load(args.load_flow_2))
+         
     prior = get_prior(args,ctx)
+    target = get_target(args,ctx)
     
     if(args.test_flow):
-        test_flow(args, flow, ctx)
+        test_flow(args, flow, ctx, flow_2 = flow_2)
         return True
 
     # Log all args to wandb
-    wandb.init(entity=args.wandb_usr, project='se3flows', name=args.name, config=args)
+    wandb.init(entity=args.wandb_usr, project='NN_SAMPLING', name=args.name, config=args)
     wandb.save('*.txt')
     # logging.write_info_file(model=dynamics, FLAGS=args,
     #                         UNPARSED_ARGV=unparsed_args,
@@ -116,8 +126,8 @@ def main():
             batch = data_train[idxs]
             assert batch.size(0) == args.batch_size
 
-            #batch = batch.view(batch.size(0), n_particles, n_dims)
-            #batch = remove_mean(batch)
+            batch = batch.view(batch.size(0), n_particles, n_dims)
+            #batch = remove_mean(batch)   # IGOR_TMP do not remove mean
 
             if args.data_augmentation:
                 batch = utils.random_rotation(batch).detach()
@@ -127,12 +137,19 @@ def main():
 
             optim.zero_grad()
 
-            # transform batch through flow
+            kll_loss = torch.tensor(0.).to(device)
 
             if 'kernel_dynamics' in args.model:
                 loss, nll, reg_term, mean_abs_z = losses.compute_loss_and_nll_kerneldynamics(args, flow, prior, batch, n_particles, n_dims)
             else:
-                loss, nll, reg_term, mean_abs_z = losses.compute_loss_and_nll(args, flow, prior, batch)
+                
+                kll_weight = args.kll_weight
+                if kll_weight > 0.00001 :
+                    kll_loss, kll, dlogp_avg, reg_term = losses.compute_kll_loss(args, flow, prior, target, batch.shape, ctx)
+                loss_nll, nll, reg_term, mean_abs_z = losses.compute_loss_and_nll(args, flow, prior, batch)
+                loss = loss_nll*(1-kll_weight) + kll_loss*kll_weight
+                #loss = kll_loss
+                print(f"{loss=:.2f} {loss_nll=:.2f} {kll_loss=:.2f}  {kll_weight=:.2f}")
             # standard nll from forward KL
 
             loss.backward()
@@ -151,9 +168,10 @@ def main():
             nll_epoch.append(nll.item())
 
             # wandb.log({"mean(abs(z))": mean_abs_z}, commit=False)
-            # wandb.log({"Batch NLL": nll.item()}, commit=True)
+            wandb.log({"Batch NLL": nll.item()}, commit=True)
+            wandb.log({"Batch KLL": kll.item()}, commit=True)
 
-        # wandb.log({"Train Epoch NLL": np.mean(nll_epoch)}, commit=False)
+        wandb.log({"Train Epoch NLL": np.mean(nll_epoch)}, commit=False)
 
         if epoch % args.test_epochs == 0:
             val_loss = test(args, data_val, batch_iter_val, flow, prior, epoch, partition='val')
@@ -184,7 +202,7 @@ def test(args, data_test, batch_iter_test, flow, prior, epoch, partition='test')
             batch = torch.Tensor(data_test[batch_idxs])
             if torch.cuda.is_available():
                 batch = batch.cuda()
-            #batch = batch.view(batch.size(0), n_particles, n_dims)
+            batch = batch.view(batch.size(0), n_particles, n_dims)
             if 'kernel_dynamics' in args.model:
                 loss, nll, reg_term, mean_abs_z = losses.compute_loss_and_nll_kerneldynamics(args, flow, prior, batch,
                                                                                              n_particles, n_dims)

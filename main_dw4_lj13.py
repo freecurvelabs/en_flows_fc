@@ -60,6 +60,14 @@ elif args.data == 'lj13':
     n_particles = 13
     n_dims = 3
     dim = n_particles * n_dims
+elif args.data == 'wat5_gaff':
+    n_particles = 15
+    n_dims = 3
+    dim = n_particles * n_dims
+elif args.data == 'wat5_arrow':
+    n_particles = 15
+    n_dims = 3
+    dim = n_particles * n_dims
 else:
     raise Exception('wrong data partition: %s' % args.data)
 

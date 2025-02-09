@@ -144,8 +144,7 @@
 </Settings>
 
   <Restraints> 
-       <Restraint MolGroup="" Title="LIMIT_RESTR_HOH_1_O"  />
-       <Restraint MolGroup="" Title="LIMIT_RESTR_HOH_2_O"  />
+       <Restraint MolGroup="" Title="BondRestraint_O1_O2"  />
   </Restraints> 
 
 <ConfigureAlgorithms>

@@ -143,6 +143,10 @@
     <Param Title="FreqFrame">1</Param>
 </Settings>
 
+<Restraints>
+      <Restraint MolGroup="" Title="BondRestraint_O1_O2"  />
+</Restraints>
+
 <ConfigureAlgorithms>
 </ConfigureAlgorithms>
  

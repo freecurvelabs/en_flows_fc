@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import torch
 
@@ -11,6 +12,14 @@ def get_data(args, partition, batch_size):
         return get_data_dw4(args.n_data, partition, batch_size)
     elif args.data == 'lj13':
         return get_data_lj13(args.n_data, partition, batch_size)
+    elif args.data == 'wat2_gaff':
+        return get_data_wat(args.n_data, partition, batch_size, 6, "wat2_gaff")
+    elif args.data == 'wat2_arrow':
+        return get_data_wat(args.n_data, partition, batch_size, 6, "wat2_arrow")
+    elif args.data == 'wat5_gaff':
+        return get_data_wat(args.n_data, partition, batch_size, 15, "wat5_gaff")
+    elif args.data == 'wat5_arrow':
+        return get_data_wat(args.n_data, partition, batch_size, 15, "wat5_arrow")
     else:
         raise ValueError
 
@@ -62,8 +71,6 @@ def get_data_lj13(n_data, partition, batch_size, n_particles_val=1000):
     n_dimension = 3
     dim = n_particles * n_dimension
 
-
-
     if partition == 'train':
         data = np.load("dw4_experiment/data/holdout_data_LJ13.npy")
         idx = np.load("dw4_experiment/data/idx_LJ13.npy")
@@ -80,6 +87,36 @@ def get_data_lj13(n_data, partition, batch_size, n_particles_val=1000):
 
     if partition == 'train':
         data = data[idx[:n_data]].clone()
+
+    batch_iter = BatchIterator(len(data), batch_size)
+
+    return data, batch_iter
+
+def get_data_wat(n_data, partition, batch_size, n_particles_val=6, data_prefix = "wat2_gaff"):
+    
+    n_particles = n_particles_val
+    n_dimension = 3
+    dim = n_particles * n_dimension
+
+    if partition == 'train':
+        data = np.load(os.path.join("water_experiment","data",data_prefix + ".npy"))[0:n_data]
+    elif partition == 'val':
+        data = np.load(os.path.join("water_experiment","data",data_prefix + ".npy"))[n_data:n_data + 1000]
+    elif partition == 'test':
+        data = np.load(os.path.join("water_experiment","data",data_prefix + ".npy"))[n_data:n_data + 1000]
+    elif partition == 'all':
+        data = np.load(os.path.join("water_experiment","data",data_prefix + ".npy"))
+    else:
+        raise Exception("Wrong partition")
+
+    data = data.reshape(-1, dim)
+    data = torch.Tensor(data)
+    data = remove_mean(data, n_particles, dim // n_particles)
+
+    #if partition == 'train':
+    #    data = data[idx[:n_data]].clone()
+    
+    print(f"get_data_wat() {n_data=} {partition=} {len(data)=} {batch_size=} {data.shape=}")
 
     batch_iter = BatchIterator(len(data), batch_size)
 

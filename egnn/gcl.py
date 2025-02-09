@@ -65,6 +65,8 @@ class GCL(nn.Module):
             out = torch.cat([source, target], dim=1)
         else:
             out = torch.cat([source, target, edge_attr], dim=1)
+        
+        print(f"edge_model() {out.shape=}")
         out = self.edge_mlp(out)
 
         if self.attention:
@@ -194,6 +196,9 @@ class E_GCL(nn.Module):
 
 
     def edge_model(self, source, target, radial, edge_attr, edge_mask):
+        # Edge propagation:
+        # m_ij = phi_i(h_i,h_j,|x_i - x_j |^2, a_ij)   (3) of Sattoras_2021
+        #
         if edge_attr is None:  # Unused.
             out = torch.cat([source, target, radial], dim=1)
         else:
@@ -209,6 +214,10 @@ class E_GCL(nn.Module):
         return out
 
     def node_model(self, x, edge_index, edge_attr, node_attr):
+        # Node propagation:
+        # m_i = sum_j m_ij      (5) of Sattoras_2021
+        # h_i = phi_h(h_i,m_i)  (6) of Sattoras_2021
+        #
         row, col = edge_index
         agg = unsorted_segment_sum(edge_attr, row, num_segments=x.size(0))
         if node_attr is not None:
@@ -221,6 +230,9 @@ class E_GCL(nn.Module):
         return out, agg
 
     def coord_model(self, coord, edge_index, coord_diff, radial, edge_feat, node_mask, edge_mask):
+        # Coordinates propagation:
+        # x_i = x_i + C * sum_j (x_i - x_j) * phi_x(m_ij)   (4) of Sattoras_2021
+        #
         row, col = edge_index
         if self.tanh:
             trans = coord_diff * self.coord_mlp(edge_feat) * self.coords_range
@@ -247,12 +259,12 @@ class E_GCL(nn.Module):
 
     def forward(self, h, edge_index, coord, edge_attr=None, node_attr=None, node_mask=None, edge_mask=None):
         row, col = edge_index
-        radial, coord_diff = self.coord2radial(edge_index, coord)
+        radial, coord_diff = self.coord2radial(edge_index, coord)    
 
-        edge_feat = self.edge_model(h[row], h[col], radial, edge_attr, edge_mask)
-        coord = self.coord_model(coord, edge_index, coord_diff, radial, edge_feat, node_mask, edge_mask)
+        edge_feat = self.edge_model(h[row], h[col], radial, edge_attr, edge_mask)                        #  Edge propagation:        m_ij = phi_i(h_i,h_j,|x_i - x_j |^2, a_ij)      (3) of Sattoras_2021
+        coord = self.coord_model(coord, edge_index, coord_diff, radial, edge_feat, node_mask, edge_mask) #  Coordinates propagation: x_i = x_i + C * sum_j (x_i - x_j) * phi_x(m_ij) (4) of Sattoras_2021
 
-        h, agg = self.node_model(h, edge_index, edge_feat, node_attr)
+        h, agg = self.node_model(h, edge_index, edge_feat, node_attr)                                    #  Node propagation: m_i = sum_j m_ij  (5) ; h_i = phi_h(h_i,m_i)  (6) of Sattoras_2021
         # coord = self.node_coord_model(h, coord)
         # x = self.node_model(x, edge_index, x[col], u, batch)  # GCN
 

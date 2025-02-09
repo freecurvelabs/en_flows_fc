@@ -60,7 +60,6 @@ class FFJORD(torch.nn.Module):
         reg_term = x.new_zeros(x.shape[0])
 
         state = (x, ldj, reg_term)
-        #print(f"FFJORD.forward() {x.shape=}")
 
         self.odefunc.before_odeint(x)
         # print(state, self.odefunc, self.int_time, self.method)
@@ -97,6 +96,28 @@ class FFJORD(torch.nn.Module):
         if node_mask is not None or edge_mask is not None or context is not None:
             self.odefunc.dynamics.forward = self.odefunc.dynamics.unwrap_forward()
         return xt
+    
+    def inverse(self, z, node_mask=None, edge_mask=None, context=None):
+        ldj = z.new_zeros(z.shape[0])
+        reg_term = z.new_zeros(z.shape[0])
+
+        state = (z, ldj, reg_term)
+
+        self.odefunc.before_odeint(z)
+        
+        # Wrap forward, do not unwrap until backward call!!! - this is for mask application??
+        if node_mask is not None or edge_mask is not None or context is not None:
+            self.odefunc.dynamics.forward = self.odefunc.dynamics.wrap_forward(
+                node_mask, edge_mask, context)
+
+        statet = odeint(self.odefunc, state, self.inv_int_time,
+                        method=self.method,
+                        rtol=self.rtol,
+                        atol=self.atol)
+
+        xt, ldjt, reg_termt = statet
+        xt, ldj, reg_term = xt[-1], ldjt[-1], reg_termt[-1]
+        return xt, ldj, reg_term
 
     def reverse(self, z, node_mask=None, edge_mask=None, context=None):
         xt = self.reverse_fn(z, node_mask, edge_mask, context)

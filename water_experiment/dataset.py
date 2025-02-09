@@ -39,7 +39,7 @@ def get_data_wat(n_data, partition, batch_size, n_particles_val=6, data_prefix =
 
     data = data.reshape(-1, dim)
     data = torch.Tensor(data)
-    data = remove_mean(data, n_particles, dim // n_particles)
+    # data = remove_mean(data, n_particles, dim // n_particles)  #IGOR_TMP - don't to remove_mean
 
     #if partition == 'train':
     #    data = data[idx[:n_data]].clone()

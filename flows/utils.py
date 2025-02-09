@@ -38,6 +38,7 @@ def assert_correctly_masked(variable, node_mask):
 
 
 def center_gravity_zero_gaussian_log_likelihood(x):
+    x = x.reshape(x.size(0), -1, 3)
     assert len(x.size()) == 3
     B, N, D = x.size()
     assert_mean_zero(x)
@@ -57,6 +58,7 @@ def center_gravity_zero_gaussian_log_likelihood(x):
 
 def sample_center_gravity_zero_gaussian(size, device):
     assert len(size) == 3
+    
     x = torch.randn(size, device=device)
 
     # This projection only works because Gaussian is rotation invariant around

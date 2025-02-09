@@ -38,7 +38,7 @@ def compute_loss_and_nll(args, flow, prior, batch):
     #print(f" compute_loss_and_nll() {batch.shape=}")
     
     z, delta_logp, reg_term = flow(batch)
-
+    
     log_pz = prior(z)
     log_px = (log_pz + delta_logp.view(-1)).mean()
     nll = -log_px
@@ -53,6 +53,28 @@ def compute_loss_and_nll(args, flow, prior, batch):
     loss = nll
 
     return loss, nll, reg_term, mean_abs_z
+
+def compute_kll_loss(args, flow, prior, target, n_samples, ctx, temperature=1.0):
+    # if args.ode_regularization > 0:
+    #     z, delta_logp, reg_frob, reg_dx2 = flow(batch)
+    #     z = z.view(z.size(0), 8)
+    #     nll = (prior(z).view(-1) + delta_logp.view(-1)).mean()
+    #     reg_term = (reg_frob.mean() + reg_dx2.mean())
+    #     loss = nll + args.ode_regularization * reg_term
+    # else:
+    #print(f" compute_loss_and_nll() {batch.shape=}")
+    
+    reg_term = torch.tensor([0.])
+    
+    z = prior.sample(n_samples, ctx.device)
+    x, dlogp, reg_term = flow.inverse(z)
+    kll = target._energy(x).mean()
+    dlogp_avg = dlogp.mean()  
+    kll_tot = kll - dlogp_avg  # sing of dlogp  is not clear
+    
+    print(f"{kll=:.2f} {dlogp_avg=:.2f} ")
+
+    return kll_tot, kll, dlogp_avg, reg_term  
 
 
 def compute_loss_and_nll_kerneldynamics(args, flow, prior, batch, n_particles, n_dims):
