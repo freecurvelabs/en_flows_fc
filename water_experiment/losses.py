@@ -56,8 +56,7 @@ def  compute_loss_and_nll(args, flow, prior, batch):
     
     log_pz = prior(z)
     
-    #log_px = (log_pz + delta_logp.view(-1)).mean()  # IGOR_TMP remove Jacobian term 
-    log_px  = log_pz.mean()                          # IGOR_TMP remove Jacobian term 
+    log_px = (log_pz + delta_logp.view(-1)).mean()  
     #  
     nll = -log_px
 
