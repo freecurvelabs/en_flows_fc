@@ -1,0 +1,27 @@
+forcefield QMPFF 
+sys 0 0 1
+mol 1 "HOH"
+atom 1 O  O OW h 0  0.000  0.000   0.000  2 2 s 3 s
+atom 2 H1 H HW h 0  0.957  0.000   0.000  1 1 s
+atom 3 H2 H HW h 0 -0.240  0.927   0.000  1 1 s
+endmol 1
+mol 2 "HOH"
+atom 1 O  O OW h 0  3.140 -2.290  -0.960  2 2 s 3 s
+atom 2 H1 H HW h 0  3.770 -2.360  -0.280  1 1 s
+atom 3 H2 H HW h 0  2.780 -3.240  -1.160  1 1 s
+endmol 2
+mol 3 "HOH"
+atom 1 O  O OW h 0 -3.140 -2.290  -0.960  2 2 s 3 s
+atom 2 H1 H HW h 0 -3.770 -2.360  -0.280  1 1 s
+atom 3 H2 H HW h 0 -2.780 -3.240  -1.160  1 1 s
+endmol 3
+mol 4 "HOH"
+atom 1 O  O OW h 0  3.140  2.290  -0.960  2 2 s 3 s
+atom 2 H1 H HW h 0  3.770  2.360  -0.280  1 1 s
+atom 3 H2 H HW h 0  2.780  3.240  -1.160  1 1 s
+endmol 4
+mol 5 "HOH"
+atom 1 O  O OW h 0 -3.140  2.290  -0.960  2 2 s 3 s
+atom 2 H1 H HW h 0 -3.770  2.360  -0.280  1 1 s
+atom 3 H2 H HW h 0 -2.780  3.240  -1.160  1 1 s
+endmol 5
