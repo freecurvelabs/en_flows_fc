@@ -276,7 +276,12 @@ class _ArbalestEnergyWrapper(torch.autograd.Function):
     def backward(ctx, grad_output):
         neg_force, = ctx.saved_tensors
         grad_input = grad_output * neg_force
+        neg_force_arr = neg_force.detach().cpu().numpy() 
+        #rint(f"_ArbalestEnergyWrapper.backward() {grad_output=}")
+        #print(f"_ArbalestEnergyWrapper.backward() {neg_force=}")
         grad_input = grad_input.view(grad_input.shape[0], -1,3)
+        
+        #print(f"_ArbalestEnergyWrapper.backward() \n grad_input= \n {grad_input.detach().cpu().numpy()} ")
         return grad_input, None
     
 _evaluate_arbalest_energy = _ArbalestEnergyWrapper.apply
@@ -303,6 +308,8 @@ class ArbalestPrior(Energy):
         self.conf_templ_fname = conf_templ_fname
         self.ene_component = ""   # if not empty compute Arbalest Energy Component  
         
+        print(f"ArbalestPrior.__init__() {self.n_atoms=} {crd_dim=} {coords.shape=} ")
+        
         self._coords = coords.reshape(-1,crd_dim)
         self._crd_dim = crd_dim
         self._npt     = len(coords)
@@ -321,8 +328,10 @@ class ArbalestPrior(Energy):
         (n_samples,n_pt,n_dim) = size
         permutation = np.random.permutation(self._npt)[:n_samples]
         #permutation = np.random.permutation(self._npt)[:size]
-        s = torch.tensor(np.asarray(self._coords[permutation]),device=device)
+        #s = torch.tensor(np.asarray(self._coords[permutation]),device=device)   #IGOR_TMP - sample the same conformations 
+        s = torch.tensor(np.asarray(self._coords[:n_samples]),device=device)
         s = s.reshape(n_samples,-1,3)
+        print(f"ArbalestPrior.sample() {s=}")
         return s
     
     def evaluate(self, batch):
@@ -405,7 +414,9 @@ class ArbalestPrior(Energy):
     
 def get_prior(args, ctx):
     
-    if args.prior == "wat2_arrow" or args.prior == "wat2_gaff" or args.prior == "wat5_arrow" or args.prior == "wat5_gaff":
+    if args.prior == "wat1_arrow" or args.prior == "wat1_gaff" or \
+       args.prior == "wat2_arrow" or args.prior == "wat2_gaff" or \
+       args.prior == "wat5_arrow" or args.prior == "wat5_gaff" :
         prior = get_dist_water(args.prior, ctx)
     elif args.prior == "harmonic":
         prior = PositionPrior()
@@ -416,7 +427,9 @@ def get_prior(args, ctx):
 
 def get_target(args, ctx):
     
-    if args.data == "wat2_arrow" or args.data == "wat2_gaff" or args.data == "wat5_arrow" or args.data == "wat5_gaff":
+    if args.data == "wat1_arrow" or args.data == "wat1_gaff" or \
+       args.data == "wat2_arrow" or args.data == "wat2_gaff" or \
+       args.data == "wat5_arrow" or args.data == "wat5_gaff":
         target = get_dist_water(args.data, ctx)
     elif args.prior == "harmonic":
         target = PositionPrior()
@@ -427,7 +440,23 @@ def get_target(args, ctx):
 
 def get_dist_water(dist_name,ctx):
     
-    if dist_name == "wat2_arrow":
+    if dist_name == "wat1_arrow":
+        print("get_dist_water()  wat1_arrow")
+        coords = np.load(os.path.join("water_experiment","data","wat1_arrow" + ".npy"))
+        n_dims = 9
+        dist = ArbalestPrior(os.path.join("water_experiment","data","wat_1.gro"), 
+                              os.path.join("water_experiment","data","wat_1_arrow_rerun_conf_templ.xml"),
+                        n_dims, coords,ctx) 
+        
+    elif dist_name == 'wat1_gaff':
+        print("get_dist_water()  wat1_gaff")
+        coords = np.load(os.path.join("water_experiment","data","wat1_gaff" + ".npy"))
+        n_dims = 9
+        dist = ArbalestPrior(os.path.join("water_experiment","data","wat_1.gro"), 
+                              os.path.join("water_experiment","data","wat_1_gaff_rerun_conf_templ.xml"),
+                        n_dims, coords,ctx)
+        
+    elif dist_name == "wat2_arrow":
         print("get_dist_water()  wat2_arrow")
         coords = np.load(os.path.join("water_experiment","data","wat2_arrow" + ".npy"))
         n_dims = 18

@@ -9,11 +9,11 @@ from water_experiment.models import get_model
 from water_experiment.distributions import get_prior,get_target,test_flow
 from flows.utils import remove_mean
 
-parser = argparse.ArgumentParser(description='SE3')
+parser = argparse.ArgumentParser(description='WAT_NN')
 parser.add_argument('--model', type=str, default='egnn_dynamics',
                     help='our_dynamics | schnet | simple_dynamics | kernel_dynamics | egnn_dynamics | gnn_dynamics')
 parser.add_argument('--data', type=str, default='wat2_arrow',
-                    help='wat2_gaff | wat2_arrow | wat5_gaff | wat5_arrow')
+                    help='wat1_gaff | wat1_arrow  | wat2_gaff | wat2_arrow | wat5_gaff | wat5_arrow')
 parser.add_argument('--prior', type=str, default='normal')
 parser.add_argument('--n_epochs', type=int, default=300)
 parser.add_argument('--batch_size', type=int, default=100)
@@ -57,7 +57,11 @@ parser.add_argument('--load_flow_2', type=str, default='')
 args, unparsed_args = parser.parse_known_args()
 print(args)
 
-if args.data == 'wat2_gaff' or args.data == 'wat2_arrow':
+if args.data == 'wat1_gaff' or args.data == 'wat1_arrow':
+    n_particles = 3
+    n_dims = 3
+    dim = n_particles * n_dims
+elif args.data == 'wat2_gaff' or args.data == 'wat2_arrow':
     n_particles = 6
     n_dims = 3
     dim = n_particles * n_dims
@@ -111,11 +115,12 @@ def main():
 
     print("Max")
     print(torch.max(data_train))
+    
 
     # initial training with likelihood maximization on data set
     optim = torch.optim.AdamW(flow.parameters(), lr=args.lr, amsgrad=True,
                               weight_decay=args.weight_decay)
-    #print(flow)
+    #print(f"main: {flow=}")
 
     best_val_loss = 1e8
     best_test_loss = 1e8
@@ -137,6 +142,7 @@ def main():
 
             optim.zero_grad()
 
+            kll = torch.tensor(0.).to(device)
             kll_loss = torch.tensor(0.).to(device)
 
             if 'kernel_dynamics' in args.model:
@@ -152,9 +158,21 @@ def main():
                 print(f"{loss=:.2f} {loss_nll=:.2f} {kll_loss=:.2f}  {kll_weight=:.2f}")
             # standard nll from forward KL
 
+            #if( epoch % 25 == 0 ):
+            #    print("Initial Flow parameters:")
+            #    print(f"{list(flow.parameters())[1]=}")
+            
             loss.backward()
-
+            
+            #if( epoch % 25 == 0 ):
+            #    print("Gradient of Initial Flow parameters:")
+            #    print(list(flow.parameters())[1].grad)
+            
             optim.step()
+            
+            #if( epoch % 25 == 0 ):
+            #    print("Updated Flow parameters:")
+            #    print(f"{list(flow.parameters())[1]=}")
 
             if it % args.n_report_steps == 0:
                 print("\repoch: {0}, iter: {1}/{2}, NLL: {3:.4} Reg term: {4:.3f}".format(
@@ -173,7 +191,7 @@ def main():
 
         wandb.log({"Train Epoch NLL": np.mean(nll_epoch)}, commit=False)
 
-        if epoch % args.test_epochs == 0:
+        if epoch % args.test_epochs == 0:  
             val_loss = test(args, data_val, batch_iter_val, flow, prior, epoch, partition='val')
             test_loss = test(args, data_test, batch_iter_test, flow, prior, epoch, partition='test')
             if val_loss < best_val_loss:

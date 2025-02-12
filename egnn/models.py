@@ -12,7 +12,7 @@ class EGNN_dynamics(nn.Module):
         super().__init__()
         self.mode = mode
         if mode == 'egnn_dynamics':
-            # can set number of edge features here:
+            # can set number of edge features here ( set in_edge_nf to 2 if adding bonding info)
             self.egnn = EGNN(in_node_nf=1, in_edge_nf=1, hidden_nf=hidden_nf, device=device, act_fn=act_fn, n_layers=n_layers, recurrent=recurrent, attention=attention, tanh=tanh, agg=agg)
         elif mode == 'gnn_dynamics':
             self.gnn = GNN(in_node_nf=1 + n_dimension, in_edge_nf=0, hidden_nf=hidden_nf, out_node_nf=n_dimension, device=device, act_fn=act_fn, n_layers=n_layers, recurrent=recurrent, attention=attention)
@@ -21,7 +21,7 @@ class EGNN_dynamics(nn.Module):
         self._n_particles = n_particles
         self._n_dimension = n_dimension
         self.edges = self._create_edges()   # edges - pairs of atom indexes [[row][col]] 
-        self._edges_dict = {}               # this is empty but if not empty _cast_edges2batch wil use it 
+        self._edges_dict = {}               # this is empty but if not empty _cast_edges2batch will use it 
         self.condition_time = condition_time
 
     def forward(self, t, xs):
@@ -35,9 +35,13 @@ class EGNN_dynamics(nn.Module):
         h = torch.ones(n_batch*self._n_particles, 1).to(self.device)             # forming the tensor of graph verticies (nodes?)  - all ones here!  
         
         # IGOR_TMP modify node feature vector (distinguish oxygens):
+        #h[0,0] = 8.0
+        #h[1,0] = 4.0
         for i in range(n_batch):
-            h[i*6,0] = 0.0
-            h[i*6+3,0] = 0.0
+             h[i*3,0]   = 8.0
+             h[i*3+1,0] = 2.0
+             h[i*3+2,0] = 1.0
+        #    h[i*6+3,0] = 0.0
         
         if self.condition_time:
             h = h*t
@@ -45,11 +49,16 @@ class EGNN_dynamics(nn.Module):
         if self.mode == 'egnn_dynamics':
             edge_attr = torch.sum((x[edges[0]] - x[edges[1]])**2, dim=1, keepdim=True)
             #print(f"{edge_attr.shape=}")
+            #
+            # IGOR_TMP adding bonding attributes - not working so far
             #bonding_attr = torch.ones(n_batch*self._n_particles*(self._n_particles-1), 1).to(self.device)
-            #for i in range(len(edges[0])):
+            #bond_attr_mol = torch.ones(self._n_particles*(self._n_particles-1), 1).to(self.device)
+            #for i in range(self._n_particles*(self._n_particles-1)):
+            #    bond_attr_mol[i] = i
             #    if( (edges[0][i] < 3 and edges[1][i] < 3) or (edges[0][i] > 2 and edges[1][i] > 2) ):
-            #        bonding_attr[i] = 0.0
-            
+            #        bond_attr_mol[i] = 0.0
+            #bonding_attr = bond_attr_mol.repeat(n_batch,1)
+                    
             #edge_attr = torch.cat((edge_attr, bonding_attr), dim = 1)
             
             _, x_final = self.egnn(h, x, edges, edge_attr=edge_attr)
@@ -62,6 +71,7 @@ class EGNN_dynamics(nn.Module):
         vel = vel.view(n_batch, self._n_particles, self._n_dimension)  
         vel = remove_mean(vel)
         #print(f"EGNN_dynamics.forward() {vel.shape=}")
+        #print(f"EGNN_dynamics.forward() {t=} {vel=}")
         return vel
 
     def _create_edges(self):
@@ -232,7 +242,7 @@ class EGNN(nn.Module):
         h = self.embedding_out(h)
 
         # Important, the bias of the last linear might be non-zero
-        if node_mask is not None:
+        if node_mask is not None: 
             h = h * node_mask
         return h, x
 

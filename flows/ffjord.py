@@ -234,5 +234,4 @@ class ODEfunc(torch.nn.Module):
 
                 # No regularization terms, set to zero.
                 reg_term = torch.zeros_like(ldj)
-
         return dx, ldj, reg_term

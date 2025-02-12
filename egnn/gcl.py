@@ -66,7 +66,7 @@ class GCL(nn.Module):
         else:
             out = torch.cat([source, target, edge_attr], dim=1)
         
-        print(f"edge_model() {out.shape=}")
+        #print(f"edge_model() {out.shape=} {source.shape=} {target.shape=}")
         out = self.edge_mlp(out)
 
         if self.attention:
@@ -235,9 +235,9 @@ class E_GCL(nn.Module):
         #
         row, col = edge_index
         if self.tanh:
-            trans = coord_diff * self.coord_mlp(edge_feat) * self.coords_range
+            trans = coord_diff * self.coord_mlp(edge_feat) * self.coords_range  
         else:
-            trans = coord_diff * self.coord_mlp(edge_feat)
+            trans = coord_diff * self.coord_mlp(edge_feat) 
         #trans = torch.clamp(trans, min=-100, max=100)
         if edge_mask is not None:
             trans = trans * edge_mask

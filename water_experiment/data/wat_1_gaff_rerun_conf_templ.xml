@@ -1,0 +1,203 @@
+<Configuration><OutputStreams>
+<Stream Title="Main">
+
+<LogToFile Do="False">
+
+<LogFile>.//LogFile.txt</LogFile>
+
+<LogLevel>
+<LogErrors>True</LogErrors>
+<LogWarnings>True</LogWarnings>
+<LogInfo>True</LogInfo>
+<LogTimeStamp>True</LogTimeStamp>
+</LogLevel>
+</LogToFile>
+
+<LogToConsole Do="False">
+
+<LogLevel>
+<LogErrors>True</LogErrors>
+<LogWarnings>True</LogWarnings>
+<LogInfo>True</LogInfo>
+<LogTimeStamp>True</LogTimeStamp>
+</LogLevel>
+</LogToConsole>
+<ProcIDs />
+</Stream>
+</OutputStreams>
+<ConfigureInteractions>
+<ForceField Title="GAFF">
+        <FFConfig>Input/FFConfig.xml</FFConfig>
+        <Settings>
+           <Param Title="RTabulated">10.0</Param>
+           <Param Title="NTabulated">10000</Param>
+           <Param Title="EqTolerance">0.000001</Param>
+           <Param Title="PolarConvergenceTol">0.0</Param>
+           <Param Title="PolarEquilibrationMaxSteps">50</Param>
+        </Settings>
+</ForceField>
+<Volume>
+<Lx>32.0</Lx>
+<Ly>32.0</Ly>
+<Lz>32.0</Lz>
+</Volume>
+<Boundary>
+<BoundX>PERIODIC</BoundX>
+<BoundY>PERIODIC</BoundY>
+<BoundZ>PERIODIC</BoundZ>
+</Boundary>
+<LongRange>
+        <RCutOff>10.0</RCutOff>
+        <RSwitch>10.0</RSwitch>
+        <RCutOffVdW>10.0</RCutOffVdW>
+        <RSwitchVdW>10.0</RSwitchVdW>
+        <RCutOffNN>4.5</RCutOffNN>
+        <RSwitchNN>4.0</RSwitchNN>
+        <dRCutOff>2.0</dRCutOff>
+        <NLstRefresh>100</NLstRefresh>
+  <NRecalc>
+        <Shell R="9.0">5</Shell>
+        <Shell R="8.0">3</Shell>
+        <Shell R="7.0">2</Shell>
+  </NRecalc>
+  <!-- <LRangeCoulomb Type="PME"> -->
+  <LRangeCoulomb Type="GrSwitch"> 
+     <Settings>
+          <Param Title="GridFragmentationX">32</Param>
+          <Param Title="GridFragmentationY">32</Param>
+          <Param Title="GridFragmentationZ">32</Param>
+          <Param Title="BSplineOrder">5</Param>
+          <Param Title="Tolerance">5</Param>
+          <Param Title="DielConstRF">1000000000000.0</Param>
+     </Settings>
+  </LRangeCoulomb>
+  <LRangeVdW>
+      <CorrectEnergy>true</CorrectEnergy>
+      <CorrectPressure>true</CorrectPressure>
+  </LRangeVdW>
+</LongRange>
+<Constraints>
+   <Tolerance>0.001</Tolerance>
+   <ConstrGeom>EquilibriumGeom</ConstrGeom>
+</Constraints>
+</ConfigureInteractions>
+<Topology>
+<MoleculeDefinition Title="ETG">
+<StructureType>SINGLERES</StructureType>
+<StructureDefinition>
+<Instance Title="StateA">
+ <TopologySource>STRUCT</TopologySource>
+ <TopologyFiles>
+  <File Type="TOP">Input/HIN/WAT_TIP3P.top</File>
+ </TopologyFiles>
+ <StructureFiles>
+  <File Descr="MolTemplate" Type="HIN">Input/HIN/WAT_TIP3P.hin</File>
+  </StructureFiles>
+ <StructureSettings>
+  <GenerateChargeGroups>ATOM</GenerateChargeGroups>
+  <ConstrainBonds>false</ConstrainBonds>
+  <ConstrainAngles>false</ConstrainAngles>
+  <ConstrainTorsions>false</ConstrainTorsions>
+ </StructureSettings>
+</Instance>
+</StructureDefinition>
+</MoleculeDefinition>
+</Topology>
+<MolecularSystem ForcePlacement="true">
+<SystemState Title="SystemA">
+  <Load>
+     <Molecules>
+        <Molecule Instance="StateA" Title="ETG" />
+     </Molecules>
+     <StructureFiles>
+        <File Type="HIN">WAT_1_init.hin</File>
+     </StructureFiles>
+     <Restraints>
+        <!-- <Restraint MolGroup="" Title="BondRestraint_O1_O2" /> -->
+     </Restraints>
+  </Load>
+</SystemState>
+<RestrainingRules>
+       <!--
+      <BondRestraintDefinition Title="BondRestraint_O1_O2">
+           <LinkToAtom_1>HOH(1)::O</LinkToAtom_1>
+           <LinkToAtom_2>HOH(2)::O</LinkToAtom_2>
+           <ForceConstant>1.000000</ForceConstant> 
+           <ForceConstant_2>1.000000</ForceConstant_2>  
+		   <EquilibriumLength>0</EquilibriumLength>
+           <EquilibriumLength_Ca_2>5.0</EquilibriumLength_Ca_2> 
+		   <FunctionalForm>FLATBOTTOM</FunctionalForm>
+      </BondRestraintDefinition>
+	  -->
+</RestrainingRules> 
+</MolecularSystem>
+<GroupsDefinition>
+</GroupsDefinition>
+<TaskSequence>
+ 
+<Task SeqID="3" Type="ReRun">
+<Settings>
+<!--    <Param Title="TrajectoryFile">eth_gly_1_arrow_10ns_cnt.trr</Param>  -->
+<!--    <Param Title="TrajectoryFile">eth_gly_1_arrow_10ps_cnt.trr</Param>  -->
+    <Param Title="TrajectoryFile">TRR_TRAJ_FNAME</Param>
+    <Param Title="FirstFrame">0</Param>
+    <Param Title="LastFrame">-1</Param>
+    <Param Title="FreqFrame">1</Param>
+</Settings>
+
+<ConfigureAlgorithms>
+</ConfigureAlgorithms>
+ 
+
+<ConsoleOutput Do="True">
+<Output Frequency="50" Mode="WATERFALL" NRows="100" Screen="SYSTEM">
+    <Item Param="Step" Title="ID" />
+    <!-- <Item FunctionalGroup="SYSTEM" Param="Temp" Title="Temp" /> -->
+    <Item FunctionalGroup="SYSTEM" Param="EnrgPot" Title="EnrgPot" />
+</Output>
+</ConsoleOutput>
+
+<FileOutput OutputFolder="./Output_rerun">
+<Output DataType="ENE" Frequency="1">
+   <Settings>
+        <Param Title="Time">Time</Param>
+        <Param Title="EnrgPot">EnrgPot</Param>
+        <Param Title="EnrgCoul">EnrgCoul</Param>
+        <Param Title="EnrgVdW">EnrgVdW</Param>
+        <Param Title="EnrgVdW_LRCor">EnrgVdW_LRCor</Param>
+        <Param Title="EnrgPol">EnrgPol</Param>
+        <Param Title="EnrgBond">EnrgBond</Param>
+        <Param Title="EnrgAngle">EnrgAngle</Param>
+        <Param Title="EnrgStretch">EnrgStretchBend</Param>
+        <Param Title="EnrgTorsion">EnrgTorsion</Param>
+        <Param Title="EnrgOOP">EnrgOutOfPlane</Param>
+        <Param Title="EnrgRestraint">EnrgRestraint</Param>
+   </Settings>
+   <FunctionalGroups>
+        <Group>SYSTEM</Group>
+   </FunctionalGroups>
+</Output>
+
+<Output DataType = "FORCE" Frequency = "1" >
+<Settings>
+</Settings>
+<FunctionalGroups>
+        <Group>SYSTEM</Group>
+</FunctionalGroups>
+</Output>
+
+<!--
+<Output DataType="TRR" Frequency="1">
+<Settings>
+        <Param Title="RecordGRO">true</Param>
+</Settings>
+<FunctionalGroups>
+        <Group>SYSTEM</Group>
+</FunctionalGroups>
+</Output>
+-->
+
+</FileOutput>
+</Task>
+</TaskSequence>
+</Configuration>

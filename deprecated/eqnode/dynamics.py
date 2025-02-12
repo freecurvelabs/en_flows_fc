@@ -853,7 +853,7 @@ class KernelDynamics_V2(torch.nn.Module):
 
 
 class SchNet(torch.nn.Module):
-    def __init__(self, transformation, rbf_encoder, n_particles, n_dimesnion, features, feature_encoding, cfconv1, cfconv2, cfconv3):
+    def __init__(self, transformation, rbf_encoder, n_particles, n_dimension, features, feature_encoding, cfconv1, cfconv2, cfconv3):
         super().__init__()
         self._transformation = transformation
         self._feature_encoding = feature_encoding
@@ -862,7 +862,7 @@ class SchNet(torch.nn.Module):
         self._cfconv3 = cfconv3
         self._rbf_encoder = rbf_encoder
         self._n_particles = n_particles
-        self._n_dimension = n_dimesnion
+        self._n_dimension = n_dimension
         self._dim = self._n_particles * self._n_dimension
         self._feature_shape = features
 
@@ -921,12 +921,12 @@ class SchNet(torch.nn.Module):
 
 
 class SimpleEqDynamics(torch.nn.Module):
-    def __init__(self, transformation, rbf_encoder, n_particles, n_dimesnion, n_rbfs):
+    def __init__(self, transformation, rbf_encoder, n_particles, n_dimension, n_rbfs):
         super().__init__()
         self._transformation = transformation
         self._rbf_encoder = rbf_encoder
         self._n_particles = n_particles
-        self._n_dimension = n_dimesnion
+        self._n_dimension = n_dimension
         self._dim = self._n_particles * self._n_dimension
         self._n_rbfs = n_rbfs
 

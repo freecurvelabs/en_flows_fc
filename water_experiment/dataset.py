@@ -8,7 +8,11 @@ from deprecated.eqnode.train_utils import IndexBatchIterator, BatchIterator
 
 
 def get_data(args, partition, batch_size):
-    if args.data == 'wat2_gaff':
+    if args.data == 'wat1_gaff':
+        return get_data_wat(args.n_data, partition, batch_size, 3, "wat1_gaff")
+    elif args.data == 'wat1_arrow':
+        return get_data_wat(args.n_data, partition, batch_size, 3, "wat1_arrow")
+    elif args.data == 'wat2_gaff':
         return get_data_wat(args.n_data, partition, batch_size, 6, "wat2_gaff")
     elif args.data == 'wat2_arrow':
         return get_data_wat(args.n_data, partition, batch_size, 6, "wat2_arrow")
@@ -27,7 +31,7 @@ def get_data_wat(n_data, partition, batch_size, n_particles_val=6, data_prefix =
     dim = n_particles * n_dimension
 
     if partition == 'train':
-        data = np.load(os.path.join("water_experiment","data",data_prefix + ".npy"))[0:n_data]
+        data = np.load(os.path.join("water_experiment","data",data_prefix + ".npy"))[10:n_data+10]
     elif partition == 'val':
         data = np.load(os.path.join("water_experiment","data",data_prefix + ".npy"))[n_data:n_data + 1000]
     elif partition == 'test':
@@ -39,7 +43,7 @@ def get_data_wat(n_data, partition, batch_size, n_particles_val=6, data_prefix =
 
     data = data.reshape(-1, dim)
     data = torch.Tensor(data)
-    # data = remove_mean(data, n_particles, dim // n_particles)  #IGOR_TMP - don't to remove_mean
+    data = remove_mean(data, n_particles, dim // n_particles)  #IGOR_TMP - don't to remove_mean
 
     #if partition == 'train':
     #    data = data[idx[:n_data]].clone()

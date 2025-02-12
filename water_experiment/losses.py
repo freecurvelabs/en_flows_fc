@@ -1,4 +1,5 @@
 import torch
+import numpy as np
 
 def sum_except_batch(x):
     return x.view(x.size(0), -1).sum(dim=-1)
@@ -27,7 +28,7 @@ def sum_except_batch(x):
 #         return x
 
 
-def compute_loss_and_nll(args, flow, prior, batch):
+def  compute_loss_and_nll(args, flow, prior, batch):
     # if args.ode_regularization > 0:
     #     z, delta_logp, reg_frob, reg_dx2 = flow(batch)
     #     z = z.view(z.size(0), 8)
@@ -38,11 +39,28 @@ def compute_loss_and_nll(args, flow, prior, batch):
     #print(f" compute_loss_and_nll() {batch.shape=}")
     
     z, delta_logp, reg_term = flow(batch)
+    #z_max = z.max()
+    #print(f"{z_max=}")
+    #print(f"{z_max.requires_grad=}")
+    
+    #_max.retain_grad()
+    #z_max.backward(retain_graph=True)
+    #print(f"{z_max.grad=}")
+    
+    #x = batch.detach().cpu().numpy().reshape(batch.shape[0],-1,3) * 10.0
+    #x_tr = z.detach().cpu().numpy().reshape(batch.shape[0],-1,3) * 10.0
+    
+    #np.set_printoptions(precision=4)
+    #print(f"compute_loss_and_nll() \n x= {x}")
+    #print(f" x_tr= \n {x_tr}")
     
     log_pz = prior(z)
-    log_px = (log_pz + delta_logp.view(-1)).mean()
-    nll = -log_px
     
+    #log_px = (log_pz + delta_logp.view(-1)).mean()  # IGOR_TMP remove Jacobian term 
+    log_px  = log_pz.mean()                          # IGOR_TMP remove Jacobian term 
+    #  
+    nll = -log_px
+
     print(f"{-log_pz.mean()=:.2f} {-delta_logp.mean()=:.2f} ")
 
     mean_abs_z = torch.mean(torch.abs(z)).item()
@@ -70,7 +88,8 @@ def compute_kll_loss(args, flow, prior, target, n_samples, ctx, temperature=1.0)
     x, dlogp, reg_term = flow.inverse(z)
     kll = target._energy(x).mean()
     dlogp_avg = dlogp.mean()  
-    kll_tot = kll - dlogp_avg  # sing of dlogp  is not clear
+    #kll_tot = kll - dlogp_avg  # the sign of dlogp  is not clear
+    kll_tot = kll       # IGOR_TMP removed dlogp_avg from the penalty
     
     print(f"{kll=:.2f} {dlogp_avg=:.2f} ")
 

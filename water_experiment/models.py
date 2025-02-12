@@ -35,7 +35,7 @@ def get_model(args, dim, n_particles):
             feature_encoding=DenseNet([1, n_features], activation=torch.nn.Tanh()),
             rbf_encoder=rbf_encoder,
             n_particles=n_particles,
-            n_dimesnion=dim // n_particles,
+            n_dimension=dim // n_particles,
             features=n_features,
         )
 
@@ -48,7 +48,8 @@ def get_model(args, dim, n_particles):
                                                       brute_force=args.brute_force)
             flow = RegularizedDiffEqFlow(dynamics)
         else:
-            dynamics = HutchinsonEstimator(net_dynamics, brute_force=args.brute_force)
+            #dynamics = HutchinsonEstimator(net_dynamics, brute_force=args.brute_force)
+            dynamics = HutchinsonEstimator(net_dynamics, brute_force=True) # IGOR_TMP set brute_force
             flow = DiffEqFlow(dynamics=dynamics)
 
     elif args.model == 'simple_dynamics':
@@ -86,7 +87,7 @@ def get_model(args, dim, n_particles):
         if torch.cuda.is_available():
             device = 'cuda'
         net_dynamics = EGNN_dynamics(n_particles=n_particles, device=device,  n_dimension=dim // n_particles, hidden_nf=args.nf,
-            act_fn=torch.nn.SiLU(), n_layers=args.n_layers, recurrent=False, tanh=args.tanh, attention=args.attention, condition_time=args.condition_time, mode=args.model, agg=args.x_aggregation)
+            act_fn=torch.nn.SiLU(), n_layers=args.n_layers, recurrent=True, tanh=args.tanh, attention=args.attention, condition_time=args.condition_time, mode=args.model, agg=args.x_aggregation)
 
         flow = FFJORD(net_dynamics, trace_method='hutch', hutch_noise=args.hutch_noise, ode_regularization=args.ode_regularization)
 
