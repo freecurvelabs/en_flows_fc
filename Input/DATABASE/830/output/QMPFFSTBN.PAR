@@ -1,0 +1,25 @@
+;
+; File: QMPFFSTBN.PAR :: 
+; Stretch Bend Parameters
+;
+;#!ID  ATOM1 BT12 ATOM2 BT23 ATOM3    kba_IJK    kba_KJI
+      1      HC4    s       C4    s      HC4       0.3467       0.3467
+      2       C3    s       C3    s       C3       0.3905       0.3905
+      3       C3    s       C3    s      HC3       0.4005       0.1252
+      4      HC3    s       C3    s      HC3       0.3474       0.3474
+      5       HW    s       OW    s       HW       0.7385       0.7385
+      6       C3    s       C3    s       CA       0.3818       0.6531
+      7      HC3    s       C3    s       CA       0.1115       0.4326
+      8       CA    s       C3    s       CA       0.6280       0.6280
+      9       C3    s       CA    a       CA       1.2184       0.7813
+     10       CA    a       CA    a       CA      -1.0325      -1.0325
+     11       CA    s       CA    s       CA       0.6280       0.6280
+     12       CA    a       CA    s      HCA       0.6280       0.7009
+     13       CA    a       CA    a      CAB      -1.0325      -1.0325
+     14       CA    a      CAB    a       CA      -1.0325      -1.0325
+     15       CA    a      CAB    a      CAB      -1.0325      -1.0325
+     16      CAB    a       CA    s      HCA       0.6280       0.7009
+     17       C3    s       C3    s      HC2       0.4005       0.1252
+     18      HC2    s       C3    s      HC2       0.3474       0.3474
+     19       C3    s       C3    s     HC2R       0.4005       0.1252
+     20     HC2R    s       C3    s     HC2R       0.3474       0.3474

@@ -1,0 +1,18 @@
+;
+; File: QMPFFBOND.PAR :: 
+; Bond Stretching Parameters
+;
+;#!ID  ATOM1  BT  ATOM2      r0             k
+      1       C4    s      HC4   1.0840     804.41812
+      2       C3    s       C3   1.5110     671.93400
+      3       C3    s      HC3   1.0870     770.81967
+      4       OW    s       HW   0.9590    1237.22940
+      5       C3    s       CA   1.4970     706.56316
+      6       CA    a       CA   1.3900    1035.32980
+      7       CA    s       CA   1.4360     745.28246
+      8       CA    s      HCA   1.0800     815.77698
+      9       CA    a      CAB   1.3900    1035.32980
+     10      CAB    a      CAB   1.3900    1035.32980
+     11       C3    s      HC2   1.0870     770.81967
+     12       C3    s     HC2R   1.0870     770.81967
+     13     OWNN    s     HWNN   0.9590    1237.22940

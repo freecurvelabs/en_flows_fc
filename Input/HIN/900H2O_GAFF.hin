@@ -1,0 +1,4502 @@
+forcefield GAFF 
+sys 0 0 1
+mol 1 "HOH"
+atom 1 OW O OW h 0 1.95 1.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 1.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 1.5 2.16 1 1 s
+endmol 1
+mol 2 "HOH"
+atom 1 OW O OW h 0 4.95 1.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 1.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 1.5 2.16 1 1 s
+endmol 2
+mol 3 "HOH"
+atom 1 OW O OW h 0 7.95 1.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 1.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 1.5 2.16 1 1 s
+endmol 3
+mol 4 "HOH"
+atom 1 OW O OW h 0 10.95 1.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 1.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 1.5 2.16 1 1 s
+endmol 4
+mol 5 "HOH"
+atom 1 OW O OW h 0 13.95 1.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 1.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 1.5 2.16 1 1 s
+endmol 5
+mol 6 "HOH"
+atom 1 OW O OW h 0 16.95 1.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 1.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 1.5 2.16 1 1 s
+endmol 6
+mol 7 "HOH"
+atom 1 OW O OW h 0 19.95 1.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 1.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 1.5 2.16 1 1 s
+endmol 7
+mol 8 "HOH"
+atom 1 OW O OW h 0 22.95 1.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 1.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 1.5 2.16 1 1 s
+endmol 8
+mol 9 "HOH"
+atom 1 OW O OW h 0 25.95 1.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 1.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 1.5 2.16 1 1 s
+endmol 9
+mol 10 "HOH"
+atom 1 OW O OW h 0 28.95 1.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 1.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 1.5 2.16 1 1 s
+endmol 10
+mol 11 "HOH"
+atom 1 OW O OW h 0 1.95 4.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 4.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 4.5 2.16 1 1 s
+endmol 11
+mol 12 "HOH"
+atom 1 OW O OW h 0 4.95 4.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 4.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 4.5 2.16 1 1 s
+endmol 12
+mol 13 "HOH"
+atom 1 OW O OW h 0 7.95 4.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 4.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 4.5 2.16 1 1 s
+endmol 13
+mol 14 "HOH"
+atom 1 OW O OW h 0 10.95 4.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 4.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 4.5 2.16 1 1 s
+endmol 14
+mol 15 "HOH"
+atom 1 OW O OW h 0 13.95 4.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 4.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 4.5 2.16 1 1 s
+endmol 15
+mol 16 "HOH"
+atom 1 OW O OW h 0 16.95 4.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 4.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 4.5 2.16 1 1 s
+endmol 16
+mol 17 "HOH"
+atom 1 OW O OW h 0 19.95 4.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 4.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 4.5 2.16 1 1 s
+endmol 17
+mol 18 "HOH"
+atom 1 OW O OW h 0 22.95 4.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 4.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 4.5 2.16 1 1 s
+endmol 18
+mol 19 "HOH"
+atom 1 OW O OW h 0 25.95 4.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 4.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 4.5 2.16 1 1 s
+endmol 19
+mol 20 "HOH"
+atom 1 OW O OW h 0 28.95 4.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 4.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 4.5 2.16 1 1 s
+endmol 20
+mol 21 "HOH"
+atom 1 OW O OW h 0 1.95 7.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 7.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 7.5 2.16 1 1 s
+endmol 21
+mol 22 "HOH"
+atom 1 OW O OW h 0 4.95 7.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 7.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 7.5 2.16 1 1 s
+endmol 22
+mol 23 "HOH"
+atom 1 OW O OW h 0 7.95 7.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 7.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 7.5 2.16 1 1 s
+endmol 23
+mol 24 "HOH"
+atom 1 OW O OW h 0 10.95 7.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 7.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 7.5 2.16 1 1 s
+endmol 24
+mol 25 "HOH"
+atom 1 OW O OW h 0 13.95 7.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 7.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 7.5 2.16 1 1 s
+endmol 25
+mol 26 "HOH"
+atom 1 OW O OW h 0 16.95 7.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 7.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 7.5 2.16 1 1 s
+endmol 26
+mol 27 "HOH"
+atom 1 OW O OW h 0 19.95 7.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 7.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 7.5 2.16 1 1 s
+endmol 27
+mol 28 "HOH"
+atom 1 OW O OW h 0 22.95 7.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 7.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 7.5 2.16 1 1 s
+endmol 28
+mol 29 "HOH"
+atom 1 OW O OW h 0 25.95 7.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 7.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 7.5 2.16 1 1 s
+endmol 29
+mol 30 "HOH"
+atom 1 OW O OW h 0 28.95 7.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 7.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 7.5 2.16 1 1 s
+endmol 30
+mol 31 "HOH"
+atom 1 OW O OW h 0 1.95 10.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 10.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 10.5 2.16 1 1 s
+endmol 31
+mol 32 "HOH"
+atom 1 OW O OW h 0 4.95 10.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 10.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 10.5 2.16 1 1 s
+endmol 32
+mol 33 "HOH"
+atom 1 OW O OW h 0 7.95 10.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 10.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 10.5 2.16 1 1 s
+endmol 33
+mol 34 "HOH"
+atom 1 OW O OW h 0 10.95 10.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 10.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 10.5 2.16 1 1 s
+endmol 34
+mol 35 "HOH"
+atom 1 OW O OW h 0 13.95 10.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 10.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 10.5 2.16 1 1 s
+endmol 35
+mol 36 "HOH"
+atom 1 OW O OW h 0 16.95 10.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 10.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 10.5 2.16 1 1 s
+endmol 36
+mol 37 "HOH"
+atom 1 OW O OW h 0 19.95 10.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 10.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 10.5 2.16 1 1 s
+endmol 37
+mol 38 "HOH"
+atom 1 OW O OW h 0 22.95 10.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 10.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 10.5 2.16 1 1 s
+endmol 38
+mol 39 "HOH"
+atom 1 OW O OW h 0 25.95 10.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 10.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 10.5 2.16 1 1 s
+endmol 39
+mol 40 "HOH"
+atom 1 OW O OW h 0 28.95 10.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 10.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 10.5 2.16 1 1 s
+endmol 40
+mol 41 "HOH"
+atom 1 OW O OW h 0 1.95 13.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 13.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 13.5 2.16 1 1 s
+endmol 41
+mol 42 "HOH"
+atom 1 OW O OW h 0 4.95 13.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 13.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 13.5 2.16 1 1 s
+endmol 42
+mol 43 "HOH"
+atom 1 OW O OW h 0 7.95 13.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 13.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 13.5 2.16 1 1 s
+endmol 43
+mol 44 "HOH"
+atom 1 OW O OW h 0 10.95 13.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 13.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 13.5 2.16 1 1 s
+endmol 44
+mol 45 "HOH"
+atom 1 OW O OW h 0 13.95 13.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 13.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 13.5 2.16 1 1 s
+endmol 45
+mol 46 "HOH"
+atom 1 OW O OW h 0 16.95 13.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 13.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 13.5 2.16 1 1 s
+endmol 46
+mol 47 "HOH"
+atom 1 OW O OW h 0 19.95 13.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 13.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 13.5 2.16 1 1 s
+endmol 47
+mol 48 "HOH"
+atom 1 OW O OW h 0 22.95 13.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 13.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 13.5 2.16 1 1 s
+endmol 48
+mol 49 "HOH"
+atom 1 OW O OW h 0 25.95 13.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 13.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 13.5 2.16 1 1 s
+endmol 49
+mol 50 "HOH"
+atom 1 OW O OW h 0 28.95 13.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 13.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 13.5 2.16 1 1 s
+endmol 50
+mol 51 "HOH"
+atom 1 OW O OW h 0 1.95 16.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 16.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 16.5 2.16 1 1 s
+endmol 51
+mol 52 "HOH"
+atom 1 OW O OW h 0 4.95 16.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 16.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 16.5 2.16 1 1 s
+endmol 52
+mol 53 "HOH"
+atom 1 OW O OW h 0 7.95 16.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 16.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 16.5 2.16 1 1 s
+endmol 53
+mol 54 "HOH"
+atom 1 OW O OW h 0 10.95 16.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 16.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 16.5 2.16 1 1 s
+endmol 54
+mol 55 "HOH"
+atom 1 OW O OW h 0 13.95 16.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 16.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 16.5 2.16 1 1 s
+endmol 55
+mol 56 "HOH"
+atom 1 OW O OW h 0 16.95 16.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 16.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 16.5 2.16 1 1 s
+endmol 56
+mol 57 "HOH"
+atom 1 OW O OW h 0 19.95 16.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 16.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 16.5 2.16 1 1 s
+endmol 57
+mol 58 "HOH"
+atom 1 OW O OW h 0 22.95 16.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 16.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 16.5 2.16 1 1 s
+endmol 58
+mol 59 "HOH"
+atom 1 OW O OW h 0 25.95 16.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 16.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 16.5 2.16 1 1 s
+endmol 59
+mol 60 "HOH"
+atom 1 OW O OW h 0 28.95 16.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 16.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 16.5 2.16 1 1 s
+endmol 60
+mol 61 "HOH"
+atom 1 OW O OW h 0 1.95 19.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 19.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 19.5 2.16 1 1 s
+endmol 61
+mol 62 "HOH"
+atom 1 OW O OW h 0 4.95 19.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 19.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 19.5 2.16 1 1 s
+endmol 62
+mol 63 "HOH"
+atom 1 OW O OW h 0 7.95 19.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 19.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 19.5 2.16 1 1 s
+endmol 63
+mol 64 "HOH"
+atom 1 OW O OW h 0 10.95 19.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 19.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 19.5 2.16 1 1 s
+endmol 64
+mol 65 "HOH"
+atom 1 OW O OW h 0 13.95 19.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 19.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 19.5 2.16 1 1 s
+endmol 65
+mol 66 "HOH"
+atom 1 OW O OW h 0 16.95 19.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 19.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 19.5 2.16 1 1 s
+endmol 66
+mol 67 "HOH"
+atom 1 OW O OW h 0 19.95 19.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 19.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 19.5 2.16 1 1 s
+endmol 67
+mol 68 "HOH"
+atom 1 OW O OW h 0 22.95 19.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 19.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 19.5 2.16 1 1 s
+endmol 68
+mol 69 "HOH"
+atom 1 OW O OW h 0 25.95 19.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 19.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 19.5 2.16 1 1 s
+endmol 69
+mol 70 "HOH"
+atom 1 OW O OW h 0 28.95 19.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 19.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 19.5 2.16 1 1 s
+endmol 70
+mol 71 "HOH"
+atom 1 OW O OW h 0 1.95 22.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 22.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 22.5 2.16 1 1 s
+endmol 71
+mol 72 "HOH"
+atom 1 OW O OW h 0 4.95 22.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 22.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 22.5 2.16 1 1 s
+endmol 72
+mol 73 "HOH"
+atom 1 OW O OW h 0 7.95 22.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 22.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 22.5 2.16 1 1 s
+endmol 73
+mol 74 "HOH"
+atom 1 OW O OW h 0 10.95 22.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 22.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 22.5 2.16 1 1 s
+endmol 74
+mol 75 "HOH"
+atom 1 OW O OW h 0 13.95 22.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 22.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 22.5 2.16 1 1 s
+endmol 75
+mol 76 "HOH"
+atom 1 OW O OW h 0 16.95 22.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 22.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 22.5 2.16 1 1 s
+endmol 76
+mol 77 "HOH"
+atom 1 OW O OW h 0 19.95 22.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 22.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 22.5 2.16 1 1 s
+endmol 77
+mol 78 "HOH"
+atom 1 OW O OW h 0 22.95 22.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 22.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 22.5 2.16 1 1 s
+endmol 78
+mol 79 "HOH"
+atom 1 OW O OW h 0 25.95 22.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 22.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 22.5 2.16 1 1 s
+endmol 79
+mol 80 "HOH"
+atom 1 OW O OW h 0 28.95 22.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 22.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 22.5 2.16 1 1 s
+endmol 80
+mol 81 "HOH"
+atom 1 OW O OW h 0 1.95 25.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 25.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 25.5 2.16 1 1 s
+endmol 81
+mol 82 "HOH"
+atom 1 OW O OW h 0 4.95 25.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 25.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 25.5 2.16 1 1 s
+endmol 82
+mol 83 "HOH"
+atom 1 OW O OW h 0 7.95 25.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 25.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 25.5 2.16 1 1 s
+endmol 83
+mol 84 "HOH"
+atom 1 OW O OW h 0 10.95 25.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 25.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 25.5 2.16 1 1 s
+endmol 84
+mol 85 "HOH"
+atom 1 OW O OW h 0 13.95 25.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 25.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 25.5 2.16 1 1 s
+endmol 85
+mol 86 "HOH"
+atom 1 OW O OW h 0 16.95 25.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 25.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 25.5 2.16 1 1 s
+endmol 86
+mol 87 "HOH"
+atom 1 OW O OW h 0 19.95 25.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 25.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 25.5 2.16 1 1 s
+endmol 87
+mol 88 "HOH"
+atom 1 OW O OW h 0 22.95 25.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 25.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 25.5 2.16 1 1 s
+endmol 88
+mol 89 "HOH"
+atom 1 OW O OW h 0 25.95 25.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 25.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 25.5 2.16 1 1 s
+endmol 89
+mol 90 "HOH"
+atom 1 OW O OW h 0 28.95 25.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 25.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 25.5 2.16 1 1 s
+endmol 90
+mol 91 "HOH"
+atom 1 OW O OW h 0 1.95 28.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 28.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 28.5 2.16 1 1 s
+endmol 91
+mol 92 "HOH"
+atom 1 OW O OW h 0 4.95 28.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 28.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 28.5 2.16 1 1 s
+endmol 92
+mol 93 "HOH"
+atom 1 OW O OW h 0 7.95 28.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 28.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 28.5 2.16 1 1 s
+endmol 93
+mol 94 "HOH"
+atom 1 OW O OW h 0 10.95 28.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 28.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 28.5 2.16 1 1 s
+endmol 94
+mol 95 "HOH"
+atom 1 OW O OW h 0 13.95 28.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 28.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 28.5 2.16 1 1 s
+endmol 95
+mol 96 "HOH"
+atom 1 OW O OW h 0 16.95 28.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 28.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 28.5 2.16 1 1 s
+endmol 96
+mol 97 "HOH"
+atom 1 OW O OW h 0 19.95 28.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 28.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 28.5 2.16 1 1 s
+endmol 97
+mol 98 "HOH"
+atom 1 OW O OW h 0 22.95 28.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 28.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 28.5 2.16 1 1 s
+endmol 98
+mol 99 "HOH"
+atom 1 OW O OW h 0 25.95 28.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 28.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 28.5 2.16 1 1 s
+endmol 99
+mol 100 "HOH"
+atom 1 OW O OW h 0 28.95 28.5 1.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 28.5 0.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 28.5 2.16 1 1 s
+endmol 100
+mol 101 "HOH"
+atom 1 OW O OW h 0 1.95 1.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 1.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 1.5 5.16 1 1 s
+endmol 101
+mol 102 "HOH"
+atom 1 OW O OW h 0 4.95 1.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 1.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 1.5 5.16 1 1 s
+endmol 102
+mol 103 "HOH"
+atom 1 OW O OW h 0 7.95 1.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 1.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 1.5 5.16 1 1 s
+endmol 103
+mol 104 "HOH"
+atom 1 OW O OW h 0 10.95 1.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 1.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 1.5 5.16 1 1 s
+endmol 104
+mol 105 "HOH"
+atom 1 OW O OW h 0 13.95 1.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 1.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 1.5 5.16 1 1 s
+endmol 105
+mol 106 "HOH"
+atom 1 OW O OW h 0 16.95 1.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 1.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 1.5 5.16 1 1 s
+endmol 106
+mol 107 "HOH"
+atom 1 OW O OW h 0 19.95 1.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 1.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 1.5 5.16 1 1 s
+endmol 107
+mol 108 "HOH"
+atom 1 OW O OW h 0 22.95 1.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 1.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 1.5 5.16 1 1 s
+endmol 108
+mol 109 "HOH"
+atom 1 OW O OW h 0 25.95 1.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 1.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 1.5 5.16 1 1 s
+endmol 109
+mol 110 "HOH"
+atom 1 OW O OW h 0 28.95 1.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 1.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 1.5 5.16 1 1 s
+endmol 110
+mol 111 "HOH"
+atom 1 OW O OW h 0 1.95 4.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 4.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 4.5 5.16 1 1 s
+endmol 111
+mol 112 "HOH"
+atom 1 OW O OW h 0 4.95 4.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 4.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 4.5 5.16 1 1 s
+endmol 112
+mol 113 "HOH"
+atom 1 OW O OW h 0 7.95 4.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 4.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 4.5 5.16 1 1 s
+endmol 113
+mol 114 "HOH"
+atom 1 OW O OW h 0 10.95 4.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 4.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 4.5 5.16 1 1 s
+endmol 114
+mol 115 "HOH"
+atom 1 OW O OW h 0 13.95 4.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 4.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 4.5 5.16 1 1 s
+endmol 115
+mol 116 "HOH"
+atom 1 OW O OW h 0 16.95 4.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 4.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 4.5 5.16 1 1 s
+endmol 116
+mol 117 "HOH"
+atom 1 OW O OW h 0 19.95 4.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 4.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 4.5 5.16 1 1 s
+endmol 117
+mol 118 "HOH"
+atom 1 OW O OW h 0 22.95 4.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 4.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 4.5 5.16 1 1 s
+endmol 118
+mol 119 "HOH"
+atom 1 OW O OW h 0 25.95 4.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 4.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 4.5 5.16 1 1 s
+endmol 119
+mol 120 "HOH"
+atom 1 OW O OW h 0 28.95 4.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 4.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 4.5 5.16 1 1 s
+endmol 120
+mol 121 "HOH"
+atom 1 OW O OW h 0 1.95 7.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 7.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 7.5 5.16 1 1 s
+endmol 121
+mol 122 "HOH"
+atom 1 OW O OW h 0 4.95 7.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 7.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 7.5 5.16 1 1 s
+endmol 122
+mol 123 "HOH"
+atom 1 OW O OW h 0 7.95 7.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 7.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 7.5 5.16 1 1 s
+endmol 123
+mol 124 "HOH"
+atom 1 OW O OW h 0 10.95 7.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 7.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 7.5 5.16 1 1 s
+endmol 124
+mol 125 "HOH"
+atom 1 OW O OW h 0 13.95 7.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 7.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 7.5 5.16 1 1 s
+endmol 125
+mol 126 "HOH"
+atom 1 OW O OW h 0 16.95 7.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 7.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 7.5 5.16 1 1 s
+endmol 126
+mol 127 "HOH"
+atom 1 OW O OW h 0 19.95 7.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 7.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 7.5 5.16 1 1 s
+endmol 127
+mol 128 "HOH"
+atom 1 OW O OW h 0 22.95 7.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 7.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 7.5 5.16 1 1 s
+endmol 128
+mol 129 "HOH"
+atom 1 OW O OW h 0 25.95 7.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 7.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 7.5 5.16 1 1 s
+endmol 129
+mol 130 "HOH"
+atom 1 OW O OW h 0 28.95 7.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 7.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 7.5 5.16 1 1 s
+endmol 130
+mol 131 "HOH"
+atom 1 OW O OW h 0 1.95 10.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 10.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 10.5 5.16 1 1 s
+endmol 131
+mol 132 "HOH"
+atom 1 OW O OW h 0 4.95 10.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 10.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 10.5 5.16 1 1 s
+endmol 132
+mol 133 "HOH"
+atom 1 OW O OW h 0 7.95 10.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 10.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 10.5 5.16 1 1 s
+endmol 133
+mol 134 "HOH"
+atom 1 OW O OW h 0 10.95 10.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 10.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 10.5 5.16 1 1 s
+endmol 134
+mol 135 "HOH"
+atom 1 OW O OW h 0 13.95 10.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 10.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 10.5 5.16 1 1 s
+endmol 135
+mol 136 "HOH"
+atom 1 OW O OW h 0 16.95 10.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 10.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 10.5 5.16 1 1 s
+endmol 136
+mol 137 "HOH"
+atom 1 OW O OW h 0 19.95 10.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 10.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 10.5 5.16 1 1 s
+endmol 137
+mol 138 "HOH"
+atom 1 OW O OW h 0 22.95 10.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 10.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 10.5 5.16 1 1 s
+endmol 138
+mol 139 "HOH"
+atom 1 OW O OW h 0 25.95 10.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 10.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 10.5 5.16 1 1 s
+endmol 139
+mol 140 "HOH"
+atom 1 OW O OW h 0 28.95 10.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 10.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 10.5 5.16 1 1 s
+endmol 140
+mol 141 "HOH"
+atom 1 OW O OW h 0 1.95 13.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 13.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 13.5 5.16 1 1 s
+endmol 141
+mol 142 "HOH"
+atom 1 OW O OW h 0 4.95 13.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 13.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 13.5 5.16 1 1 s
+endmol 142
+mol 143 "HOH"
+atom 1 OW O OW h 0 7.95 13.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 13.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 13.5 5.16 1 1 s
+endmol 143
+mol 144 "HOH"
+atom 1 OW O OW h 0 10.95 13.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 13.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 13.5 5.16 1 1 s
+endmol 144
+mol 145 "HOH"
+atom 1 OW O OW h 0 13.95 13.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 13.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 13.5 5.16 1 1 s
+endmol 145
+mol 146 "HOH"
+atom 1 OW O OW h 0 16.95 13.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 13.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 13.5 5.16 1 1 s
+endmol 146
+mol 147 "HOH"
+atom 1 OW O OW h 0 19.95 13.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 13.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 13.5 5.16 1 1 s
+endmol 147
+mol 148 "HOH"
+atom 1 OW O OW h 0 22.95 13.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 13.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 13.5 5.16 1 1 s
+endmol 148
+mol 149 "HOH"
+atom 1 OW O OW h 0 25.95 13.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 13.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 13.5 5.16 1 1 s
+endmol 149
+mol 150 "HOH"
+atom 1 OW O OW h 0 28.95 13.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 13.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 13.5 5.16 1 1 s
+endmol 150
+mol 151 "HOH"
+atom 1 OW O OW h 0 1.95 16.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 16.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 16.5 5.16 1 1 s
+endmol 151
+mol 152 "HOH"
+atom 1 OW O OW h 0 4.95 16.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 16.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 16.5 5.16 1 1 s
+endmol 152
+mol 153 "HOH"
+atom 1 OW O OW h 0 7.95 16.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 16.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 16.5 5.16 1 1 s
+endmol 153
+mol 154 "HOH"
+atom 1 OW O OW h 0 10.95 16.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 16.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 16.5 5.16 1 1 s
+endmol 154
+mol 155 "HOH"
+atom 1 OW O OW h 0 13.95 16.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 16.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 16.5 5.16 1 1 s
+endmol 155
+mol 156 "HOH"
+atom 1 OW O OW h 0 16.95 16.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 16.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 16.5 5.16 1 1 s
+endmol 156
+mol 157 "HOH"
+atom 1 OW O OW h 0 19.95 16.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 16.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 16.5 5.16 1 1 s
+endmol 157
+mol 158 "HOH"
+atom 1 OW O OW h 0 22.95 16.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 16.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 16.5 5.16 1 1 s
+endmol 158
+mol 159 "HOH"
+atom 1 OW O OW h 0 25.95 16.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 16.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 16.5 5.16 1 1 s
+endmol 159
+mol 160 "HOH"
+atom 1 OW O OW h 0 28.95 16.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 16.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 16.5 5.16 1 1 s
+endmol 160
+mol 161 "HOH"
+atom 1 OW O OW h 0 1.95 19.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 19.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 19.5 5.16 1 1 s
+endmol 161
+mol 162 "HOH"
+atom 1 OW O OW h 0 4.95 19.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 19.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 19.5 5.16 1 1 s
+endmol 162
+mol 163 "HOH"
+atom 1 OW O OW h 0 7.95 19.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 19.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 19.5 5.16 1 1 s
+endmol 163
+mol 164 "HOH"
+atom 1 OW O OW h 0 10.95 19.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 19.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 19.5 5.16 1 1 s
+endmol 164
+mol 165 "HOH"
+atom 1 OW O OW h 0 13.95 19.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 19.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 19.5 5.16 1 1 s
+endmol 165
+mol 166 "HOH"
+atom 1 OW O OW h 0 16.95 19.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 19.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 19.5 5.16 1 1 s
+endmol 166
+mol 167 "HOH"
+atom 1 OW O OW h 0 19.95 19.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 19.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 19.5 5.16 1 1 s
+endmol 167
+mol 168 "HOH"
+atom 1 OW O OW h 0 22.95 19.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 19.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 19.5 5.16 1 1 s
+endmol 168
+mol 169 "HOH"
+atom 1 OW O OW h 0 25.95 19.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 19.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 19.5 5.16 1 1 s
+endmol 169
+mol 170 "HOH"
+atom 1 OW O OW h 0 28.95 19.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 19.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 19.5 5.16 1 1 s
+endmol 170
+mol 171 "HOH"
+atom 1 OW O OW h 0 1.95 22.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 22.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 22.5 5.16 1 1 s
+endmol 171
+mol 172 "HOH"
+atom 1 OW O OW h 0 4.95 22.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 22.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 22.5 5.16 1 1 s
+endmol 172
+mol 173 "HOH"
+atom 1 OW O OW h 0 7.95 22.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 22.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 22.5 5.16 1 1 s
+endmol 173
+mol 174 "HOH"
+atom 1 OW O OW h 0 10.95 22.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 22.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 22.5 5.16 1 1 s
+endmol 174
+mol 175 "HOH"
+atom 1 OW O OW h 0 13.95 22.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 22.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 22.5 5.16 1 1 s
+endmol 175
+mol 176 "HOH"
+atom 1 OW O OW h 0 16.95 22.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 22.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 22.5 5.16 1 1 s
+endmol 176
+mol 177 "HOH"
+atom 1 OW O OW h 0 19.95 22.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 22.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 22.5 5.16 1 1 s
+endmol 177
+mol 178 "HOH"
+atom 1 OW O OW h 0 22.95 22.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 22.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 22.5 5.16 1 1 s
+endmol 178
+mol 179 "HOH"
+atom 1 OW O OW h 0 25.95 22.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 22.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 22.5 5.16 1 1 s
+endmol 179
+mol 180 "HOH"
+atom 1 OW O OW h 0 28.95 22.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 22.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 22.5 5.16 1 1 s
+endmol 180
+mol 181 "HOH"
+atom 1 OW O OW h 0 1.95 25.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 25.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 25.5 5.16 1 1 s
+endmol 181
+mol 182 "HOH"
+atom 1 OW O OW h 0 4.95 25.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 25.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 25.5 5.16 1 1 s
+endmol 182
+mol 183 "HOH"
+atom 1 OW O OW h 0 7.95 25.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 25.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 25.5 5.16 1 1 s
+endmol 183
+mol 184 "HOH"
+atom 1 OW O OW h 0 10.95 25.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 25.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 25.5 5.16 1 1 s
+endmol 184
+mol 185 "HOH"
+atom 1 OW O OW h 0 13.95 25.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 25.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 25.5 5.16 1 1 s
+endmol 185
+mol 186 "HOH"
+atom 1 OW O OW h 0 16.95 25.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 25.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 25.5 5.16 1 1 s
+endmol 186
+mol 187 "HOH"
+atom 1 OW O OW h 0 19.95 25.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 25.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 25.5 5.16 1 1 s
+endmol 187
+mol 188 "HOH"
+atom 1 OW O OW h 0 22.95 25.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 25.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 25.5 5.16 1 1 s
+endmol 188
+mol 189 "HOH"
+atom 1 OW O OW h 0 25.95 25.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 25.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 25.5 5.16 1 1 s
+endmol 189
+mol 190 "HOH"
+atom 1 OW O OW h 0 28.95 25.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 25.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 25.5 5.16 1 1 s
+endmol 190
+mol 191 "HOH"
+atom 1 OW O OW h 0 1.95 28.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 28.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 28.5 5.16 1 1 s
+endmol 191
+mol 192 "HOH"
+atom 1 OW O OW h 0 4.95 28.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 28.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 28.5 5.16 1 1 s
+endmol 192
+mol 193 "HOH"
+atom 1 OW O OW h 0 7.95 28.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 28.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 28.5 5.16 1 1 s
+endmol 193
+mol 194 "HOH"
+atom 1 OW O OW h 0 10.95 28.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 28.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 28.5 5.16 1 1 s
+endmol 194
+mol 195 "HOH"
+atom 1 OW O OW h 0 13.95 28.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 28.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 28.5 5.16 1 1 s
+endmol 195
+mol 196 "HOH"
+atom 1 OW O OW h 0 16.95 28.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 28.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 28.5 5.16 1 1 s
+endmol 196
+mol 197 "HOH"
+atom 1 OW O OW h 0 19.95 28.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 28.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 28.5 5.16 1 1 s
+endmol 197
+mol 198 "HOH"
+atom 1 OW O OW h 0 22.95 28.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 28.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 28.5 5.16 1 1 s
+endmol 198
+mol 199 "HOH"
+atom 1 OW O OW h 0 25.95 28.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 28.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 28.5 5.16 1 1 s
+endmol 199
+mol 200 "HOH"
+atom 1 OW O OW h 0 28.95 28.5 4.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 28.5 3.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 28.5 5.16 1 1 s
+endmol 200
+mol 201 "HOH"
+atom 1 OW O OW h 0 1.95 1.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 1.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 1.5 8.16 1 1 s
+endmol 201
+mol 202 "HOH"
+atom 1 OW O OW h 0 4.95 1.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 1.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 1.5 8.16 1 1 s
+endmol 202
+mol 203 "HOH"
+atom 1 OW O OW h 0 7.95 1.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 1.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 1.5 8.16 1 1 s
+endmol 203
+mol 204 "HOH"
+atom 1 OW O OW h 0 10.95 1.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 1.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 1.5 8.16 1 1 s
+endmol 204
+mol 205 "HOH"
+atom 1 OW O OW h 0 13.95 1.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 1.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 1.5 8.16 1 1 s
+endmol 205
+mol 206 "HOH"
+atom 1 OW O OW h 0 16.95 1.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 1.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 1.5 8.16 1 1 s
+endmol 206
+mol 207 "HOH"
+atom 1 OW O OW h 0 19.95 1.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 1.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 1.5 8.16 1 1 s
+endmol 207
+mol 208 "HOH"
+atom 1 OW O OW h 0 22.95 1.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 1.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 1.5 8.16 1 1 s
+endmol 208
+mol 209 "HOH"
+atom 1 OW O OW h 0 25.95 1.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 1.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 1.5 8.16 1 1 s
+endmol 209
+mol 210 "HOH"
+atom 1 OW O OW h 0 28.95 1.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 1.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 1.5 8.16 1 1 s
+endmol 210
+mol 211 "HOH"
+atom 1 OW O OW h 0 1.95 4.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 4.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 4.5 8.16 1 1 s
+endmol 211
+mol 212 "HOH"
+atom 1 OW O OW h 0 4.95 4.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 4.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 4.5 8.16 1 1 s
+endmol 212
+mol 213 "HOH"
+atom 1 OW O OW h 0 7.95 4.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 4.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 4.5 8.16 1 1 s
+endmol 213
+mol 214 "HOH"
+atom 1 OW O OW h 0 10.95 4.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 4.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 4.5 8.16 1 1 s
+endmol 214
+mol 215 "HOH"
+atom 1 OW O OW h 0 13.95 4.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 4.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 4.5 8.16 1 1 s
+endmol 215
+mol 216 "HOH"
+atom 1 OW O OW h 0 16.95 4.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 4.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 4.5 8.16 1 1 s
+endmol 216
+mol 217 "HOH"
+atom 1 OW O OW h 0 19.95 4.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 4.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 4.5 8.16 1 1 s
+endmol 217
+mol 218 "HOH"
+atom 1 OW O OW h 0 22.95 4.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 4.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 4.5 8.16 1 1 s
+endmol 218
+mol 219 "HOH"
+atom 1 OW O OW h 0 25.95 4.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 4.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 4.5 8.16 1 1 s
+endmol 219
+mol 220 "HOH"
+atom 1 OW O OW h 0 28.95 4.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 4.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 4.5 8.16 1 1 s
+endmol 220
+mol 221 "HOH"
+atom 1 OW O OW h 0 1.95 7.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 7.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 7.5 8.16 1 1 s
+endmol 221
+mol 222 "HOH"
+atom 1 OW O OW h 0 4.95 7.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 7.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 7.5 8.16 1 1 s
+endmol 222
+mol 223 "HOH"
+atom 1 OW O OW h 0 7.95 7.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 7.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 7.5 8.16 1 1 s
+endmol 223
+mol 224 "HOH"
+atom 1 OW O OW h 0 10.95 7.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 7.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 7.5 8.16 1 1 s
+endmol 224
+mol 225 "HOH"
+atom 1 OW O OW h 0 13.95 7.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 7.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 7.5 8.16 1 1 s
+endmol 225
+mol 226 "HOH"
+atom 1 OW O OW h 0 16.95 7.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 7.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 7.5 8.16 1 1 s
+endmol 226
+mol 227 "HOH"
+atom 1 OW O OW h 0 19.95 7.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 7.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 7.5 8.16 1 1 s
+endmol 227
+mol 228 "HOH"
+atom 1 OW O OW h 0 22.95 7.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 7.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 7.5 8.16 1 1 s
+endmol 228
+mol 229 "HOH"
+atom 1 OW O OW h 0 25.95 7.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 7.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 7.5 8.16 1 1 s
+endmol 229
+mol 230 "HOH"
+atom 1 OW O OW h 0 28.95 7.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 7.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 7.5 8.16 1 1 s
+endmol 230
+mol 231 "HOH"
+atom 1 OW O OW h 0 1.95 10.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 10.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 10.5 8.16 1 1 s
+endmol 231
+mol 232 "HOH"
+atom 1 OW O OW h 0 4.95 10.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 10.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 10.5 8.16 1 1 s
+endmol 232
+mol 233 "HOH"
+atom 1 OW O OW h 0 7.95 10.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 10.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 10.5 8.16 1 1 s
+endmol 233
+mol 234 "HOH"
+atom 1 OW O OW h 0 10.95 10.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 10.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 10.5 8.16 1 1 s
+endmol 234
+mol 235 "HOH"
+atom 1 OW O OW h 0 13.95 10.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 10.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 10.5 8.16 1 1 s
+endmol 235
+mol 236 "HOH"
+atom 1 OW O OW h 0 16.95 10.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 10.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 10.5 8.16 1 1 s
+endmol 236
+mol 237 "HOH"
+atom 1 OW O OW h 0 19.95 10.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 10.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 10.5 8.16 1 1 s
+endmol 237
+mol 238 "HOH"
+atom 1 OW O OW h 0 22.95 10.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 10.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 10.5 8.16 1 1 s
+endmol 238
+mol 239 "HOH"
+atom 1 OW O OW h 0 25.95 10.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 10.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 10.5 8.16 1 1 s
+endmol 239
+mol 240 "HOH"
+atom 1 OW O OW h 0 28.95 10.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 10.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 10.5 8.16 1 1 s
+endmol 240
+mol 241 "HOH"
+atom 1 OW O OW h 0 1.95 13.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 13.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 13.5 8.16 1 1 s
+endmol 241
+mol 242 "HOH"
+atom 1 OW O OW h 0 4.95 13.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 13.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 13.5 8.16 1 1 s
+endmol 242
+mol 243 "HOH"
+atom 1 OW O OW h 0 7.95 13.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 13.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 13.5 8.16 1 1 s
+endmol 243
+mol 244 "HOH"
+atom 1 OW O OW h 0 10.95 13.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 13.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 13.5 8.16 1 1 s
+endmol 244
+mol 245 "HOH"
+atom 1 OW O OW h 0 13.95 13.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 13.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 13.5 8.16 1 1 s
+endmol 245
+mol 246 "HOH"
+atom 1 OW O OW h 0 16.95 13.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 13.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 13.5 8.16 1 1 s
+endmol 246
+mol 247 "HOH"
+atom 1 OW O OW h 0 19.95 13.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 13.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 13.5 8.16 1 1 s
+endmol 247
+mol 248 "HOH"
+atom 1 OW O OW h 0 22.95 13.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 13.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 13.5 8.16 1 1 s
+endmol 248
+mol 249 "HOH"
+atom 1 OW O OW h 0 25.95 13.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 13.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 13.5 8.16 1 1 s
+endmol 249
+mol 250 "HOH"
+atom 1 OW O OW h 0 28.95 13.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 13.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 13.5 8.16 1 1 s
+endmol 250
+mol 251 "HOH"
+atom 1 OW O OW h 0 1.95 16.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 16.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 16.5 8.16 1 1 s
+endmol 251
+mol 252 "HOH"
+atom 1 OW O OW h 0 4.95 16.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 16.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 16.5 8.16 1 1 s
+endmol 252
+mol 253 "HOH"
+atom 1 OW O OW h 0 7.95 16.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 16.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 16.5 8.16 1 1 s
+endmol 253
+mol 254 "HOH"
+atom 1 OW O OW h 0 10.95 16.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 16.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 16.5 8.16 1 1 s
+endmol 254
+mol 255 "HOH"
+atom 1 OW O OW h 0 13.95 16.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 16.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 16.5 8.16 1 1 s
+endmol 255
+mol 256 "HOH"
+atom 1 OW O OW h 0 16.95 16.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 16.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 16.5 8.16 1 1 s
+endmol 256
+mol 257 "HOH"
+atom 1 OW O OW h 0 19.95 16.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 16.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 16.5 8.16 1 1 s
+endmol 257
+mol 258 "HOH"
+atom 1 OW O OW h 0 22.95 16.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 16.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 16.5 8.16 1 1 s
+endmol 258
+mol 259 "HOH"
+atom 1 OW O OW h 0 25.95 16.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 16.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 16.5 8.16 1 1 s
+endmol 259
+mol 260 "HOH"
+atom 1 OW O OW h 0 28.95 16.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 16.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 16.5 8.16 1 1 s
+endmol 260
+mol 261 "HOH"
+atom 1 OW O OW h 0 1.95 19.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 19.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 19.5 8.16 1 1 s
+endmol 261
+mol 262 "HOH"
+atom 1 OW O OW h 0 4.95 19.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 19.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 19.5 8.16 1 1 s
+endmol 262
+mol 263 "HOH"
+atom 1 OW O OW h 0 7.95 19.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 19.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 19.5 8.16 1 1 s
+endmol 263
+mol 264 "HOH"
+atom 1 OW O OW h 0 10.95 19.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 19.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 19.5 8.16 1 1 s
+endmol 264
+mol 265 "HOH"
+atom 1 OW O OW h 0 13.95 19.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 19.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 19.5 8.16 1 1 s
+endmol 265
+mol 266 "HOH"
+atom 1 OW O OW h 0 16.95 19.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 19.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 19.5 8.16 1 1 s
+endmol 266
+mol 267 "HOH"
+atom 1 OW O OW h 0 19.95 19.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 19.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 19.5 8.16 1 1 s
+endmol 267
+mol 268 "HOH"
+atom 1 OW O OW h 0 22.95 19.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 19.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 19.5 8.16 1 1 s
+endmol 268
+mol 269 "HOH"
+atom 1 OW O OW h 0 25.95 19.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 19.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 19.5 8.16 1 1 s
+endmol 269
+mol 270 "HOH"
+atom 1 OW O OW h 0 28.95 19.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 19.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 19.5 8.16 1 1 s
+endmol 270
+mol 271 "HOH"
+atom 1 OW O OW h 0 1.95 22.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 22.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 22.5 8.16 1 1 s
+endmol 271
+mol 272 "HOH"
+atom 1 OW O OW h 0 4.95 22.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 22.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 22.5 8.16 1 1 s
+endmol 272
+mol 273 "HOH"
+atom 1 OW O OW h 0 7.95 22.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 22.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 22.5 8.16 1 1 s
+endmol 273
+mol 274 "HOH"
+atom 1 OW O OW h 0 10.95 22.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 22.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 22.5 8.16 1 1 s
+endmol 274
+mol 275 "HOH"
+atom 1 OW O OW h 0 13.95 22.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 22.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 22.5 8.16 1 1 s
+endmol 275
+mol 276 "HOH"
+atom 1 OW O OW h 0 16.95 22.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 22.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 22.5 8.16 1 1 s
+endmol 276
+mol 277 "HOH"
+atom 1 OW O OW h 0 19.95 22.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 22.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 22.5 8.16 1 1 s
+endmol 277
+mol 278 "HOH"
+atom 1 OW O OW h 0 22.95 22.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 22.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 22.5 8.16 1 1 s
+endmol 278
+mol 279 "HOH"
+atom 1 OW O OW h 0 25.95 22.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 22.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 22.5 8.16 1 1 s
+endmol 279
+mol 280 "HOH"
+atom 1 OW O OW h 0 28.95 22.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 22.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 22.5 8.16 1 1 s
+endmol 280
+mol 281 "HOH"
+atom 1 OW O OW h 0 1.95 25.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 25.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 25.5 8.16 1 1 s
+endmol 281
+mol 282 "HOH"
+atom 1 OW O OW h 0 4.95 25.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 25.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 25.5 8.16 1 1 s
+endmol 282
+mol 283 "HOH"
+atom 1 OW O OW h 0 7.95 25.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 25.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 25.5 8.16 1 1 s
+endmol 283
+mol 284 "HOH"
+atom 1 OW O OW h 0 10.95 25.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 25.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 25.5 8.16 1 1 s
+endmol 284
+mol 285 "HOH"
+atom 1 OW O OW h 0 13.95 25.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 25.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 25.5 8.16 1 1 s
+endmol 285
+mol 286 "HOH"
+atom 1 OW O OW h 0 16.95 25.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 25.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 25.5 8.16 1 1 s
+endmol 286
+mol 287 "HOH"
+atom 1 OW O OW h 0 19.95 25.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 25.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 25.5 8.16 1 1 s
+endmol 287
+mol 288 "HOH"
+atom 1 OW O OW h 0 22.95 25.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 25.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 25.5 8.16 1 1 s
+endmol 288
+mol 289 "HOH"
+atom 1 OW O OW h 0 25.95 25.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 25.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 25.5 8.16 1 1 s
+endmol 289
+mol 290 "HOH"
+atom 1 OW O OW h 0 28.95 25.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 25.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 25.5 8.16 1 1 s
+endmol 290
+mol 291 "HOH"
+atom 1 OW O OW h 0 1.95 28.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 28.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 28.5 8.16 1 1 s
+endmol 291
+mol 292 "HOH"
+atom 1 OW O OW h 0 4.95 28.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 28.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 28.5 8.16 1 1 s
+endmol 292
+mol 293 "HOH"
+atom 1 OW O OW h 0 7.95 28.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 28.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 28.5 8.16 1 1 s
+endmol 293
+mol 294 "HOH"
+atom 1 OW O OW h 0 10.95 28.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 28.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 28.5 8.16 1 1 s
+endmol 294
+mol 295 "HOH"
+atom 1 OW O OW h 0 13.95 28.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 28.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 28.5 8.16 1 1 s
+endmol 295
+mol 296 "HOH"
+atom 1 OW O OW h 0 16.95 28.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 28.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 28.5 8.16 1 1 s
+endmol 296
+mol 297 "HOH"
+atom 1 OW O OW h 0 19.95 28.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 28.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 28.5 8.16 1 1 s
+endmol 297
+mol 298 "HOH"
+atom 1 OW O OW h 0 22.95 28.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 28.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 28.5 8.16 1 1 s
+endmol 298
+mol 299 "HOH"
+atom 1 OW O OW h 0 25.95 28.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 28.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 28.5 8.16 1 1 s
+endmol 299
+mol 300 "HOH"
+atom 1 OW O OW h 0 28.95 28.5 7.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 28.5 6.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 28.5 8.16 1 1 s
+endmol 300
+mol 301 "HOH"
+atom 1 OW O OW h 0 1.95 1.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 1.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 1.5 11.16 1 1 s
+endmol 301
+mol 302 "HOH"
+atom 1 OW O OW h 0 4.95 1.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 1.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 1.5 11.16 1 1 s
+endmol 302
+mol 303 "HOH"
+atom 1 OW O OW h 0 7.95 1.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 1.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 1.5 11.16 1 1 s
+endmol 303
+mol 304 "HOH"
+atom 1 OW O OW h 0 10.95 1.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 1.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 1.5 11.16 1 1 s
+endmol 304
+mol 305 "HOH"
+atom 1 OW O OW h 0 13.95 1.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 1.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 1.5 11.16 1 1 s
+endmol 305
+mol 306 "HOH"
+atom 1 OW O OW h 0 16.95 1.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 1.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 1.5 11.16 1 1 s
+endmol 306
+mol 307 "HOH"
+atom 1 OW O OW h 0 19.95 1.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 1.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 1.5 11.16 1 1 s
+endmol 307
+mol 308 "HOH"
+atom 1 OW O OW h 0 22.95 1.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 1.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 1.5 11.16 1 1 s
+endmol 308
+mol 309 "HOH"
+atom 1 OW O OW h 0 25.95 1.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 1.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 1.5 11.16 1 1 s
+endmol 309
+mol 310 "HOH"
+atom 1 OW O OW h 0 28.95 1.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 1.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 1.5 11.16 1 1 s
+endmol 310
+mol 311 "HOH"
+atom 1 OW O OW h 0 1.95 4.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 4.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 4.5 11.16 1 1 s
+endmol 311
+mol 312 "HOH"
+atom 1 OW O OW h 0 4.95 4.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 4.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 4.5 11.16 1 1 s
+endmol 312
+mol 313 "HOH"
+atom 1 OW O OW h 0 7.95 4.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 4.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 4.5 11.16 1 1 s
+endmol 313
+mol 314 "HOH"
+atom 1 OW O OW h 0 10.95 4.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 4.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 4.5 11.16 1 1 s
+endmol 314
+mol 315 "HOH"
+atom 1 OW O OW h 0 13.95 4.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 4.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 4.5 11.16 1 1 s
+endmol 315
+mol 316 "HOH"
+atom 1 OW O OW h 0 16.95 4.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 4.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 4.5 11.16 1 1 s
+endmol 316
+mol 317 "HOH"
+atom 1 OW O OW h 0 19.95 4.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 4.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 4.5 11.16 1 1 s
+endmol 317
+mol 318 "HOH"
+atom 1 OW O OW h 0 22.95 4.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 4.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 4.5 11.16 1 1 s
+endmol 318
+mol 319 "HOH"
+atom 1 OW O OW h 0 25.95 4.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 4.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 4.5 11.16 1 1 s
+endmol 319
+mol 320 "HOH"
+atom 1 OW O OW h 0 28.95 4.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 4.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 4.5 11.16 1 1 s
+endmol 320
+mol 321 "HOH"
+atom 1 OW O OW h 0 1.95 7.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 7.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 7.5 11.16 1 1 s
+endmol 321
+mol 322 "HOH"
+atom 1 OW O OW h 0 4.95 7.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 7.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 7.5 11.16 1 1 s
+endmol 322
+mol 323 "HOH"
+atom 1 OW O OW h 0 7.95 7.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 7.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 7.5 11.16 1 1 s
+endmol 323
+mol 324 "HOH"
+atom 1 OW O OW h 0 10.95 7.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 7.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 7.5 11.16 1 1 s
+endmol 324
+mol 325 "HOH"
+atom 1 OW O OW h 0 13.95 7.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 7.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 7.5 11.16 1 1 s
+endmol 325
+mol 326 "HOH"
+atom 1 OW O OW h 0 16.95 7.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 7.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 7.5 11.16 1 1 s
+endmol 326
+mol 327 "HOH"
+atom 1 OW O OW h 0 19.95 7.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 7.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 7.5 11.16 1 1 s
+endmol 327
+mol 328 "HOH"
+atom 1 OW O OW h 0 22.95 7.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 7.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 7.5 11.16 1 1 s
+endmol 328
+mol 329 "HOH"
+atom 1 OW O OW h 0 25.95 7.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 7.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 7.5 11.16 1 1 s
+endmol 329
+mol 330 "HOH"
+atom 1 OW O OW h 0 28.95 7.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 7.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 7.5 11.16 1 1 s
+endmol 330
+mol 331 "HOH"
+atom 1 OW O OW h 0 1.95 10.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 10.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 10.5 11.16 1 1 s
+endmol 331
+mol 332 "HOH"
+atom 1 OW O OW h 0 4.95 10.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 10.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 10.5 11.16 1 1 s
+endmol 332
+mol 333 "HOH"
+atom 1 OW O OW h 0 7.95 10.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 10.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 10.5 11.16 1 1 s
+endmol 333
+mol 334 "HOH"
+atom 1 OW O OW h 0 10.95 10.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 10.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 10.5 11.16 1 1 s
+endmol 334
+mol 335 "HOH"
+atom 1 OW O OW h 0 13.95 10.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 10.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 10.5 11.16 1 1 s
+endmol 335
+mol 336 "HOH"
+atom 1 OW O OW h 0 16.95 10.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 10.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 10.5 11.16 1 1 s
+endmol 336
+mol 337 "HOH"
+atom 1 OW O OW h 0 19.95 10.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 10.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 10.5 11.16 1 1 s
+endmol 337
+mol 338 "HOH"
+atom 1 OW O OW h 0 22.95 10.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 10.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 10.5 11.16 1 1 s
+endmol 338
+mol 339 "HOH"
+atom 1 OW O OW h 0 25.95 10.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 10.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 10.5 11.16 1 1 s
+endmol 339
+mol 340 "HOH"
+atom 1 OW O OW h 0 28.95 10.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 10.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 10.5 11.16 1 1 s
+endmol 340
+mol 341 "HOH"
+atom 1 OW O OW h 0 1.95 13.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 13.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 13.5 11.16 1 1 s
+endmol 341
+mol 342 "HOH"
+atom 1 OW O OW h 0 4.95 13.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 13.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 13.5 11.16 1 1 s
+endmol 342
+mol 343 "HOH"
+atom 1 OW O OW h 0 7.95 13.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 13.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 13.5 11.16 1 1 s
+endmol 343
+mol 344 "HOH"
+atom 1 OW O OW h 0 10.95 13.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 13.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 13.5 11.16 1 1 s
+endmol 344
+mol 345 "HOH"
+atom 1 OW O OW h 0 13.95 13.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 13.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 13.5 11.16 1 1 s
+endmol 345
+mol 346 "HOH"
+atom 1 OW O OW h 0 16.95 13.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 13.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 13.5 11.16 1 1 s
+endmol 346
+mol 347 "HOH"
+atom 1 OW O OW h 0 19.95 13.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 13.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 13.5 11.16 1 1 s
+endmol 347
+mol 348 "HOH"
+atom 1 OW O OW h 0 22.95 13.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 13.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 13.5 11.16 1 1 s
+endmol 348
+mol 349 "HOH"
+atom 1 OW O OW h 0 25.95 13.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 13.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 13.5 11.16 1 1 s
+endmol 349
+mol 350 "HOH"
+atom 1 OW O OW h 0 28.95 13.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 13.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 13.5 11.16 1 1 s
+endmol 350
+mol 351 "HOH"
+atom 1 OW O OW h 0 1.95 16.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 16.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 16.5 11.16 1 1 s
+endmol 351
+mol 352 "HOH"
+atom 1 OW O OW h 0 4.95 16.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 16.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 16.5 11.16 1 1 s
+endmol 352
+mol 353 "HOH"
+atom 1 OW O OW h 0 7.95 16.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 16.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 16.5 11.16 1 1 s
+endmol 353
+mol 354 "HOH"
+atom 1 OW O OW h 0 10.95 16.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 16.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 16.5 11.16 1 1 s
+endmol 354
+mol 355 "HOH"
+atom 1 OW O OW h 0 13.95 16.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 16.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 16.5 11.16 1 1 s
+endmol 355
+mol 356 "HOH"
+atom 1 OW O OW h 0 16.95 16.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 16.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 16.5 11.16 1 1 s
+endmol 356
+mol 357 "HOH"
+atom 1 OW O OW h 0 19.95 16.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 16.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 16.5 11.16 1 1 s
+endmol 357
+mol 358 "HOH"
+atom 1 OW O OW h 0 22.95 16.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 16.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 16.5 11.16 1 1 s
+endmol 358
+mol 359 "HOH"
+atom 1 OW O OW h 0 25.95 16.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 16.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 16.5 11.16 1 1 s
+endmol 359
+mol 360 "HOH"
+atom 1 OW O OW h 0 28.95 16.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 16.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 16.5 11.16 1 1 s
+endmol 360
+mol 361 "HOH"
+atom 1 OW O OW h 0 1.95 19.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 19.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 19.5 11.16 1 1 s
+endmol 361
+mol 362 "HOH"
+atom 1 OW O OW h 0 4.95 19.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 19.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 19.5 11.16 1 1 s
+endmol 362
+mol 363 "HOH"
+atom 1 OW O OW h 0 7.95 19.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 19.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 19.5 11.16 1 1 s
+endmol 363
+mol 364 "HOH"
+atom 1 OW O OW h 0 10.95 19.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 19.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 19.5 11.16 1 1 s
+endmol 364
+mol 365 "HOH"
+atom 1 OW O OW h 0 13.95 19.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 19.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 19.5 11.16 1 1 s
+endmol 365
+mol 366 "HOH"
+atom 1 OW O OW h 0 16.95 19.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 19.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 19.5 11.16 1 1 s
+endmol 366
+mol 367 "HOH"
+atom 1 OW O OW h 0 19.95 19.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 19.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 19.5 11.16 1 1 s
+endmol 367
+mol 368 "HOH"
+atom 1 OW O OW h 0 22.95 19.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 19.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 19.5 11.16 1 1 s
+endmol 368
+mol 369 "HOH"
+atom 1 OW O OW h 0 25.95 19.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 19.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 19.5 11.16 1 1 s
+endmol 369
+mol 370 "HOH"
+atom 1 OW O OW h 0 28.95 19.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 19.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 19.5 11.16 1 1 s
+endmol 370
+mol 371 "HOH"
+atom 1 OW O OW h 0 1.95 22.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 22.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 22.5 11.16 1 1 s
+endmol 371
+mol 372 "HOH"
+atom 1 OW O OW h 0 4.95 22.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 22.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 22.5 11.16 1 1 s
+endmol 372
+mol 373 "HOH"
+atom 1 OW O OW h 0 7.95 22.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 22.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 22.5 11.16 1 1 s
+endmol 373
+mol 374 "HOH"
+atom 1 OW O OW h 0 10.95 22.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 22.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 22.5 11.16 1 1 s
+endmol 374
+mol 375 "HOH"
+atom 1 OW O OW h 0 13.95 22.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 22.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 22.5 11.16 1 1 s
+endmol 375
+mol 376 "HOH"
+atom 1 OW O OW h 0 16.95 22.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 22.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 22.5 11.16 1 1 s
+endmol 376
+mol 377 "HOH"
+atom 1 OW O OW h 0 19.95 22.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 22.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 22.5 11.16 1 1 s
+endmol 377
+mol 378 "HOH"
+atom 1 OW O OW h 0 22.95 22.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 22.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 22.5 11.16 1 1 s
+endmol 378
+mol 379 "HOH"
+atom 1 OW O OW h 0 25.95 22.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 22.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 22.5 11.16 1 1 s
+endmol 379
+mol 380 "HOH"
+atom 1 OW O OW h 0 28.95 22.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 22.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 22.5 11.16 1 1 s
+endmol 380
+mol 381 "HOH"
+atom 1 OW O OW h 0 1.95 25.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 25.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 25.5 11.16 1 1 s
+endmol 381
+mol 382 "HOH"
+atom 1 OW O OW h 0 4.95 25.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 25.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 25.5 11.16 1 1 s
+endmol 382
+mol 383 "HOH"
+atom 1 OW O OW h 0 7.95 25.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 25.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 25.5 11.16 1 1 s
+endmol 383
+mol 384 "HOH"
+atom 1 OW O OW h 0 10.95 25.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 25.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 25.5 11.16 1 1 s
+endmol 384
+mol 385 "HOH"
+atom 1 OW O OW h 0 13.95 25.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 25.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 25.5 11.16 1 1 s
+endmol 385
+mol 386 "HOH"
+atom 1 OW O OW h 0 16.95 25.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 25.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 25.5 11.16 1 1 s
+endmol 386
+mol 387 "HOH"
+atom 1 OW O OW h 0 19.95 25.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 25.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 25.5 11.16 1 1 s
+endmol 387
+mol 388 "HOH"
+atom 1 OW O OW h 0 22.95 25.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 25.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 25.5 11.16 1 1 s
+endmol 388
+mol 389 "HOH"
+atom 1 OW O OW h 0 25.95 25.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 25.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 25.5 11.16 1 1 s
+endmol 389
+mol 390 "HOH"
+atom 1 OW O OW h 0 28.95 25.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 25.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 25.5 11.16 1 1 s
+endmol 390
+mol 391 "HOH"
+atom 1 OW O OW h 0 1.95 28.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 28.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 28.5 11.16 1 1 s
+endmol 391
+mol 392 "HOH"
+atom 1 OW O OW h 0 4.95 28.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 28.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 28.5 11.16 1 1 s
+endmol 392
+mol 393 "HOH"
+atom 1 OW O OW h 0 7.95 28.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 28.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 28.5 11.16 1 1 s
+endmol 393
+mol 394 "HOH"
+atom 1 OW O OW h 0 10.95 28.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 28.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 28.5 11.16 1 1 s
+endmol 394
+mol 395 "HOH"
+atom 1 OW O OW h 0 13.95 28.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 28.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 28.5 11.16 1 1 s
+endmol 395
+mol 396 "HOH"
+atom 1 OW O OW h 0 16.95 28.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 28.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 28.5 11.16 1 1 s
+endmol 396
+mol 397 "HOH"
+atom 1 OW O OW h 0 19.95 28.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 28.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 28.5 11.16 1 1 s
+endmol 397
+mol 398 "HOH"
+atom 1 OW O OW h 0 22.95 28.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 28.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 28.5 11.16 1 1 s
+endmol 398
+mol 399 "HOH"
+atom 1 OW O OW h 0 25.95 28.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 28.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 28.5 11.16 1 1 s
+endmol 399
+mol 400 "HOH"
+atom 1 OW O OW h 0 28.95 28.5 10.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 28.5 9.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 28.5 11.16 1 1 s
+endmol 400
+mol 401 "HOH"
+atom 1 OW O OW h 0 1.95 1.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 1.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 1.5 14.16 1 1 s
+endmol 401
+mol 402 "HOH"
+atom 1 OW O OW h 0 4.95 1.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 1.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 1.5 14.16 1 1 s
+endmol 402
+mol 403 "HOH"
+atom 1 OW O OW h 0 7.95 1.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 1.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 1.5 14.16 1 1 s
+endmol 403
+mol 404 "HOH"
+atom 1 OW O OW h 0 10.95 1.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 1.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 1.5 14.16 1 1 s
+endmol 404
+mol 405 "HOH"
+atom 1 OW O OW h 0 13.95 1.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 1.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 1.5 14.16 1 1 s
+endmol 405
+mol 406 "HOH"
+atom 1 OW O OW h 0 16.95 1.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 1.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 1.5 14.16 1 1 s
+endmol 406
+mol 407 "HOH"
+atom 1 OW O OW h 0 19.95 1.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 1.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 1.5 14.16 1 1 s
+endmol 407
+mol 408 "HOH"
+atom 1 OW O OW h 0 22.95 1.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 1.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 1.5 14.16 1 1 s
+endmol 408
+mol 409 "HOH"
+atom 1 OW O OW h 0 25.95 1.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 1.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 1.5 14.16 1 1 s
+endmol 409
+mol 410 "HOH"
+atom 1 OW O OW h 0 28.95 1.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 1.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 1.5 14.16 1 1 s
+endmol 410
+mol 411 "HOH"
+atom 1 OW O OW h 0 1.95 4.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 4.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 4.5 14.16 1 1 s
+endmol 411
+mol 412 "HOH"
+atom 1 OW O OW h 0 4.95 4.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 4.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 4.5 14.16 1 1 s
+endmol 412
+mol 413 "HOH"
+atom 1 OW O OW h 0 7.95 4.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 4.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 4.5 14.16 1 1 s
+endmol 413
+mol 414 "HOH"
+atom 1 OW O OW h 0 10.95 4.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 4.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 4.5 14.16 1 1 s
+endmol 414
+mol 415 "HOH"
+atom 1 OW O OW h 0 13.95 4.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 4.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 4.5 14.16 1 1 s
+endmol 415
+mol 416 "HOH"
+atom 1 OW O OW h 0 16.95 4.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 4.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 4.5 14.16 1 1 s
+endmol 416
+mol 417 "HOH"
+atom 1 OW O OW h 0 19.95 4.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 4.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 4.5 14.16 1 1 s
+endmol 417
+mol 418 "HOH"
+atom 1 OW O OW h 0 22.95 4.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 4.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 4.5 14.16 1 1 s
+endmol 418
+mol 419 "HOH"
+atom 1 OW O OW h 0 25.95 4.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 4.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 4.5 14.16 1 1 s
+endmol 419
+mol 420 "HOH"
+atom 1 OW O OW h 0 28.95 4.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 4.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 4.5 14.16 1 1 s
+endmol 420
+mol 421 "HOH"
+atom 1 OW O OW h 0 1.95 7.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 7.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 7.5 14.16 1 1 s
+endmol 421
+mol 422 "HOH"
+atom 1 OW O OW h 0 4.95 7.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 7.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 7.5 14.16 1 1 s
+endmol 422
+mol 423 "HOH"
+atom 1 OW O OW h 0 7.95 7.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 7.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 7.5 14.16 1 1 s
+endmol 423
+mol 424 "HOH"
+atom 1 OW O OW h 0 10.95 7.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 7.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 7.5 14.16 1 1 s
+endmol 424
+mol 425 "HOH"
+atom 1 OW O OW h 0 13.95 7.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 7.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 7.5 14.16 1 1 s
+endmol 425
+mol 426 "HOH"
+atom 1 OW O OW h 0 16.95 7.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 7.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 7.5 14.16 1 1 s
+endmol 426
+mol 427 "HOH"
+atom 1 OW O OW h 0 19.95 7.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 7.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 7.5 14.16 1 1 s
+endmol 427
+mol 428 "HOH"
+atom 1 OW O OW h 0 22.95 7.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 7.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 7.5 14.16 1 1 s
+endmol 428
+mol 429 "HOH"
+atom 1 OW O OW h 0 25.95 7.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 7.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 7.5 14.16 1 1 s
+endmol 429
+mol 430 "HOH"
+atom 1 OW O OW h 0 28.95 7.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 7.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 7.5 14.16 1 1 s
+endmol 430
+mol 431 "HOH"
+atom 1 OW O OW h 0 1.95 10.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 10.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 10.5 14.16 1 1 s
+endmol 431
+mol 432 "HOH"
+atom 1 OW O OW h 0 4.95 10.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 10.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 10.5 14.16 1 1 s
+endmol 432
+mol 433 "HOH"
+atom 1 OW O OW h 0 7.95 10.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 10.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 10.5 14.16 1 1 s
+endmol 433
+mol 434 "HOH"
+atom 1 OW O OW h 0 10.95 10.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 10.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 10.5 14.16 1 1 s
+endmol 434
+mol 435 "HOH"
+atom 1 OW O OW h 0 13.95 10.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 10.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 10.5 14.16 1 1 s
+endmol 435
+mol 436 "HOH"
+atom 1 OW O OW h 0 16.95 10.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 10.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 10.5 14.16 1 1 s
+endmol 436
+mol 437 "HOH"
+atom 1 OW O OW h 0 19.95 10.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 10.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 10.5 14.16 1 1 s
+endmol 437
+mol 438 "HOH"
+atom 1 OW O OW h 0 22.95 10.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 10.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 10.5 14.16 1 1 s
+endmol 438
+mol 439 "HOH"
+atom 1 OW O OW h 0 25.95 10.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 10.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 10.5 14.16 1 1 s
+endmol 439
+mol 440 "HOH"
+atom 1 OW O OW h 0 28.95 10.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 10.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 10.5 14.16 1 1 s
+endmol 440
+mol 441 "HOH"
+atom 1 OW O OW h 0 1.95 13.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 13.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 13.5 14.16 1 1 s
+endmol 441
+mol 442 "HOH"
+atom 1 OW O OW h 0 4.95 13.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 13.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 13.5 14.16 1 1 s
+endmol 442
+mol 443 "HOH"
+atom 1 OW O OW h 0 7.95 13.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 13.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 13.5 14.16 1 1 s
+endmol 443
+mol 444 "HOH"
+atom 1 OW O OW h 0 10.95 13.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 13.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 13.5 14.16 1 1 s
+endmol 444
+mol 445 "HOH"
+atom 1 OW O OW h 0 13.95 13.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 13.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 13.5 14.16 1 1 s
+endmol 445
+mol 446 "HOH"
+atom 1 OW O OW h 0 16.95 13.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 13.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 13.5 14.16 1 1 s
+endmol 446
+mol 447 "HOH"
+atom 1 OW O OW h 0 19.95 13.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 13.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 13.5 14.16 1 1 s
+endmol 447
+mol 448 "HOH"
+atom 1 OW O OW h 0 22.95 13.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 13.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 13.5 14.16 1 1 s
+endmol 448
+mol 449 "HOH"
+atom 1 OW O OW h 0 25.95 13.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 13.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 13.5 14.16 1 1 s
+endmol 449
+mol 450 "HOH"
+atom 1 OW O OW h 0 28.95 13.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 13.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 13.5 14.16 1 1 s
+endmol 450
+mol 451 "HOH"
+atom 1 OW O OW h 0 1.95 16.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 16.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 16.5 14.16 1 1 s
+endmol 451
+mol 452 "HOH"
+atom 1 OW O OW h 0 4.95 16.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 16.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 16.5 14.16 1 1 s
+endmol 452
+mol 453 "HOH"
+atom 1 OW O OW h 0 7.95 16.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 16.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 16.5 14.16 1 1 s
+endmol 453
+mol 454 "HOH"
+atom 1 OW O OW h 0 10.95 16.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 16.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 16.5 14.16 1 1 s
+endmol 454
+mol 455 "HOH"
+atom 1 OW O OW h 0 13.95 16.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 16.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 16.5 14.16 1 1 s
+endmol 455
+mol 456 "HOH"
+atom 1 OW O OW h 0 16.95 16.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 16.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 16.5 14.16 1 1 s
+endmol 456
+mol 457 "HOH"
+atom 1 OW O OW h 0 19.95 16.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 16.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 16.5 14.16 1 1 s
+endmol 457
+mol 458 "HOH"
+atom 1 OW O OW h 0 22.95 16.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 16.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 16.5 14.16 1 1 s
+endmol 458
+mol 459 "HOH"
+atom 1 OW O OW h 0 25.95 16.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 16.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 16.5 14.16 1 1 s
+endmol 459
+mol 460 "HOH"
+atom 1 OW O OW h 0 28.95 16.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 16.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 16.5 14.16 1 1 s
+endmol 460
+mol 461 "HOH"
+atom 1 OW O OW h 0 1.95 19.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 19.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 19.5 14.16 1 1 s
+endmol 461
+mol 462 "HOH"
+atom 1 OW O OW h 0 4.95 19.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 19.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 19.5 14.16 1 1 s
+endmol 462
+mol 463 "HOH"
+atom 1 OW O OW h 0 7.95 19.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 19.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 19.5 14.16 1 1 s
+endmol 463
+mol 464 "HOH"
+atom 1 OW O OW h 0 10.95 19.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 19.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 19.5 14.16 1 1 s
+endmol 464
+mol 465 "HOH"
+atom 1 OW O OW h 0 13.95 19.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 19.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 19.5 14.16 1 1 s
+endmol 465
+mol 466 "HOH"
+atom 1 OW O OW h 0 16.95 19.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 19.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 19.5 14.16 1 1 s
+endmol 466
+mol 467 "HOH"
+atom 1 OW O OW h 0 19.95 19.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 19.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 19.5 14.16 1 1 s
+endmol 467
+mol 468 "HOH"
+atom 1 OW O OW h 0 22.95 19.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 19.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 19.5 14.16 1 1 s
+endmol 468
+mol 469 "HOH"
+atom 1 OW O OW h 0 25.95 19.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 19.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 19.5 14.16 1 1 s
+endmol 469
+mol 470 "HOH"
+atom 1 OW O OW h 0 28.95 19.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 19.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 19.5 14.16 1 1 s
+endmol 470
+mol 471 "HOH"
+atom 1 OW O OW h 0 1.95 22.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 22.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 22.5 14.16 1 1 s
+endmol 471
+mol 472 "HOH"
+atom 1 OW O OW h 0 4.95 22.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 22.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 22.5 14.16 1 1 s
+endmol 472
+mol 473 "HOH"
+atom 1 OW O OW h 0 7.95 22.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 22.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 22.5 14.16 1 1 s
+endmol 473
+mol 474 "HOH"
+atom 1 OW O OW h 0 10.95 22.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 22.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 22.5 14.16 1 1 s
+endmol 474
+mol 475 "HOH"
+atom 1 OW O OW h 0 13.95 22.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 22.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 22.5 14.16 1 1 s
+endmol 475
+mol 476 "HOH"
+atom 1 OW O OW h 0 16.95 22.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 22.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 22.5 14.16 1 1 s
+endmol 476
+mol 477 "HOH"
+atom 1 OW O OW h 0 19.95 22.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 22.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 22.5 14.16 1 1 s
+endmol 477
+mol 478 "HOH"
+atom 1 OW O OW h 0 22.95 22.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 22.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 22.5 14.16 1 1 s
+endmol 478
+mol 479 "HOH"
+atom 1 OW O OW h 0 25.95 22.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 22.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 22.5 14.16 1 1 s
+endmol 479
+mol 480 "HOH"
+atom 1 OW O OW h 0 28.95 22.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 22.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 22.5 14.16 1 1 s
+endmol 480
+mol 481 "HOH"
+atom 1 OW O OW h 0 1.95 25.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 25.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 25.5 14.16 1 1 s
+endmol 481
+mol 482 "HOH"
+atom 1 OW O OW h 0 4.95 25.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 25.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 25.5 14.16 1 1 s
+endmol 482
+mol 483 "HOH"
+atom 1 OW O OW h 0 7.95 25.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 25.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 25.5 14.16 1 1 s
+endmol 483
+mol 484 "HOH"
+atom 1 OW O OW h 0 10.95 25.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 25.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 25.5 14.16 1 1 s
+endmol 484
+mol 485 "HOH"
+atom 1 OW O OW h 0 13.95 25.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 25.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 25.5 14.16 1 1 s
+endmol 485
+mol 486 "HOH"
+atom 1 OW O OW h 0 16.95 25.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 25.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 25.5 14.16 1 1 s
+endmol 486
+mol 487 "HOH"
+atom 1 OW O OW h 0 19.95 25.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 25.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 25.5 14.16 1 1 s
+endmol 487
+mol 488 "HOH"
+atom 1 OW O OW h 0 22.95 25.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 25.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 25.5 14.16 1 1 s
+endmol 488
+mol 489 "HOH"
+atom 1 OW O OW h 0 25.95 25.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 25.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 25.5 14.16 1 1 s
+endmol 489
+mol 490 "HOH"
+atom 1 OW O OW h 0 28.95 25.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 25.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 25.5 14.16 1 1 s
+endmol 490
+mol 491 "HOH"
+atom 1 OW O OW h 0 1.95 28.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 28.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 28.5 14.16 1 1 s
+endmol 491
+mol 492 "HOH"
+atom 1 OW O OW h 0 4.95 28.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 28.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 28.5 14.16 1 1 s
+endmol 492
+mol 493 "HOH"
+atom 1 OW O OW h 0 7.95 28.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 28.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 28.5 14.16 1 1 s
+endmol 493
+mol 494 "HOH"
+atom 1 OW O OW h 0 10.95 28.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 28.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 28.5 14.16 1 1 s
+endmol 494
+mol 495 "HOH"
+atom 1 OW O OW h 0 13.95 28.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 28.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 28.5 14.16 1 1 s
+endmol 495
+mol 496 "HOH"
+atom 1 OW O OW h 0 16.95 28.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 28.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 28.5 14.16 1 1 s
+endmol 496
+mol 497 "HOH"
+atom 1 OW O OW h 0 19.95 28.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 28.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 28.5 14.16 1 1 s
+endmol 497
+mol 498 "HOH"
+atom 1 OW O OW h 0 22.95 28.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 28.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 28.5 14.16 1 1 s
+endmol 498
+mol 499 "HOH"
+atom 1 OW O OW h 0 25.95 28.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 28.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 28.5 14.16 1 1 s
+endmol 499
+mol 500 "HOH"
+atom 1 OW O OW h 0 28.95 28.5 13.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 28.5 12.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 28.5 14.16 1 1 s
+endmol 500
+mol 501 "HOH"
+atom 1 OW O OW h 0 1.95 1.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 1.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 1.5 17.16 1 1 s
+endmol 501
+mol 502 "HOH"
+atom 1 OW O OW h 0 4.95 1.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 1.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 1.5 17.16 1 1 s
+endmol 502
+mol 503 "HOH"
+atom 1 OW O OW h 0 7.95 1.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 1.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 1.5 17.16 1 1 s
+endmol 503
+mol 504 "HOH"
+atom 1 OW O OW h 0 10.95 1.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 1.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 1.5 17.16 1 1 s
+endmol 504
+mol 505 "HOH"
+atom 1 OW O OW h 0 13.95 1.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 1.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 1.5 17.16 1 1 s
+endmol 505
+mol 506 "HOH"
+atom 1 OW O OW h 0 16.95 1.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 1.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 1.5 17.16 1 1 s
+endmol 506
+mol 507 "HOH"
+atom 1 OW O OW h 0 19.95 1.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 1.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 1.5 17.16 1 1 s
+endmol 507
+mol 508 "HOH"
+atom 1 OW O OW h 0 22.95 1.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 1.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 1.5 17.16 1 1 s
+endmol 508
+mol 509 "HOH"
+atom 1 OW O OW h 0 25.95 1.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 1.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 1.5 17.16 1 1 s
+endmol 509
+mol 510 "HOH"
+atom 1 OW O OW h 0 28.95 1.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 1.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 1.5 17.16 1 1 s
+endmol 510
+mol 511 "HOH"
+atom 1 OW O OW h 0 1.95 4.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 4.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 4.5 17.16 1 1 s
+endmol 511
+mol 512 "HOH"
+atom 1 OW O OW h 0 4.95 4.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 4.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 4.5 17.16 1 1 s
+endmol 512
+mol 513 "HOH"
+atom 1 OW O OW h 0 7.95 4.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 4.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 4.5 17.16 1 1 s
+endmol 513
+mol 514 "HOH"
+atom 1 OW O OW h 0 10.95 4.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 4.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 4.5 17.16 1 1 s
+endmol 514
+mol 515 "HOH"
+atom 1 OW O OW h 0 13.95 4.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 4.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 4.5 17.16 1 1 s
+endmol 515
+mol 516 "HOH"
+atom 1 OW O OW h 0 16.95 4.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 4.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 4.5 17.16 1 1 s
+endmol 516
+mol 517 "HOH"
+atom 1 OW O OW h 0 19.95 4.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 4.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 4.5 17.16 1 1 s
+endmol 517
+mol 518 "HOH"
+atom 1 OW O OW h 0 22.95 4.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 4.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 4.5 17.16 1 1 s
+endmol 518
+mol 519 "HOH"
+atom 1 OW O OW h 0 25.95 4.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 4.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 4.5 17.16 1 1 s
+endmol 519
+mol 520 "HOH"
+atom 1 OW O OW h 0 28.95 4.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 4.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 4.5 17.16 1 1 s
+endmol 520
+mol 521 "HOH"
+atom 1 OW O OW h 0 1.95 7.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 7.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 7.5 17.16 1 1 s
+endmol 521
+mol 522 "HOH"
+atom 1 OW O OW h 0 4.95 7.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 7.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 7.5 17.16 1 1 s
+endmol 522
+mol 523 "HOH"
+atom 1 OW O OW h 0 7.95 7.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 7.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 7.5 17.16 1 1 s
+endmol 523
+mol 524 "HOH"
+atom 1 OW O OW h 0 10.95 7.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 7.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 7.5 17.16 1 1 s
+endmol 524
+mol 525 "HOH"
+atom 1 OW O OW h 0 13.95 7.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 7.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 7.5 17.16 1 1 s
+endmol 525
+mol 526 "HOH"
+atom 1 OW O OW h 0 16.95 7.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 7.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 7.5 17.16 1 1 s
+endmol 526
+mol 527 "HOH"
+atom 1 OW O OW h 0 19.95 7.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 7.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 7.5 17.16 1 1 s
+endmol 527
+mol 528 "HOH"
+atom 1 OW O OW h 0 22.95 7.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 7.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 7.5 17.16 1 1 s
+endmol 528
+mol 529 "HOH"
+atom 1 OW O OW h 0 25.95 7.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 7.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 7.5 17.16 1 1 s
+endmol 529
+mol 530 "HOH"
+atom 1 OW O OW h 0 28.95 7.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 7.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 7.5 17.16 1 1 s
+endmol 530
+mol 531 "HOH"
+atom 1 OW O OW h 0 1.95 10.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 10.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 10.5 17.16 1 1 s
+endmol 531
+mol 532 "HOH"
+atom 1 OW O OW h 0 4.95 10.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 10.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 10.5 17.16 1 1 s
+endmol 532
+mol 533 "HOH"
+atom 1 OW O OW h 0 7.95 10.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 10.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 10.5 17.16 1 1 s
+endmol 533
+mol 534 "HOH"
+atom 1 OW O OW h 0 10.95 10.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 10.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 10.5 17.16 1 1 s
+endmol 534
+mol 535 "HOH"
+atom 1 OW O OW h 0 13.95 10.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 10.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 10.5 17.16 1 1 s
+endmol 535
+mol 536 "HOH"
+atom 1 OW O OW h 0 16.95 10.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 10.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 10.5 17.16 1 1 s
+endmol 536
+mol 537 "HOH"
+atom 1 OW O OW h 0 19.95 10.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 10.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 10.5 17.16 1 1 s
+endmol 537
+mol 538 "HOH"
+atom 1 OW O OW h 0 22.95 10.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 10.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 10.5 17.16 1 1 s
+endmol 538
+mol 539 "HOH"
+atom 1 OW O OW h 0 25.95 10.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 10.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 10.5 17.16 1 1 s
+endmol 539
+mol 540 "HOH"
+atom 1 OW O OW h 0 28.95 10.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 10.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 10.5 17.16 1 1 s
+endmol 540
+mol 541 "HOH"
+atom 1 OW O OW h 0 1.95 13.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 13.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 13.5 17.16 1 1 s
+endmol 541
+mol 542 "HOH"
+atom 1 OW O OW h 0 4.95 13.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 13.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 13.5 17.16 1 1 s
+endmol 542
+mol 543 "HOH"
+atom 1 OW O OW h 0 7.95 13.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 13.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 13.5 17.16 1 1 s
+endmol 543
+mol 544 "HOH"
+atom 1 OW O OW h 0 10.95 13.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 13.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 13.5 17.16 1 1 s
+endmol 544
+mol 545 "HOH"
+atom 1 OW O OW h 0 13.95 13.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 13.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 13.5 17.16 1 1 s
+endmol 545
+mol 546 "HOH"
+atom 1 OW O OW h 0 16.95 13.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 13.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 13.5 17.16 1 1 s
+endmol 546
+mol 547 "HOH"
+atom 1 OW O OW h 0 19.95 13.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 13.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 13.5 17.16 1 1 s
+endmol 547
+mol 548 "HOH"
+atom 1 OW O OW h 0 22.95 13.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 13.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 13.5 17.16 1 1 s
+endmol 548
+mol 549 "HOH"
+atom 1 OW O OW h 0 25.95 13.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 13.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 13.5 17.16 1 1 s
+endmol 549
+mol 550 "HOH"
+atom 1 OW O OW h 0 28.95 13.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 13.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 13.5 17.16 1 1 s
+endmol 550
+mol 551 "HOH"
+atom 1 OW O OW h 0 1.95 16.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 16.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 16.5 17.16 1 1 s
+endmol 551
+mol 552 "HOH"
+atom 1 OW O OW h 0 4.95 16.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 16.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 16.5 17.16 1 1 s
+endmol 552
+mol 553 "HOH"
+atom 1 OW O OW h 0 7.95 16.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 16.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 16.5 17.16 1 1 s
+endmol 553
+mol 554 "HOH"
+atom 1 OW O OW h 0 10.95 16.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 16.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 16.5 17.16 1 1 s
+endmol 554
+mol 555 "HOH"
+atom 1 OW O OW h 0 13.95 16.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 16.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 16.5 17.16 1 1 s
+endmol 555
+mol 556 "HOH"
+atom 1 OW O OW h 0 16.95 16.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 16.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 16.5 17.16 1 1 s
+endmol 556
+mol 557 "HOH"
+atom 1 OW O OW h 0 19.95 16.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 16.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 16.5 17.16 1 1 s
+endmol 557
+mol 558 "HOH"
+atom 1 OW O OW h 0 22.95 16.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 16.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 16.5 17.16 1 1 s
+endmol 558
+mol 559 "HOH"
+atom 1 OW O OW h 0 25.95 16.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 16.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 16.5 17.16 1 1 s
+endmol 559
+mol 560 "HOH"
+atom 1 OW O OW h 0 28.95 16.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 16.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 16.5 17.16 1 1 s
+endmol 560
+mol 561 "HOH"
+atom 1 OW O OW h 0 1.95 19.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 19.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 19.5 17.16 1 1 s
+endmol 561
+mol 562 "HOH"
+atom 1 OW O OW h 0 4.95 19.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 19.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 19.5 17.16 1 1 s
+endmol 562
+mol 563 "HOH"
+atom 1 OW O OW h 0 7.95 19.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 19.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 19.5 17.16 1 1 s
+endmol 563
+mol 564 "HOH"
+atom 1 OW O OW h 0 10.95 19.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 19.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 19.5 17.16 1 1 s
+endmol 564
+mol 565 "HOH"
+atom 1 OW O OW h 0 13.95 19.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 19.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 19.5 17.16 1 1 s
+endmol 565
+mol 566 "HOH"
+atom 1 OW O OW h 0 16.95 19.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 19.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 19.5 17.16 1 1 s
+endmol 566
+mol 567 "HOH"
+atom 1 OW O OW h 0 19.95 19.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 19.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 19.5 17.16 1 1 s
+endmol 567
+mol 568 "HOH"
+atom 1 OW O OW h 0 22.95 19.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 19.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 19.5 17.16 1 1 s
+endmol 568
+mol 569 "HOH"
+atom 1 OW O OW h 0 25.95 19.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 19.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 19.5 17.16 1 1 s
+endmol 569
+mol 570 "HOH"
+atom 1 OW O OW h 0 28.95 19.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 19.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 19.5 17.16 1 1 s
+endmol 570
+mol 571 "HOH"
+atom 1 OW O OW h 0 1.95 22.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 22.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 22.5 17.16 1 1 s
+endmol 571
+mol 572 "HOH"
+atom 1 OW O OW h 0 4.95 22.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 22.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 22.5 17.16 1 1 s
+endmol 572
+mol 573 "HOH"
+atom 1 OW O OW h 0 7.95 22.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 22.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 22.5 17.16 1 1 s
+endmol 573
+mol 574 "HOH"
+atom 1 OW O OW h 0 10.95 22.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 22.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 22.5 17.16 1 1 s
+endmol 574
+mol 575 "HOH"
+atom 1 OW O OW h 0 13.95 22.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 22.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 22.5 17.16 1 1 s
+endmol 575
+mol 576 "HOH"
+atom 1 OW O OW h 0 16.95 22.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 22.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 22.5 17.16 1 1 s
+endmol 576
+mol 577 "HOH"
+atom 1 OW O OW h 0 19.95 22.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 22.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 22.5 17.16 1 1 s
+endmol 577
+mol 578 "HOH"
+atom 1 OW O OW h 0 22.95 22.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 22.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 22.5 17.16 1 1 s
+endmol 578
+mol 579 "HOH"
+atom 1 OW O OW h 0 25.95 22.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 22.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 22.5 17.16 1 1 s
+endmol 579
+mol 580 "HOH"
+atom 1 OW O OW h 0 28.95 22.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 22.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 22.5 17.16 1 1 s
+endmol 580
+mol 581 "HOH"
+atom 1 OW O OW h 0 1.95 25.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 25.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 25.5 17.16 1 1 s
+endmol 581
+mol 582 "HOH"
+atom 1 OW O OW h 0 4.95 25.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 25.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 25.5 17.16 1 1 s
+endmol 582
+mol 583 "HOH"
+atom 1 OW O OW h 0 7.95 25.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 25.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 25.5 17.16 1 1 s
+endmol 583
+mol 584 "HOH"
+atom 1 OW O OW h 0 10.95 25.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 25.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 25.5 17.16 1 1 s
+endmol 584
+mol 585 "HOH"
+atom 1 OW O OW h 0 13.95 25.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 25.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 25.5 17.16 1 1 s
+endmol 585
+mol 586 "HOH"
+atom 1 OW O OW h 0 16.95 25.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 25.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 25.5 17.16 1 1 s
+endmol 586
+mol 587 "HOH"
+atom 1 OW O OW h 0 19.95 25.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 25.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 25.5 17.16 1 1 s
+endmol 587
+mol 588 "HOH"
+atom 1 OW O OW h 0 22.95 25.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 25.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 25.5 17.16 1 1 s
+endmol 588
+mol 589 "HOH"
+atom 1 OW O OW h 0 25.95 25.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 25.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 25.5 17.16 1 1 s
+endmol 589
+mol 590 "HOH"
+atom 1 OW O OW h 0 28.95 25.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 25.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 25.5 17.16 1 1 s
+endmol 590
+mol 591 "HOH"
+atom 1 OW O OW h 0 1.95 28.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 28.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 28.5 17.16 1 1 s
+endmol 591
+mol 592 "HOH"
+atom 1 OW O OW h 0 4.95 28.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 28.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 28.5 17.16 1 1 s
+endmol 592
+mol 593 "HOH"
+atom 1 OW O OW h 0 7.95 28.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 28.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 28.5 17.16 1 1 s
+endmol 593
+mol 594 "HOH"
+atom 1 OW O OW h 0 10.95 28.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 28.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 28.5 17.16 1 1 s
+endmol 594
+mol 595 "HOH"
+atom 1 OW O OW h 0 13.95 28.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 28.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 28.5 17.16 1 1 s
+endmol 595
+mol 596 "HOH"
+atom 1 OW O OW h 0 16.95 28.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 28.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 28.5 17.16 1 1 s
+endmol 596
+mol 597 "HOH"
+atom 1 OW O OW h 0 19.95 28.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 28.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 28.5 17.16 1 1 s
+endmol 597
+mol 598 "HOH"
+atom 1 OW O OW h 0 22.95 28.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 28.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 28.5 17.16 1 1 s
+endmol 598
+mol 599 "HOH"
+atom 1 OW O OW h 0 25.95 28.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 28.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 28.5 17.16 1 1 s
+endmol 599
+mol 600 "HOH"
+atom 1 OW O OW h 0 28.95 28.5 16.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 28.5 15.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 28.5 17.16 1 1 s
+endmol 600
+mol 601 "HOH"
+atom 1 OW O OW h 0 1.95 1.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 1.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 1.5 20.16 1 1 s
+endmol 601
+mol 602 "HOH"
+atom 1 OW O OW h 0 4.95 1.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 1.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 1.5 20.16 1 1 s
+endmol 602
+mol 603 "HOH"
+atom 1 OW O OW h 0 7.95 1.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 1.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 1.5 20.16 1 1 s
+endmol 603
+mol 604 "HOH"
+atom 1 OW O OW h 0 10.95 1.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 1.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 1.5 20.16 1 1 s
+endmol 604
+mol 605 "HOH"
+atom 1 OW O OW h 0 13.95 1.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 1.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 1.5 20.16 1 1 s
+endmol 605
+mol 606 "HOH"
+atom 1 OW O OW h 0 16.95 1.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 1.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 1.5 20.16 1 1 s
+endmol 606
+mol 607 "HOH"
+atom 1 OW O OW h 0 19.95 1.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 1.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 1.5 20.16 1 1 s
+endmol 607
+mol 608 "HOH"
+atom 1 OW O OW h 0 22.95 1.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 1.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 1.5 20.16 1 1 s
+endmol 608
+mol 609 "HOH"
+atom 1 OW O OW h 0 25.95 1.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 1.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 1.5 20.16 1 1 s
+endmol 609
+mol 610 "HOH"
+atom 1 OW O OW h 0 28.95 1.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 1.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 1.5 20.16 1 1 s
+endmol 610
+mol 611 "HOH"
+atom 1 OW O OW h 0 1.95 4.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 4.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 4.5 20.16 1 1 s
+endmol 611
+mol 612 "HOH"
+atom 1 OW O OW h 0 4.95 4.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 4.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 4.5 20.16 1 1 s
+endmol 612
+mol 613 "HOH"
+atom 1 OW O OW h 0 7.95 4.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 4.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 4.5 20.16 1 1 s
+endmol 613
+mol 614 "HOH"
+atom 1 OW O OW h 0 10.95 4.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 4.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 4.5 20.16 1 1 s
+endmol 614
+mol 615 "HOH"
+atom 1 OW O OW h 0 13.95 4.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 4.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 4.5 20.16 1 1 s
+endmol 615
+mol 616 "HOH"
+atom 1 OW O OW h 0 16.95 4.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 4.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 4.5 20.16 1 1 s
+endmol 616
+mol 617 "HOH"
+atom 1 OW O OW h 0 19.95 4.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 4.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 4.5 20.16 1 1 s
+endmol 617
+mol 618 "HOH"
+atom 1 OW O OW h 0 22.95 4.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 4.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 4.5 20.16 1 1 s
+endmol 618
+mol 619 "HOH"
+atom 1 OW O OW h 0 25.95 4.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 4.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 4.5 20.16 1 1 s
+endmol 619
+mol 620 "HOH"
+atom 1 OW O OW h 0 28.95 4.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 4.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 4.5 20.16 1 1 s
+endmol 620
+mol 621 "HOH"
+atom 1 OW O OW h 0 1.95 7.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 7.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 7.5 20.16 1 1 s
+endmol 621
+mol 622 "HOH"
+atom 1 OW O OW h 0 4.95 7.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 7.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 7.5 20.16 1 1 s
+endmol 622
+mol 623 "HOH"
+atom 1 OW O OW h 0 7.95 7.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 7.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 7.5 20.16 1 1 s
+endmol 623
+mol 624 "HOH"
+atom 1 OW O OW h 0 10.95 7.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 7.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 7.5 20.16 1 1 s
+endmol 624
+mol 625 "HOH"
+atom 1 OW O OW h 0 13.95 7.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 7.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 7.5 20.16 1 1 s
+endmol 625
+mol 626 "HOH"
+atom 1 OW O OW h 0 16.95 7.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 7.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 7.5 20.16 1 1 s
+endmol 626
+mol 627 "HOH"
+atom 1 OW O OW h 0 19.95 7.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 7.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 7.5 20.16 1 1 s
+endmol 627
+mol 628 "HOH"
+atom 1 OW O OW h 0 22.95 7.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 7.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 7.5 20.16 1 1 s
+endmol 628
+mol 629 "HOH"
+atom 1 OW O OW h 0 25.95 7.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 7.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 7.5 20.16 1 1 s
+endmol 629
+mol 630 "HOH"
+atom 1 OW O OW h 0 28.95 7.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 7.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 7.5 20.16 1 1 s
+endmol 630
+mol 631 "HOH"
+atom 1 OW O OW h 0 1.95 10.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 10.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 10.5 20.16 1 1 s
+endmol 631
+mol 632 "HOH"
+atom 1 OW O OW h 0 4.95 10.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 10.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 10.5 20.16 1 1 s
+endmol 632
+mol 633 "HOH"
+atom 1 OW O OW h 0 7.95 10.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 10.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 10.5 20.16 1 1 s
+endmol 633
+mol 634 "HOH"
+atom 1 OW O OW h 0 10.95 10.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 10.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 10.5 20.16 1 1 s
+endmol 634
+mol 635 "HOH"
+atom 1 OW O OW h 0 13.95 10.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 10.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 10.5 20.16 1 1 s
+endmol 635
+mol 636 "HOH"
+atom 1 OW O OW h 0 16.95 10.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 10.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 10.5 20.16 1 1 s
+endmol 636
+mol 637 "HOH"
+atom 1 OW O OW h 0 19.95 10.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 10.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 10.5 20.16 1 1 s
+endmol 637
+mol 638 "HOH"
+atom 1 OW O OW h 0 22.95 10.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 10.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 10.5 20.16 1 1 s
+endmol 638
+mol 639 "HOH"
+atom 1 OW O OW h 0 25.95 10.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 10.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 10.5 20.16 1 1 s
+endmol 639
+mol 640 "HOH"
+atom 1 OW O OW h 0 28.95 10.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 10.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 10.5 20.16 1 1 s
+endmol 640
+mol 641 "HOH"
+atom 1 OW O OW h 0 1.95 13.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 13.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 13.5 20.16 1 1 s
+endmol 641
+mol 642 "HOH"
+atom 1 OW O OW h 0 4.95 13.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 13.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 13.5 20.16 1 1 s
+endmol 642
+mol 643 "HOH"
+atom 1 OW O OW h 0 7.95 13.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 13.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 13.5 20.16 1 1 s
+endmol 643
+mol 644 "HOH"
+atom 1 OW O OW h 0 10.95 13.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 13.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 13.5 20.16 1 1 s
+endmol 644
+mol 645 "HOH"
+atom 1 OW O OW h 0 13.95 13.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 13.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 13.5 20.16 1 1 s
+endmol 645
+mol 646 "HOH"
+atom 1 OW O OW h 0 16.95 13.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 13.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 13.5 20.16 1 1 s
+endmol 646
+mol 647 "HOH"
+atom 1 OW O OW h 0 19.95 13.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 13.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 13.5 20.16 1 1 s
+endmol 647
+mol 648 "HOH"
+atom 1 OW O OW h 0 22.95 13.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 13.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 13.5 20.16 1 1 s
+endmol 648
+mol 649 "HOH"
+atom 1 OW O OW h 0 25.95 13.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 13.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 13.5 20.16 1 1 s
+endmol 649
+mol 650 "HOH"
+atom 1 OW O OW h 0 28.95 13.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 13.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 13.5 20.16 1 1 s
+endmol 650
+mol 651 "HOH"
+atom 1 OW O OW h 0 1.95 16.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 16.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 16.5 20.16 1 1 s
+endmol 651
+mol 652 "HOH"
+atom 1 OW O OW h 0 4.95 16.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 16.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 16.5 20.16 1 1 s
+endmol 652
+mol 653 "HOH"
+atom 1 OW O OW h 0 7.95 16.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 16.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 16.5 20.16 1 1 s
+endmol 653
+mol 654 "HOH"
+atom 1 OW O OW h 0 10.95 16.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 16.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 16.5 20.16 1 1 s
+endmol 654
+mol 655 "HOH"
+atom 1 OW O OW h 0 13.95 16.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 16.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 16.5 20.16 1 1 s
+endmol 655
+mol 656 "HOH"
+atom 1 OW O OW h 0 16.95 16.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 16.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 16.5 20.16 1 1 s
+endmol 656
+mol 657 "HOH"
+atom 1 OW O OW h 0 19.95 16.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 16.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 16.5 20.16 1 1 s
+endmol 657
+mol 658 "HOH"
+atom 1 OW O OW h 0 22.95 16.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 16.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 16.5 20.16 1 1 s
+endmol 658
+mol 659 "HOH"
+atom 1 OW O OW h 0 25.95 16.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 16.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 16.5 20.16 1 1 s
+endmol 659
+mol 660 "HOH"
+atom 1 OW O OW h 0 28.95 16.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 16.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 16.5 20.16 1 1 s
+endmol 660
+mol 661 "HOH"
+atom 1 OW O OW h 0 1.95 19.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 19.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 19.5 20.16 1 1 s
+endmol 661
+mol 662 "HOH"
+atom 1 OW O OW h 0 4.95 19.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 19.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 19.5 20.16 1 1 s
+endmol 662
+mol 663 "HOH"
+atom 1 OW O OW h 0 7.95 19.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 19.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 19.5 20.16 1 1 s
+endmol 663
+mol 664 "HOH"
+atom 1 OW O OW h 0 10.95 19.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 19.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 19.5 20.16 1 1 s
+endmol 664
+mol 665 "HOH"
+atom 1 OW O OW h 0 13.95 19.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 19.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 19.5 20.16 1 1 s
+endmol 665
+mol 666 "HOH"
+atom 1 OW O OW h 0 16.95 19.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 19.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 19.5 20.16 1 1 s
+endmol 666
+mol 667 "HOH"
+atom 1 OW O OW h 0 19.95 19.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 19.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 19.5 20.16 1 1 s
+endmol 667
+mol 668 "HOH"
+atom 1 OW O OW h 0 22.95 19.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 19.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 19.5 20.16 1 1 s
+endmol 668
+mol 669 "HOH"
+atom 1 OW O OW h 0 25.95 19.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 19.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 19.5 20.16 1 1 s
+endmol 669
+mol 670 "HOH"
+atom 1 OW O OW h 0 28.95 19.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 19.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 19.5 20.16 1 1 s
+endmol 670
+mol 671 "HOH"
+atom 1 OW O OW h 0 1.95 22.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 22.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 22.5 20.16 1 1 s
+endmol 671
+mol 672 "HOH"
+atom 1 OW O OW h 0 4.95 22.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 22.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 22.5 20.16 1 1 s
+endmol 672
+mol 673 "HOH"
+atom 1 OW O OW h 0 7.95 22.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 22.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 22.5 20.16 1 1 s
+endmol 673
+mol 674 "HOH"
+atom 1 OW O OW h 0 10.95 22.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 22.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 22.5 20.16 1 1 s
+endmol 674
+mol 675 "HOH"
+atom 1 OW O OW h 0 13.95 22.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 22.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 22.5 20.16 1 1 s
+endmol 675
+mol 676 "HOH"
+atom 1 OW O OW h 0 16.95 22.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 22.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 22.5 20.16 1 1 s
+endmol 676
+mol 677 "HOH"
+atom 1 OW O OW h 0 19.95 22.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 22.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 22.5 20.16 1 1 s
+endmol 677
+mol 678 "HOH"
+atom 1 OW O OW h 0 22.95 22.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 22.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 22.5 20.16 1 1 s
+endmol 678
+mol 679 "HOH"
+atom 1 OW O OW h 0 25.95 22.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 22.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 22.5 20.16 1 1 s
+endmol 679
+mol 680 "HOH"
+atom 1 OW O OW h 0 28.95 22.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 22.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 22.5 20.16 1 1 s
+endmol 680
+mol 681 "HOH"
+atom 1 OW O OW h 0 1.95 25.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 25.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 25.5 20.16 1 1 s
+endmol 681
+mol 682 "HOH"
+atom 1 OW O OW h 0 4.95 25.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 25.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 25.5 20.16 1 1 s
+endmol 682
+mol 683 "HOH"
+atom 1 OW O OW h 0 7.95 25.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 25.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 25.5 20.16 1 1 s
+endmol 683
+mol 684 "HOH"
+atom 1 OW O OW h 0 10.95 25.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 25.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 25.5 20.16 1 1 s
+endmol 684
+mol 685 "HOH"
+atom 1 OW O OW h 0 13.95 25.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 25.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 25.5 20.16 1 1 s
+endmol 685
+mol 686 "HOH"
+atom 1 OW O OW h 0 16.95 25.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 25.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 25.5 20.16 1 1 s
+endmol 686
+mol 687 "HOH"
+atom 1 OW O OW h 0 19.95 25.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 25.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 25.5 20.16 1 1 s
+endmol 687
+mol 688 "HOH"
+atom 1 OW O OW h 0 22.95 25.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 25.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 25.5 20.16 1 1 s
+endmol 688
+mol 689 "HOH"
+atom 1 OW O OW h 0 25.95 25.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 25.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 25.5 20.16 1 1 s
+endmol 689
+mol 690 "HOH"
+atom 1 OW O OW h 0 28.95 25.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 25.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 25.5 20.16 1 1 s
+endmol 690
+mol 691 "HOH"
+atom 1 OW O OW h 0 1.95 28.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 28.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 28.5 20.16 1 1 s
+endmol 691
+mol 692 "HOH"
+atom 1 OW O OW h 0 4.95 28.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 28.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 28.5 20.16 1 1 s
+endmol 692
+mol 693 "HOH"
+atom 1 OW O OW h 0 7.95 28.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 28.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 28.5 20.16 1 1 s
+endmol 693
+mol 694 "HOH"
+atom 1 OW O OW h 0 10.95 28.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 28.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 28.5 20.16 1 1 s
+endmol 694
+mol 695 "HOH"
+atom 1 OW O OW h 0 13.95 28.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 28.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 28.5 20.16 1 1 s
+endmol 695
+mol 696 "HOH"
+atom 1 OW O OW h 0 16.95 28.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 28.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 28.5 20.16 1 1 s
+endmol 696
+mol 697 "HOH"
+atom 1 OW O OW h 0 19.95 28.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 28.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 28.5 20.16 1 1 s
+endmol 697
+mol 698 "HOH"
+atom 1 OW O OW h 0 22.95 28.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 28.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 28.5 20.16 1 1 s
+endmol 698
+mol 699 "HOH"
+atom 1 OW O OW h 0 25.95 28.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 28.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 28.5 20.16 1 1 s
+endmol 699
+mol 700 "HOH"
+atom 1 OW O OW h 0 28.95 28.5 19.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 28.5 18.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 28.5 20.16 1 1 s
+endmol 700
+mol 701 "HOH"
+atom 1 OW O OW h 0 1.95 1.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 1.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 1.5 23.16 1 1 s
+endmol 701
+mol 702 "HOH"
+atom 1 OW O OW h 0 4.95 1.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 1.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 1.5 23.16 1 1 s
+endmol 702
+mol 703 "HOH"
+atom 1 OW O OW h 0 7.95 1.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 1.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 1.5 23.16 1 1 s
+endmol 703
+mol 704 "HOH"
+atom 1 OW O OW h 0 10.95 1.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 1.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 1.5 23.16 1 1 s
+endmol 704
+mol 705 "HOH"
+atom 1 OW O OW h 0 13.95 1.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 1.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 1.5 23.16 1 1 s
+endmol 705
+mol 706 "HOH"
+atom 1 OW O OW h 0 16.95 1.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 1.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 1.5 23.16 1 1 s
+endmol 706
+mol 707 "HOH"
+atom 1 OW O OW h 0 19.95 1.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 1.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 1.5 23.16 1 1 s
+endmol 707
+mol 708 "HOH"
+atom 1 OW O OW h 0 22.95 1.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 1.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 1.5 23.16 1 1 s
+endmol 708
+mol 709 "HOH"
+atom 1 OW O OW h 0 25.95 1.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 1.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 1.5 23.16 1 1 s
+endmol 709
+mol 710 "HOH"
+atom 1 OW O OW h 0 28.95 1.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 1.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 1.5 23.16 1 1 s
+endmol 710
+mol 711 "HOH"
+atom 1 OW O OW h 0 1.95 4.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 4.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 4.5 23.16 1 1 s
+endmol 711
+mol 712 "HOH"
+atom 1 OW O OW h 0 4.95 4.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 4.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 4.5 23.16 1 1 s
+endmol 712
+mol 713 "HOH"
+atom 1 OW O OW h 0 7.95 4.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 4.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 4.5 23.16 1 1 s
+endmol 713
+mol 714 "HOH"
+atom 1 OW O OW h 0 10.95 4.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 4.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 4.5 23.16 1 1 s
+endmol 714
+mol 715 "HOH"
+atom 1 OW O OW h 0 13.95 4.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 4.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 4.5 23.16 1 1 s
+endmol 715
+mol 716 "HOH"
+atom 1 OW O OW h 0 16.95 4.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 4.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 4.5 23.16 1 1 s
+endmol 716
+mol 717 "HOH"
+atom 1 OW O OW h 0 19.95 4.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 4.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 4.5 23.16 1 1 s
+endmol 717
+mol 718 "HOH"
+atom 1 OW O OW h 0 22.95 4.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 4.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 4.5 23.16 1 1 s
+endmol 718
+mol 719 "HOH"
+atom 1 OW O OW h 0 25.95 4.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 4.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 4.5 23.16 1 1 s
+endmol 719
+mol 720 "HOH"
+atom 1 OW O OW h 0 28.95 4.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 4.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 4.5 23.16 1 1 s
+endmol 720
+mol 721 "HOH"
+atom 1 OW O OW h 0 1.95 7.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 7.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 7.5 23.16 1 1 s
+endmol 721
+mol 722 "HOH"
+atom 1 OW O OW h 0 4.95 7.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 7.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 7.5 23.16 1 1 s
+endmol 722
+mol 723 "HOH"
+atom 1 OW O OW h 0 7.95 7.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 7.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 7.5 23.16 1 1 s
+endmol 723
+mol 724 "HOH"
+atom 1 OW O OW h 0 10.95 7.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 7.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 7.5 23.16 1 1 s
+endmol 724
+mol 725 "HOH"
+atom 1 OW O OW h 0 13.95 7.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 7.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 7.5 23.16 1 1 s
+endmol 725
+mol 726 "HOH"
+atom 1 OW O OW h 0 16.95 7.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 7.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 7.5 23.16 1 1 s
+endmol 726
+mol 727 "HOH"
+atom 1 OW O OW h 0 19.95 7.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 7.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 7.5 23.16 1 1 s
+endmol 727
+mol 728 "HOH"
+atom 1 OW O OW h 0 22.95 7.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 7.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 7.5 23.16 1 1 s
+endmol 728
+mol 729 "HOH"
+atom 1 OW O OW h 0 25.95 7.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 7.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 7.5 23.16 1 1 s
+endmol 729
+mol 730 "HOH"
+atom 1 OW O OW h 0 28.95 7.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 7.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 7.5 23.16 1 1 s
+endmol 730
+mol 731 "HOH"
+atom 1 OW O OW h 0 1.95 10.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 10.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 10.5 23.16 1 1 s
+endmol 731
+mol 732 "HOH"
+atom 1 OW O OW h 0 4.95 10.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 10.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 10.5 23.16 1 1 s
+endmol 732
+mol 733 "HOH"
+atom 1 OW O OW h 0 7.95 10.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 10.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 10.5 23.16 1 1 s
+endmol 733
+mol 734 "HOH"
+atom 1 OW O OW h 0 10.95 10.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 10.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 10.5 23.16 1 1 s
+endmol 734
+mol 735 "HOH"
+atom 1 OW O OW h 0 13.95 10.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 10.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 10.5 23.16 1 1 s
+endmol 735
+mol 736 "HOH"
+atom 1 OW O OW h 0 16.95 10.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 10.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 10.5 23.16 1 1 s
+endmol 736
+mol 737 "HOH"
+atom 1 OW O OW h 0 19.95 10.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 10.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 10.5 23.16 1 1 s
+endmol 737
+mol 738 "HOH"
+atom 1 OW O OW h 0 22.95 10.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 10.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 10.5 23.16 1 1 s
+endmol 738
+mol 739 "HOH"
+atom 1 OW O OW h 0 25.95 10.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 10.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 10.5 23.16 1 1 s
+endmol 739
+mol 740 "HOH"
+atom 1 OW O OW h 0 28.95 10.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 10.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 10.5 23.16 1 1 s
+endmol 740
+mol 741 "HOH"
+atom 1 OW O OW h 0 1.95 13.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 13.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 13.5 23.16 1 1 s
+endmol 741
+mol 742 "HOH"
+atom 1 OW O OW h 0 4.95 13.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 13.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 13.5 23.16 1 1 s
+endmol 742
+mol 743 "HOH"
+atom 1 OW O OW h 0 7.95 13.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 13.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 13.5 23.16 1 1 s
+endmol 743
+mol 744 "HOH"
+atom 1 OW O OW h 0 10.95 13.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 13.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 13.5 23.16 1 1 s
+endmol 744
+mol 745 "HOH"
+atom 1 OW O OW h 0 13.95 13.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 13.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 13.5 23.16 1 1 s
+endmol 745
+mol 746 "HOH"
+atom 1 OW O OW h 0 16.95 13.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 13.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 13.5 23.16 1 1 s
+endmol 746
+mol 747 "HOH"
+atom 1 OW O OW h 0 19.95 13.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 13.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 13.5 23.16 1 1 s
+endmol 747
+mol 748 "HOH"
+atom 1 OW O OW h 0 22.95 13.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 13.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 13.5 23.16 1 1 s
+endmol 748
+mol 749 "HOH"
+atom 1 OW O OW h 0 25.95 13.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 13.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 13.5 23.16 1 1 s
+endmol 749
+mol 750 "HOH"
+atom 1 OW O OW h 0 28.95 13.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 13.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 13.5 23.16 1 1 s
+endmol 750
+mol 751 "HOH"
+atom 1 OW O OW h 0 1.95 16.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 16.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 16.5 23.16 1 1 s
+endmol 751
+mol 752 "HOH"
+atom 1 OW O OW h 0 4.95 16.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 16.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 16.5 23.16 1 1 s
+endmol 752
+mol 753 "HOH"
+atom 1 OW O OW h 0 7.95 16.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 16.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 16.5 23.16 1 1 s
+endmol 753
+mol 754 "HOH"
+atom 1 OW O OW h 0 10.95 16.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 16.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 16.5 23.16 1 1 s
+endmol 754
+mol 755 "HOH"
+atom 1 OW O OW h 0 13.95 16.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 16.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 16.5 23.16 1 1 s
+endmol 755
+mol 756 "HOH"
+atom 1 OW O OW h 0 16.95 16.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 16.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 16.5 23.16 1 1 s
+endmol 756
+mol 757 "HOH"
+atom 1 OW O OW h 0 19.95 16.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 16.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 16.5 23.16 1 1 s
+endmol 757
+mol 758 "HOH"
+atom 1 OW O OW h 0 22.95 16.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 16.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 16.5 23.16 1 1 s
+endmol 758
+mol 759 "HOH"
+atom 1 OW O OW h 0 25.95 16.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 16.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 16.5 23.16 1 1 s
+endmol 759
+mol 760 "HOH"
+atom 1 OW O OW h 0 28.95 16.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 16.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 16.5 23.16 1 1 s
+endmol 760
+mol 761 "HOH"
+atom 1 OW O OW h 0 1.95 19.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 19.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 19.5 23.16 1 1 s
+endmol 761
+mol 762 "HOH"
+atom 1 OW O OW h 0 4.95 19.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 19.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 19.5 23.16 1 1 s
+endmol 762
+mol 763 "HOH"
+atom 1 OW O OW h 0 7.95 19.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 19.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 19.5 23.16 1 1 s
+endmol 763
+mol 764 "HOH"
+atom 1 OW O OW h 0 10.95 19.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 19.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 19.5 23.16 1 1 s
+endmol 764
+mol 765 "HOH"
+atom 1 OW O OW h 0 13.95 19.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 19.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 19.5 23.16 1 1 s
+endmol 765
+mol 766 "HOH"
+atom 1 OW O OW h 0 16.95 19.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 19.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 19.5 23.16 1 1 s
+endmol 766
+mol 767 "HOH"
+atom 1 OW O OW h 0 19.95 19.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 19.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 19.5 23.16 1 1 s
+endmol 767
+mol 768 "HOH"
+atom 1 OW O OW h 0 22.95 19.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 19.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 19.5 23.16 1 1 s
+endmol 768
+mol 769 "HOH"
+atom 1 OW O OW h 0 25.95 19.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 19.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 19.5 23.16 1 1 s
+endmol 769
+mol 770 "HOH"
+atom 1 OW O OW h 0 28.95 19.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 19.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 19.5 23.16 1 1 s
+endmol 770
+mol 771 "HOH"
+atom 1 OW O OW h 0 1.95 22.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 22.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 22.5 23.16 1 1 s
+endmol 771
+mol 772 "HOH"
+atom 1 OW O OW h 0 4.95 22.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 22.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 22.5 23.16 1 1 s
+endmol 772
+mol 773 "HOH"
+atom 1 OW O OW h 0 7.95 22.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 22.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 22.5 23.16 1 1 s
+endmol 773
+mol 774 "HOH"
+atom 1 OW O OW h 0 10.95 22.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 22.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 22.5 23.16 1 1 s
+endmol 774
+mol 775 "HOH"
+atom 1 OW O OW h 0 13.95 22.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 22.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 22.5 23.16 1 1 s
+endmol 775
+mol 776 "HOH"
+atom 1 OW O OW h 0 16.95 22.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 22.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 22.5 23.16 1 1 s
+endmol 776
+mol 777 "HOH"
+atom 1 OW O OW h 0 19.95 22.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 22.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 22.5 23.16 1 1 s
+endmol 777
+mol 778 "HOH"
+atom 1 OW O OW h 0 22.95 22.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 22.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 22.5 23.16 1 1 s
+endmol 778
+mol 779 "HOH"
+atom 1 OW O OW h 0 25.95 22.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 22.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 22.5 23.16 1 1 s
+endmol 779
+mol 780 "HOH"
+atom 1 OW O OW h 0 28.95 22.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 22.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 22.5 23.16 1 1 s
+endmol 780
+mol 781 "HOH"
+atom 1 OW O OW h 0 1.95 25.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 25.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 25.5 23.16 1 1 s
+endmol 781
+mol 782 "HOH"
+atom 1 OW O OW h 0 4.95 25.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 25.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 25.5 23.16 1 1 s
+endmol 782
+mol 783 "HOH"
+atom 1 OW O OW h 0 7.95 25.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 25.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 25.5 23.16 1 1 s
+endmol 783
+mol 784 "HOH"
+atom 1 OW O OW h 0 10.95 25.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 25.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 25.5 23.16 1 1 s
+endmol 784
+mol 785 "HOH"
+atom 1 OW O OW h 0 13.95 25.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 25.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 25.5 23.16 1 1 s
+endmol 785
+mol 786 "HOH"
+atom 1 OW O OW h 0 16.95 25.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 25.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 25.5 23.16 1 1 s
+endmol 786
+mol 787 "HOH"
+atom 1 OW O OW h 0 19.95 25.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 25.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 25.5 23.16 1 1 s
+endmol 787
+mol 788 "HOH"
+atom 1 OW O OW h 0 22.95 25.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 25.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 25.5 23.16 1 1 s
+endmol 788
+mol 789 "HOH"
+atom 1 OW O OW h 0 25.95 25.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 25.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 25.5 23.16 1 1 s
+endmol 789
+mol 790 "HOH"
+atom 1 OW O OW h 0 28.95 25.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 25.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 25.5 23.16 1 1 s
+endmol 790
+mol 791 "HOH"
+atom 1 OW O OW h 0 1.95 28.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 28.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 28.5 23.16 1 1 s
+endmol 791
+mol 792 "HOH"
+atom 1 OW O OW h 0 4.95 28.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 28.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 28.5 23.16 1 1 s
+endmol 792
+mol 793 "HOH"
+atom 1 OW O OW h 0 7.95 28.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 28.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 28.5 23.16 1 1 s
+endmol 793
+mol 794 "HOH"
+atom 1 OW O OW h 0 10.95 28.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 28.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 28.5 23.16 1 1 s
+endmol 794
+mol 795 "HOH"
+atom 1 OW O OW h 0 13.95 28.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 28.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 28.5 23.16 1 1 s
+endmol 795
+mol 796 "HOH"
+atom 1 OW O OW h 0 16.95 28.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 28.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 28.5 23.16 1 1 s
+endmol 796
+mol 797 "HOH"
+atom 1 OW O OW h 0 19.95 28.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 28.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 28.5 23.16 1 1 s
+endmol 797
+mol 798 "HOH"
+atom 1 OW O OW h 0 22.95 28.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 28.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 28.5 23.16 1 1 s
+endmol 798
+mol 799 "HOH"
+atom 1 OW O OW h 0 25.95 28.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 28.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 28.5 23.16 1 1 s
+endmol 799
+mol 800 "HOH"
+atom 1 OW O OW h 0 28.95 28.5 22.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 28.5 21.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 28.5 23.16 1 1 s
+endmol 800
+mol 801 "HOH"
+atom 1 OW O OW h 0 1.95 1.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 1.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 1.5 26.16 1 1 s
+endmol 801
+mol 802 "HOH"
+atom 1 OW O OW h 0 4.95 1.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 1.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 1.5 26.16 1 1 s
+endmol 802
+mol 803 "HOH"
+atom 1 OW O OW h 0 7.95 1.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 1.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 1.5 26.16 1 1 s
+endmol 803
+mol 804 "HOH"
+atom 1 OW O OW h 0 10.95 1.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 1.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 1.5 26.16 1 1 s
+endmol 804
+mol 805 "HOH"
+atom 1 OW O OW h 0 13.95 1.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 1.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 1.5 26.16 1 1 s
+endmol 805
+mol 806 "HOH"
+atom 1 OW O OW h 0 16.95 1.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 1.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 1.5 26.16 1 1 s
+endmol 806
+mol 807 "HOH"
+atom 1 OW O OW h 0 19.95 1.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 1.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 1.5 26.16 1 1 s
+endmol 807
+mol 808 "HOH"
+atom 1 OW O OW h 0 22.95 1.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 1.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 1.5 26.16 1 1 s
+endmol 808
+mol 809 "HOH"
+atom 1 OW O OW h 0 25.95 1.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 1.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 1.5 26.16 1 1 s
+endmol 809
+mol 810 "HOH"
+atom 1 OW O OW h 0 28.95 1.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 1.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 1.5 26.16 1 1 s
+endmol 810
+mol 811 "HOH"
+atom 1 OW O OW h 0 1.95 4.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 4.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 4.5 26.16 1 1 s
+endmol 811
+mol 812 "HOH"
+atom 1 OW O OW h 0 4.95 4.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 4.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 4.5 26.16 1 1 s
+endmol 812
+mol 813 "HOH"
+atom 1 OW O OW h 0 7.95 4.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 4.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 4.5 26.16 1 1 s
+endmol 813
+mol 814 "HOH"
+atom 1 OW O OW h 0 10.95 4.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 4.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 4.5 26.16 1 1 s
+endmol 814
+mol 815 "HOH"
+atom 1 OW O OW h 0 13.95 4.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 4.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 4.5 26.16 1 1 s
+endmol 815
+mol 816 "HOH"
+atom 1 OW O OW h 0 16.95 4.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 4.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 4.5 26.16 1 1 s
+endmol 816
+mol 817 "HOH"
+atom 1 OW O OW h 0 19.95 4.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 4.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 4.5 26.16 1 1 s
+endmol 817
+mol 818 "HOH"
+atom 1 OW O OW h 0 22.95 4.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 4.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 4.5 26.16 1 1 s
+endmol 818
+mol 819 "HOH"
+atom 1 OW O OW h 0 25.95 4.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 4.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 4.5 26.16 1 1 s
+endmol 819
+mol 820 "HOH"
+atom 1 OW O OW h 0 28.95 4.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 4.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 4.5 26.16 1 1 s
+endmol 820
+mol 821 "HOH"
+atom 1 OW O OW h 0 1.95 7.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 7.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 7.5 26.16 1 1 s
+endmol 821
+mol 822 "HOH"
+atom 1 OW O OW h 0 4.95 7.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 7.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 7.5 26.16 1 1 s
+endmol 822
+mol 823 "HOH"
+atom 1 OW O OW h 0 7.95 7.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 7.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 7.5 26.16 1 1 s
+endmol 823
+mol 824 "HOH"
+atom 1 OW O OW h 0 10.95 7.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 7.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 7.5 26.16 1 1 s
+endmol 824
+mol 825 "HOH"
+atom 1 OW O OW h 0 13.95 7.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 7.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 7.5 26.16 1 1 s
+endmol 825
+mol 826 "HOH"
+atom 1 OW O OW h 0 16.95 7.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 7.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 7.5 26.16 1 1 s
+endmol 826
+mol 827 "HOH"
+atom 1 OW O OW h 0 19.95 7.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 7.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 7.5 26.16 1 1 s
+endmol 827
+mol 828 "HOH"
+atom 1 OW O OW h 0 22.95 7.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 7.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 7.5 26.16 1 1 s
+endmol 828
+mol 829 "HOH"
+atom 1 OW O OW h 0 25.95 7.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 7.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 7.5 26.16 1 1 s
+endmol 829
+mol 830 "HOH"
+atom 1 OW O OW h 0 28.95 7.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 7.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 7.5 26.16 1 1 s
+endmol 830
+mol 831 "HOH"
+atom 1 OW O OW h 0 1.95 10.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 10.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 10.5 26.16 1 1 s
+endmol 831
+mol 832 "HOH"
+atom 1 OW O OW h 0 4.95 10.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 10.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 10.5 26.16 1 1 s
+endmol 832
+mol 833 "HOH"
+atom 1 OW O OW h 0 7.95 10.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 10.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 10.5 26.16 1 1 s
+endmol 833
+mol 834 "HOH"
+atom 1 OW O OW h 0 10.95 10.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 10.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 10.5 26.16 1 1 s
+endmol 834
+mol 835 "HOH"
+atom 1 OW O OW h 0 13.95 10.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 10.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 10.5 26.16 1 1 s
+endmol 835
+mol 836 "HOH"
+atom 1 OW O OW h 0 16.95 10.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 10.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 10.5 26.16 1 1 s
+endmol 836
+mol 837 "HOH"
+atom 1 OW O OW h 0 19.95 10.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 10.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 10.5 26.16 1 1 s
+endmol 837
+mol 838 "HOH"
+atom 1 OW O OW h 0 22.95 10.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 10.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 10.5 26.16 1 1 s
+endmol 838
+mol 839 "HOH"
+atom 1 OW O OW h 0 25.95 10.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 10.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 10.5 26.16 1 1 s
+endmol 839
+mol 840 "HOH"
+atom 1 OW O OW h 0 28.95 10.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 10.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 10.5 26.16 1 1 s
+endmol 840
+mol 841 "HOH"
+atom 1 OW O OW h 0 1.95 13.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 13.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 13.5 26.16 1 1 s
+endmol 841
+mol 842 "HOH"
+atom 1 OW O OW h 0 4.95 13.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 13.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 13.5 26.16 1 1 s
+endmol 842
+mol 843 "HOH"
+atom 1 OW O OW h 0 7.95 13.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 13.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 13.5 26.16 1 1 s
+endmol 843
+mol 844 "HOH"
+atom 1 OW O OW h 0 10.95 13.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 13.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 13.5 26.16 1 1 s
+endmol 844
+mol 845 "HOH"
+atom 1 OW O OW h 0 13.95 13.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 13.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 13.5 26.16 1 1 s
+endmol 845
+mol 846 "HOH"
+atom 1 OW O OW h 0 16.95 13.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 13.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 13.5 26.16 1 1 s
+endmol 846
+mol 847 "HOH"
+atom 1 OW O OW h 0 19.95 13.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 13.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 13.5 26.16 1 1 s
+endmol 847
+mol 848 "HOH"
+atom 1 OW O OW h 0 22.95 13.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 13.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 13.5 26.16 1 1 s
+endmol 848
+mol 849 "HOH"
+atom 1 OW O OW h 0 25.95 13.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 13.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 13.5 26.16 1 1 s
+endmol 849
+mol 850 "HOH"
+atom 1 OW O OW h 0 28.95 13.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 13.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 13.5 26.16 1 1 s
+endmol 850
+mol 851 "HOH"
+atom 1 OW O OW h 0 1.95 16.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 16.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 16.5 26.16 1 1 s
+endmol 851
+mol 852 "HOH"
+atom 1 OW O OW h 0 4.95 16.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 16.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 16.5 26.16 1 1 s
+endmol 852
+mol 853 "HOH"
+atom 1 OW O OW h 0 7.95 16.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 16.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 16.5 26.16 1 1 s
+endmol 853
+mol 854 "HOH"
+atom 1 OW O OW h 0 10.95 16.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 16.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 16.5 26.16 1 1 s
+endmol 854
+mol 855 "HOH"
+atom 1 OW O OW h 0 13.95 16.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 16.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 16.5 26.16 1 1 s
+endmol 855
+mol 856 "HOH"
+atom 1 OW O OW h 0 16.95 16.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 16.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 16.5 26.16 1 1 s
+endmol 856
+mol 857 "HOH"
+atom 1 OW O OW h 0 19.95 16.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 16.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 16.5 26.16 1 1 s
+endmol 857
+mol 858 "HOH"
+atom 1 OW O OW h 0 22.95 16.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 16.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 16.5 26.16 1 1 s
+endmol 858
+mol 859 "HOH"
+atom 1 OW O OW h 0 25.95 16.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 16.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 16.5 26.16 1 1 s
+endmol 859
+mol 860 "HOH"
+atom 1 OW O OW h 0 28.95 16.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 16.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 16.5 26.16 1 1 s
+endmol 860
+mol 861 "HOH"
+atom 1 OW O OW h 0 1.95 19.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 19.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 19.5 26.16 1 1 s
+endmol 861
+mol 862 "HOH"
+atom 1 OW O OW h 0 4.95 19.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 19.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 19.5 26.16 1 1 s
+endmol 862
+mol 863 "HOH"
+atom 1 OW O OW h 0 7.95 19.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 19.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 19.5 26.16 1 1 s
+endmol 863
+mol 864 "HOH"
+atom 1 OW O OW h 0 10.95 19.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 19.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 19.5 26.16 1 1 s
+endmol 864
+mol 865 "HOH"
+atom 1 OW O OW h 0 13.95 19.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 19.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 19.5 26.16 1 1 s
+endmol 865
+mol 866 "HOH"
+atom 1 OW O OW h 0 16.95 19.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 19.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 19.5 26.16 1 1 s
+endmol 866
+mol 867 "HOH"
+atom 1 OW O OW h 0 19.95 19.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 19.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 19.5 26.16 1 1 s
+endmol 867
+mol 868 "HOH"
+atom 1 OW O OW h 0 22.95 19.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 19.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 19.5 26.16 1 1 s
+endmol 868
+mol 869 "HOH"
+atom 1 OW O OW h 0 25.95 19.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 19.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 19.5 26.16 1 1 s
+endmol 869
+mol 870 "HOH"
+atom 1 OW O OW h 0 28.95 19.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 19.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 19.5 26.16 1 1 s
+endmol 870
+mol 871 "HOH"
+atom 1 OW O OW h 0 1.95 22.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 22.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 22.5 26.16 1 1 s
+endmol 871
+mol 872 "HOH"
+atom 1 OW O OW h 0 4.95 22.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 22.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 22.5 26.16 1 1 s
+endmol 872
+mol 873 "HOH"
+atom 1 OW O OW h 0 7.95 22.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 22.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 22.5 26.16 1 1 s
+endmol 873
+mol 874 "HOH"
+atom 1 OW O OW h 0 10.95 22.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 22.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 22.5 26.16 1 1 s
+endmol 874
+mol 875 "HOH"
+atom 1 OW O OW h 0 13.95 22.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 22.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 22.5 26.16 1 1 s
+endmol 875
+mol 876 "HOH"
+atom 1 OW O OW h 0 16.95 22.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 22.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 22.5 26.16 1 1 s
+endmol 876
+mol 877 "HOH"
+atom 1 OW O OW h 0 19.95 22.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 22.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 22.5 26.16 1 1 s
+endmol 877
+mol 878 "HOH"
+atom 1 OW O OW h 0 22.95 22.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 22.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 22.5 26.16 1 1 s
+endmol 878
+mol 879 "HOH"
+atom 1 OW O OW h 0 25.95 22.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 22.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 22.5 26.16 1 1 s
+endmol 879
+mol 880 "HOH"
+atom 1 OW O OW h 0 28.95 22.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 22.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 22.5 26.16 1 1 s
+endmol 880
+mol 881 "HOH"
+atom 1 OW O OW h 0 1.95 25.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 25.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 25.5 26.16 1 1 s
+endmol 881
+mol 882 "HOH"
+atom 1 OW O OW h 0 4.95 25.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 25.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 25.5 26.16 1 1 s
+endmol 882
+mol 883 "HOH"
+atom 1 OW O OW h 0 7.95 25.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 25.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 25.5 26.16 1 1 s
+endmol 883
+mol 884 "HOH"
+atom 1 OW O OW h 0 10.95 25.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 25.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 25.5 26.16 1 1 s
+endmol 884
+mol 885 "HOH"
+atom 1 OW O OW h 0 13.95 25.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 25.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 25.5 26.16 1 1 s
+endmol 885
+mol 886 "HOH"
+atom 1 OW O OW h 0 16.95 25.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 25.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 25.5 26.16 1 1 s
+endmol 886
+mol 887 "HOH"
+atom 1 OW O OW h 0 19.95 25.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 25.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 25.5 26.16 1 1 s
+endmol 887
+mol 888 "HOH"
+atom 1 OW O OW h 0 22.95 25.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 25.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 25.5 26.16 1 1 s
+endmol 888
+mol 889 "HOH"
+atom 1 OW O OW h 0 25.95 25.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 25.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 25.5 26.16 1 1 s
+endmol 889
+mol 890 "HOH"
+atom 1 OW O OW h 0 28.95 25.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 25.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 25.5 26.16 1 1 s
+endmol 890
+mol 891 "HOH"
+atom 1 OW O OW h 0 1.95 28.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 1.82 28.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 1.05 28.5 26.16 1 1 s
+endmol 891
+mol 892 "HOH"
+atom 1 OW O OW h 0 4.95 28.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 4.82 28.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 4.05 28.5 26.16 1 1 s
+endmol 892
+mol 893 "HOH"
+atom 1 OW O OW h 0 7.95 28.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 7.82 28.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 7.05 28.5 26.16 1 1 s
+endmol 893
+mol 894 "HOH"
+atom 1 OW O OW h 0 10.95 28.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 10.82 28.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 10.05 28.5 26.16 1 1 s
+endmol 894
+mol 895 "HOH"
+atom 1 OW O OW h 0 13.95 28.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 13.82 28.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 13.05 28.5 26.16 1 1 s
+endmol 895
+mol 896 "HOH"
+atom 1 OW O OW h 0 16.95 28.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 16.82 28.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 16.05 28.5 26.16 1 1 s
+endmol 896
+mol 897 "HOH"
+atom 1 OW O OW h 0 19.95 28.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 19.82 28.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 19.05 28.5 26.16 1 1 s
+endmol 897
+mol 898 "HOH"
+atom 1 OW O OW h 0 22.95 28.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 22.82 28.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 22.05 28.5 26.16 1 1 s
+endmol 898
+mol 899 "HOH"
+atom 1 OW O OW h 0 25.95 28.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 25.82 28.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 25.05 28.5 26.16 1 1 s
+endmol 899
+mol 900 "HOH"
+atom 1 OW O OW h 0 28.95 28.5 25.8 2 2 s 3 s
+atom 2 HW1 H HW h 0 28.82 28.5 24.84 1 1 s
+atom 3 HW2 H HW h 0 28.05 28.5 26.16 1 1 s
+endmol 900

@@ -1,0 +1,19 @@
+;
+;* File: QMPFFPROP.PAR :: 
+;*
+;* QMPFFPROP - QMPFF atom-type properties
+;*
+;#!atype  aname  aspec  amass  charge     crd  Nceq  arom  amid  pair  pilp  mltb  sbmb  minH  maxH
+       1       C4      6     12       0    1111     1     0     0     0     0     0     0     4     4
+       2       C3      6     12       0    1111     1     0     0     0     0     0     0     0     3
+       3      HC4      1      1       0    1000     1     0     0     1     0     0     0     0     0
+       4      HC3      1      1       0    1000     1     0     0     2     0     0     0     0     0
+       5      HC2      1      1       0    1000     1     0     0     2     0     0     0     0     0
+       6     HC2R      1      1       0    1000     1     0     0     2     0     0     0     0     0
+       7       OW      8     16       0    1100     1     0     0     0     1     0     0     2     2
+       8       HW      1      1       0    1000     1     0     0     5     0     0     0     0     0
+       9       CA      6     12       0    2110     1     1     0     0     0     2     1     0     1
+      10      HCA      1      1       0    1000     1     0     0    26     0     0     0     0     0
+      11      CAB      6     12       0    2110     1     1     0     0     0     2     1     0     1
+      12     OWNN      8     16       0    1100     1     0     0     0     1     0     0     2     2
+      13     HWNN      1      1       0    1000     1     0     0     5     0     0     0     0     0

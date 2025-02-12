@@ -1,0 +1,39 @@
+;units angs
+;basis-set avqz
+;calculation-type linearDimer
+;calculation-dimer-type NO_REAL_DECOMPOSITION_ONLY_TOTAL_ENERGY
+;total-time-cpu(HOURS) 0.013086
+;total-time-wall(HOURS) 0.014931
+;conf 1
+mol 1 WAT
+charge 0
+atom    1    O  O  OW   - +0.000  +2.902838 +19.553583  +3.722833 2  2 s  3 s
+atom    2    H1 H  HW   - +0.000  +3.288691 +20.284082  +4.292628 1  1 s
+atom    3    H2 H  HW   - +0.000  +2.918534 +19.884985  +2.850570 1  1 s
+endmol 1
+
+mol 2 WAT
+charge 0
+atom    1    O  O  OW   - +0.000  +3.348367 +19.369431  +1.195762 2  2 s  3 s
+atom    2    H1 H  HW   - +0.000  +2.617437 +18.940147  +0.763117 1  1 s
+atom    3    H2 H  HW   - +0.000  +3.687022 +20.100647  +0.678329 1  1 s
+endmol 2
+
+;conf-old-mp2-EnergyDimer(KCAL/MOL) +0.00000000
+;conf-old-mp2-DSEnergyDimer(KCAL/MOL) -0.30000000
+;conf-MP2-CBS-correction-added-to-EN-and-DS(KCAL/MOL) -0.50777080
+;conf-CCSDt-mp2-correction-added-to-EN-and-DS(KCAL/MOL) +0.05529746
+;conf-CCSDt-dft-correction-added-to-EN-and-DS(KCAL/MOL) +0.52714467
+;conf-mp2-EnergyDimer(KCAL/MOL) +0.00000000
+;conf-mp2-ESEnergyDimer(KCAL/MOL) -0.30000000
+;conf-mp2-EXEnergyDimer(KCAL/MOL) +0.90000000
+;conf-mp2-DSEnergyDimer(KCAL/MOL) -0.30000000
+;conf-mp2-INEnergyDimer(KCAL/MOL) -0.30000000
+;conf-ccmp2-EnergyDimer(KCAL/MOL) -0.45247334
+;conf-ccmp2-DSEnergyDimer(KCAL/MOL) -0.75247334
+;conf-ccdft-EnergyDimer(KCAL/MOL) +0.52714467
+;conf-ccdft-DSEnergyDimer(KCAL/MOL) +0.22714467
+;conf-population +0.00100000
+;ARBALEST_QMPFF_830 -1.3955580030199999
+;endconf 1
+

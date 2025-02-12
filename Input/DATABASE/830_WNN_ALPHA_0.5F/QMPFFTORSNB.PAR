@@ -1,0 +1,30 @@
+;
+; File: QMPFFTORSNB.PAR :: 
+; Torsion Parameters
+;
+;#!ID  ATOM1 BT12 ATOM2 BT23 ATOM3 BT34 ATOM4       V1       V2       V3
+      1       C3    s       C3    s       C3    s       C3     0.00000     0.00000     0.28700
+      2       C3    s       C3    s       C3    s      HC3     0.00000     0.00000     0.25000
+      3      HC3    s       C3    s       C3    s      HC3     0.00000     0.00000     0.33800
+      4      HC3    s       C3    s       C3    s       CA     0.00000     0.00000     0.38700
+      5       C3    s       C3    s       CA    a       CA     0.00000     1.27000     0.67700
+      6      HC3    s       C3    s       CA    a       CA    -0.01074     0.00000     0.00385
+      7       CA    s       C3    s       CA    a       CA     0.00000     1.82300    -0.67500
+      8       CA    a       CA    s       CA    a       CA     0.00000     1.13800     0.00000
+      9       CA    a       CA    a      CAB    a      CAB     0.00000    11.48300     0.00000
+     10       CA    a       CA    a      CAB    a       CA     0.00000    11.48300     0.00000
+     11      HCA    s       CA    a      CAB    a      CAB     0.00000    11.48300     0.00000
+     12      HCA    s       CA    a      CAB    a       CA     0.00000    11.48300     0.00000
+     13       CA    a      CAB    a      CAB    a      CAB     0.00000    11.48300     0.00000
+     14      CAB    a      CAB    a      CAB    a      CAB     0.00000    11.48300     0.00000
+     15       CA    a      CAB    a      CAB    a       CA     0.00000    11.48300     0.00000
+     16      CAB    a       CA    a      CAB    a      CAB     0.00000    11.48300     0.00000
+     17      CAB    a       CA    a      CAB    a       CA     0.00000    11.48300     0.00000
+     18        x    s       C3    s       C3    s        x     0.00000     0.00000     0.30500
+     19        x    s       C3    s       CA    x        x     0.00000     5.52300     0.00000
+     20        x    x       CA    s       CA    x        x     0.00000     1.44200     0.00000
+     21        x    x       CA    a       CA    x        x     0.00000    11.48300     0.00000
+     22       C3    s       C3    s       C3    s      HC2     0.00000     0.00000     0.25000
+     23      HC2    s       C3    s       C3    s      HC2     0.00000     0.00000     0.33800
+     24       C3    s       C3    s       C3    s     HC2R     0.00000     0.00000     0.25000
+     25     HC2R    s       C3    s       C3    s     HC2R     0.00000     0.00000     0.33800

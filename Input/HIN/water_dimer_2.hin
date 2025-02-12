@@ -1,0 +1,19 @@
+;units angs
+;conf 1
+mol 1 "WATMOL"
+charge 0
+res 1  WAT  1 -  
+atom 1 O O OW s  0     2.902838000     19.553583000      3.722833000 2 2 s 3 s
+atom 2 H1 H HW s  0     3.288691000     20.284082000      4.292628000 1 1 s
+atom 3 H2 H HW s  0     2.918534000     19.884985000      2.850570000 1 1 s
+endres 1
+endmol 1
+mol 2 "WATMOL"
+charge 0
+res 1  WAT  1 -  
+atom 1 O O OW s  0     3.348367000     19.369431000      1.195762000 2 2 s 3 s
+atom 2 H1 H HW s  0     2.617437000     18.940147000      0.763117000 1 1 s
+atom 3 H2 H HW s  0     3.687022000     20.100647000      0.678329000 1 1 s
+endres 1
+endmol 2
+;endconf 1

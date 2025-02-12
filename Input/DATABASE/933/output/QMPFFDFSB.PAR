@@ -1,0 +1,16 @@
+;
+; File: QMPFFDFSB.PAR :: 
+; QMPFF3 STRETCH-BENDING DEFAULT PARAMETERS
+; 
+; Source: Supplementary Material: parameters of the stretch-bend cross term
+; Assessment of Performance of the General Purpose
+; Polarizable Force Field QMPFF3 in Condensed Phase
+; DOI 10.1002/jcc.20884
+; Published online 27 December 2007 in Wiley InterScience (www.interscience.wiley.com).
+;
+; Default parameters are taken to be analogous to that in MMFF94
+; 
+;     Row in 
+;  Periodic Table         
+;   IR	JR	KR	kbaIJK	kbaKJI
+

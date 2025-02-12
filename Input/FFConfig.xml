@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="Windows-1251" ?>
+<FFConfiguration>
+         <FFDescription Type="QMPFF" Title="830">
+                  <FilesDescription>
+                        <File Type="SQLITE" >./DATABASE/830/ffdb.sqlite</File>
+                        <File Type="BNDK">./DATABASE/ALL/QMPFFBNDK.PAR</File>
+                        <File Type="DFSB">./DATABASE/ALL/QMPFFDFSB.PAR</File>
+                 </FilesDescription>
+         </FFDescription>
+         <FFDescription Type="QMPFF" Title="933">
+                  <FilesDescription>
+                        <File Type="SQLITE" >./DATABASE/933/ffdb.sqlite</File>
+                        <File Type="BNDK">./DATABASE/ALL/QMPFFBNDK.PAR</File>
+                        <File Type="DFSB">./DATABASE/ALL/QMPFFDFSB.PAR</File>
+                 </FilesDescription>
+         </FFDescription>
+         <FFDescription Type="QMPFF" Title="830_WNN" FFFolder="./DATABASE/830_WNN">
+         </FFDescription>
+         <FFDescription Type="QMPFF" Title="830_WNN_ALPHA_0.5F" FFFolder="./DATABASE/830_WNN_ALPHA_0.5F">
+         </FFDescription>
+         <FFDescription Type="QMPFF" Title="830_WNN_ALPHA_0.01F" FFFolder="./DATABASE/830_WNN_ALPHA_0.01F">
+         </FFDescription>
+         <FFDescription Type="GAFF" Title="GAFF" >
+                <FilesDescription>
+                        <File Type="PAR" >gaff.dat</File>
+                </FilesDescription>
+        </FFDescription>
+</FFConfiguration>

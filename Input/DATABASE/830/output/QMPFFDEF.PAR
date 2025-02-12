@@ -1,0 +1,16 @@
+;
+; File: QMPFFDEF.PAR :: 
+; Bond Stretching Parameters
+;
+;#!SYMBOL      t1   t2   t3   t4
+C4              C4       C4       C4        x
+C3              C3       C3       C3        x
+HC4            HC4      HC4      HC4        x
+HC3            HC3      HC3      HC3        x
+OW              OW       OW       OW        x
+HW              HW       HW       HW        x
+CA              CA       CA       C3        x
+HCA            HC3      HC3      HC3        x
+CAB             CA       CA       C3        x
+HC2            HC2      HC2      HC2        x
+HC2R          HC2R     HC2R     HC2R        x

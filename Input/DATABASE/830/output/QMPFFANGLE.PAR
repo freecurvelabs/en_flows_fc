@@ -1,0 +1,28 @@
+;
+; File: QMPFFANGLE.PAR :: 
+; Angle Parameters
+;
+;#!ID  ATOM1 BT12 ATOM2 BT23 ATOM3     thetaA           kA
+      1      HC4    s       C4    s      HC4   109.4712    0.0240083
+      2       C3    s       C3    s       C3   109.6702    0.0333101
+      3       C3    s       C3    s      HC3   110.4357    0.0274149
+      4      HC3    s       C3    s      HC3   108.8702    0.0248246
+      5       HW    s       OW    s       HW   103.9780    0.0303181
+      6       C3    s       C3    s       CA   110.6471    0.0331461
+      7      HC3    s       C3    s       CA   111.1567    0.0268488
+      8       CA    s       C3    s       CA   111.2492    0.0432302
+      9       C3    s       CA    a       CA   121.4199    0.0297086
+     10       CA    a       CA    a       CA   119.8845    0.0446501
+     11       CA    s       CA    a       CA   120.8364    0.0378812
+     12       CA    a       CA    s      HCA   120.1574    0.0215628
+     13      CAB    a       CA    s      HCA   120.1574    0.0215628
+     14       CA    a       CA    a      CAB   119.8845    0.0446501
+     15       CA    a      CAB    a       CA   119.8845    0.0446501
+     16       CA    a      CAB    a      CAB   119.8845    0.0446501
+     17        x    s       C3    s        x   108.9000    0.0398884
+     18        x    a       CA    a        x   118.8000    0.0362087
+     19        x    s       CA    s        x   115.9000    0.0378829
+     20       C3    s       C3    s      HC2   110.4357    0.0274149
+     21      HC2    s       C3    s      HC2   108.8702    0.0248246
+     22       C3    s       C3    s     HC2R   110.4357    0.0274149
+     23     HC2R    s       C3    s     HC2R   108.8702    0.0248246

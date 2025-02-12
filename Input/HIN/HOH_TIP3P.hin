@@ -1,0 +1,6 @@
+forcefield gaff
+mol 1 "HOH"
+atom 1 OW  O   OW  -  0  5.69000  12.75100  11.65100 2 2 s 3 s 
+atom 2 HW1 H   HW  -  0  4.76000  12.68100  11.28100 1 1 s 
+atom 3 HW2 H   HW  -  0  5.80000  13.64100  12.09100 1 1 s 
+endmol 1

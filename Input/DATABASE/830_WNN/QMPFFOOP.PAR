@@ -1,0 +1,9 @@
+;
+; File: QMPFFOOP.PAR :: 
+; OOP Parameters
+;
+;#!ID  ATOM1  ATOM2  ATOM3  ATOM4      k_oop
+      1       CA       C3       CA       CA   0.001754
+      2       CA       CA       CA       CA   0.001535
+      3       CA       CA       CA      HCA   0.000658
+      4       CA        x        x        x   0.001535
