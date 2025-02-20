@@ -33,6 +33,7 @@ class EGNN_dynamics(nn.Module):
        
         x = xs.view(n_batch*self._n_particles, self._n_dimension).clone()
         h = torch.ones(n_batch*self._n_particles, 1).to(self.device)             # forming the tensor of graph verticies (nodes?)  - all ones here!  
+        #h = torch.ones(n_batch*self._n_particles, 2).to(self.device)    # forming one-hot vectors for nodes to distiguish O and H 
         
         # IGOR_TMP modify node feature vector (distinguish oxygens):
         #h[0,0] = 8.0
@@ -42,6 +43,13 @@ class EGNN_dynamics(nn.Module):
              h[i*3+1,0] = 2.0
              h[i*3+2,0] = 1.0
         #    h[i*6+3,0] = 0.0
+        #for i in range(n_batch):
+        #    h[i*3,0]   = 1.0
+        #    h[i*3,1]   = 0.0
+        #    h[i*3+1,0] = 0.0
+        #    h[i*3+1,1] = 1.0
+        #    h[i*3+2,0] = 0.0
+        #    h[i*3+2,1] = 1.0
         
         if self.condition_time:
             h = h*t
@@ -50,7 +58,7 @@ class EGNN_dynamics(nn.Module):
             edge_attr = torch.sum((x[edges[0]] - x[edges[1]])**2, dim=1, keepdim=True)
             #print(f"{edge_attr.shape=}")
             #
-            # IGOR_TMP adding bonding attributes - not working so far
+            # IGOR_TMP adding bonding attributes 
             #bonding_attr = torch.ones(n_batch*self._n_particles*(self._n_particles-1), 1).to(self.device)
             #bond_attr_mol = torch.ones(self._n_particles*(self._n_particles-1), 1).to(self.device)
             #for i in range(self._n_particles*(self._n_particles-1)):
