@@ -55,7 +55,11 @@ class FFJORD(torch.nn.Module):
     def rtol(self):
         return self._rtol if self.training else self._rtol_test
 
-    def forward(self, x, node_mask=None, edge_mask=None, context=None):
+    def forward(self, x, node_mask=None, edge_mask=None, context=None, Inverse = False):
+        
+        if( Inverse):
+            return self.inverse(x, node_mask, edge_mask, context)
+        
         ldj = x.new_zeros(x.shape[0])
         reg_term = x.new_zeros(x.shape[0])
 
